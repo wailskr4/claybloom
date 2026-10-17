@@ -1,6 +1,7 @@
 import  {useState} from "react";
 import { Link } from 'react-router-dom'
-import { Flower2,  Sparkles, X, Menu } from "lucide-react";
+import Logo from '../assets/logo2.jpg'
+import {   Sparkles, X, Menu } from "lucide-react";
 export default  function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -14,14 +15,18 @@ export default  function Navbar() {
           onClick={closeMenu}
           className="flex items-center gap-2.5"
         >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-pink-100 text-pink-500 transition-transform hover:scale-105">
-            <Flower2 size={25} />
-          </span>
+          
 
           <span>
-            <span className="block text-2xl font-extrabold tracking-tight text-[#493747]">
-              Clay<span className="text-pink-500">Bloom</span>
-            </span>
+        
+<Link to="/" className="flex shrink-0 items-center gap-2">
+  <img
+    src={Logo}
+    alt="ClayBloom"
+    className="h-10 w-auto object-fit sm:h-14"
+    draggable="false"
+  />
+</Link>
 
             <span className="hidden text-[10px] text-[#998590] sm:block">
               Crée, modèle, fais fleurir ta créativité
