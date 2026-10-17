@@ -94,13 +94,13 @@ function Hero() {
       </div>
 
       <div className="relative">
-        <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-pink-100 via-purple-100 to-amber-50 blur-2xl" />
+        <div className="absolute -inset-4 rounded-[2.5rem] bg-linear-to-br from-pink-100 via-purple-100 to-amber-50 blur-2xl" />
 
-        <div className="relative overflow-hidden rounded-[2rem] border-4 border-white shadow-xl shadow-pink-100">
+        <div className="relative overflow-hidden rounded-4xl border-4 border-white shadow-xl shadow-pink-100">
           <img
             src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1200&q=85"
             alt="Composition florale aux couleurs douces"
-            className="h-[340px] w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-[440px]"
+            className="h-85 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-110"
           />
 
           <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-lg backdrop-blur-md sm:inset-x-6 sm:bottom-6 sm:p-5">
@@ -205,7 +205,7 @@ function Tutorials() {
   return (
     <section
       id="tutoriels"
-      className="scroll-mt-24 bg-gradient-to-br from-pink-50/80 to-purple-50/70 py-14 sm:py-16"
+      className="scroll-mt-24 bg-linear-to-brrom-pink-50/80 to-purple-50/70 py-14 sm:py-16"
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
@@ -251,7 +251,7 @@ function Techniques() {
       id="techniques"
       className="mx-auto max-w-7xl scroll-mt-24 px-5 py-16 lg:px-8"
     >
-      <div className="grid items-center gap-8 rounded-[2rem] bg-[#F4EAFB] p-6 shadow-sm sm:p-10 lg:grid-cols-2 lg:p-12">
+      <div className="grid items-center gap-8 rounded-4xl bg-[#F4EAFB] p-6 shadow-sm sm:p-10 lg:grid-cols-2 lg:p-12">
         <div>
           <span className="text-sm font-semibold tracking-wider text-purple-600">
             ON APPREND ENSEMBLE
@@ -297,25 +297,7 @@ function Techniques() {
   )
 }
 
-function Footer() {
-  return (
-    <footer className="border-t border-pink-100 bg-white">
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-        <Link to="/" className="text-xl font-extrabold text-[#493747]">
-          Clay<span className="text-pink-500">Bloom</span> 🌸
-        </Link>
 
-        <p className="text-sm text-[#998590]">
-          Un petit pas aujourd'hui, une grande création demain.
-        </p>
-
-        <p className="text-xs text-[#998590]">
-          © {new Date().getFullYear()} ClayBloom
-        </p>
-      </div>
-    </footer>
-  )
-}
 
 export default function Home() {
   return (
@@ -329,7 +311,7 @@ export default function Home() {
         <Techniques />
       </main>
 
-      <Footer />
+      
     </div>
   )
 }

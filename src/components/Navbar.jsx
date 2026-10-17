@@ -42,19 +42,19 @@ export default  function Navbar() {
             Créations
           </Link>
 
-          <a
-            href="#tutoriels"
+          <Link
+            to="/tutoriels"
             className="transition hover:text-pink-500"
           >
             Tutoriels
-          </a>
+          </Link>
 
-          <a
-            href="#techniques"
+          <Link
+            to="/technique"
             className="transition hover:text-pink-500"
           >
             Techniques
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-3">
@@ -113,21 +113,21 @@ export default  function Navbar() {
               Créations
             </Link>
 
-            <a
-              href="#tutoriels"
+            <Link
+              to="/tutoriels"
               onClick={closeMenu}
               className="transition hover:text-pink-500"
             >
               Tutoriels
-            </a>
+            </Link>
 
-            <a
-              href="#techniques"
+            <Link
+              to="/technique"
               onClick={closeMenu}
               className="transition hover:text-pink-500"
             >
               Techniques
-            </a>
+            </Link>
 
             <Link
               to="/creations"

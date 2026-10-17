@@ -7,7 +7,7 @@ export const tutorials = [
     duration: '45 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/38339fdc4d299e34ceb4d9f57bf8e720edd54e4b.jpg',
+      'https://i.ibb.co/3YTQPbPz/38339fdc4d299e34ceb4d9f57bf8e720edd54e4b.avif',
     description:
       'Réalise un joli bouquet de fleurs aux couleurs douces pour décorer ton espace.',
     materials: [
@@ -69,7 +69,7 @@ export const tutorials = [
     duration: '30 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/33b405425a080a530ec4cd804071f896b30c93ff.jpg',
+      'https://i.ibb.co/sdVwZQNR/33b405425a080a530ec4cd804071f896b30c93ff.avif',
     description:
       'Imagine une petite figurine adorable avec un visage expressif et des détails tout mignons.',
     materials: [
@@ -131,7 +131,7 @@ export const tutorials = [
     duration: '1 h',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/timbuktoys.com/9f211d0a6621daba150d735ee1f54ed59ddef947.jpg',
+      'https://i.ibb.co/99z8bcks/9f211d0a6621daba150d735ee1f54ed59ddef947.webp',
     description:
       'Fabrique une fleur lumineuse et ajoute-lui un petit visage souriant.',
     materials: [
@@ -193,7 +193,7 @@ export const tutorials = [
     duration: '40 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/madeit.com.au/e6c61ae1b62494d673c42163d84b81990b872188.jpg',
+      'https://i.ibb.co/SDsgZnMx/e6c61ae1b62494d673c42163d84b81990b872188.webp',
     description:
       'Crée un ensemble de boucles d\'oreilles élégantes avec un effet marbré tendance.',
     materials: [
@@ -255,7 +255,7 @@ export const tutorials = [
     duration: '50 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/f6750f2876369121ac79acc41950794db6679a1d.jpg',
+      'https://i.ibb.co/GQMgnvFh/f6750f2876369121ac79acc41950794db6679a1d.webp',
     description:
       'Fabrique un adorable chaton tenant un petit donut coloré entre ses pattes.',
     materials: [
@@ -318,7 +318,7 @@ export const tutorials = [
     duration: '1 h 15 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/319edd7742eaa7db81482f142ecd8dbb6842e396.jpg',
+      'https://i.ibb.co/7JT8nvsN/319edd7742eaa7db81482f142ecd8dbb6842e396.webp',
     description:
       'Moule une superbe coupelle en forme de feuille tropicale aux finitions dorées.',
     materials: [
@@ -382,7 +382,7 @@ export const tutorials = [
     duration: '35 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/blogger.googleusercontent.com/e99d4d20bbb93f19de7b16837ade8e590070d1c7.jpg',
+      'https://i.ibb.co/1ysn4zQ/e99d4d20bbb93f19de7b16837ade8e590070d1c7.jpg',
     description:
       'Model un mini cupcake tout sourire avec sa belle couronne de glaçage, à offrir en porte-clés ou breloque.',
     materials: [
@@ -445,7 +445,7 @@ export const tutorials = [
     duration: '2 h',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/35a8ba4b4f32d9b60c34f91e053757efabf6a95b.jpg',
+      'https://i.ibb.co/5XzYSZPD/35a8ba4b4f32d9b60c34f91e053757efabf6a95b.webp',
     description:
       'Construis une adorable maison de lutin coiffée d\'un grand chapeau de champignon rouge à pois.',
     materials: [
@@ -508,7 +508,7 @@ export const tutorials = [
     duration: '50 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/c324e344316b53b8819ffbab66aafd535e0d830b.jpg',
+      'https://i.ibb.co/qM59MGTX/c324e344316b53b8819ffbab66aafd535e0d830b.jpg',
     description:
       'Sculpte une série de petites douceurs souriantes — donut, avocado, œuf au plat — à coller sur ton réfrigérateur.',
     materials: [
@@ -570,7 +570,7 @@ export const tutorials = [
     duration: '45 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/a2fe94905407a4299fa8ad968aa86b3acd617aae.jpg',
+      'https://i.ibb.co/Fk4bQXJN/a2fe94905407a4299fa8ad968aa86b3acd617aae.avif',
     description:
       'Sculpte une petite tortue au regard tendre, parfaite pour veiller sur ton bureau.',
     materials: [
@@ -633,7 +633,7 @@ export const tutorials = [
     duration: '40 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/blogger.googleusercontent.com/1dfdbd14cc9df65a30c1dce0dc3c6026348ae930.jpg',
+      'https://i.ibb.co/0VtsqDFV/1dfdbd14cc9df65a30c1dce0dc3c6026348ae930.jpg',
     description:
       'Transforme un simple petit pot en compagnon souriant qui accueille ta succulent préférée.',
     materials: [
@@ -696,7 +696,7 @@ export const tutorials = [
     duration: '35 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/cdn.ballwool.com/11c2761f1c0e0290a3e1a17a475b10ec7cc41643.webp',
+      'https://i.ibb.co/HTqLSZwg/11c2761f1c0e0290a3e1a17a475b10ec7cc41643.webp',
     tags: ['bijou', 'cadeau', 'céleste'],
     palette: ['#1F2A44', '#F4D58D', '#C9B6E4'],
     description:
@@ -763,7 +763,7 @@ export const tutorials = [
     duration: '1 h',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/www.mommymusings.com/b7fab15bbe30fd8ab3b0645c235cec72fd0e3100.jpg',
+      'https://i.ibb.co/WqfvQ33/b7fab15bbe30fd8ab3b0645c235cec72fd0e3100.jpg',
     tags: ['miniature', 'nourriture', 'japon'],
     palette: ['#FFFFFF', '#F28C8C', '#2E7D32', '#222222'],
     description:
@@ -830,7 +830,7 @@ export const tutorials = [
     duration: '30 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/f1fd97d5e78a2401ef2961cb0afe6afc53931b3c.jpg',
+      'https://i.ibb.co/vxrpL7mY/f1fd97d5e78a2401ef2961cb0afe6afc53931b3c.jpg',
     tags: ['porte-clés', 'arc-en-ciel', 'cadeau'],
     palette: ['#FFFFFF', '#F28B82', '#FBBC04', '#34A853', '#4285F4'],
     description:
@@ -890,7 +890,7 @@ export const tutorials = [
     duration: '55 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/makerworld.bblmw.com/49e4390a9e706de01b5ac3ea56e37f4f108e06b9.jpg',
+      'https://i.ibb.co/0V9kPKCp/49e4390a9e706de01b5ac3ea56e37f4f108e06b9.webp',
     tags: ['dinosaure', 'animal', 'enfant'],
     palette: ['#A8D5BA', '#F6E7CB', '#F4A6A6'],
     description:
@@ -950,7 +950,7 @@ export const tutorials = [
     duration: '40 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/fc742b50a20f23cbe06044d16c1b1d830e71a30c.jpg',
+      'https://i.ibb.co/hx9G92n2/fc742b50a20f23cbe06044d16c1b1d830e71a30c.jpg',
     tags: ['cheveux', 'fruits', 'été'],
     palette: ['#E53935', '#FDD835', '#7CB342', '#FFFFFF'],
     description:
@@ -1010,7 +1010,7 @@ export const tutorials = [
     duration: '1 h 10 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/b622708.assetcdn.net/e5266a53cbb301f0ce3c5fde0f6dd3e0fe8cceed.jpg',
+      'https://i.ibb.co/WvQDWy1z/e5266a53cbb301f0ce3c5fde0f6dd3e0fe8cceed.webp',
     tags: ['terrazzo', 'tendance', 'vide-poche'],
     palette: ['#F2EDE4', '#E07A5F', '#81B29A', '#3D405B'],
     description:
@@ -1075,7 +1075,7 @@ export const tutorials = [
     duration: '40 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/empressofdirt.net/7155fd067a73e5bbf1362967af3da75b7a85c99a.jpg',
+      'https://i.ibb.co/9kHb8S20/7155fd067a73e5bbf1362967af3da75b7a85c99a.webp',
     tags: ['cactus', 'plante', 'décoration'],
     palette: ['#6BAA75', '#F28DA6', '#C58B5B'],
     description:
@@ -1135,7 +1135,7 @@ export const tutorials = [
     duration: '30 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/www.sculpey.com/520d627268dee5d120dccf97cb630b1c870d2287.jpg',
+      'https://i.ibb.co/mCQ7CBNR/520d627268dee5d120dccf97cb630b1c870d2287.webp',
     tags: ['chat', 'bijoux', 'organisation'],
     palette: ['#FFFFFF', '#F5C6A5', '#222222'],
     description:
@@ -1194,7 +1194,7 @@ export const tutorials = [
     duration: '50 min',
     steps: 4,
     image:
-      'https://kimi-web-img.kimi.ai/img/i.etsystatic.com/dc2664ed0144b0e442571f1727f3cc071542b4de.jpg',
+      'https://i.ibb.co/9H9rFFHC/dc2664ed0144b0e442571f1727f3cc071542b4de.avif',
     tags: ['bijou', 'papillon', 'nature'],
     palette: ['#FF6B9D', '#FFC75F', '#845EC2', '#00C9A7'],
     description:

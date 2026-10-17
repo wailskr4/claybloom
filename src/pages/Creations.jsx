@@ -82,7 +82,7 @@ return (
   return (
     <main className="min-h-screen bg-[#FFFAF6]">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-pink-100 via-[#FFF8F2] to-purple-100">
+      <section className="bg-linear-to-br from-pink-100 via-[#FFF8F2] to-purple-100">
         <div className="mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8">
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-pink-600 shadow-sm">
             <Sparkles size={16} />
