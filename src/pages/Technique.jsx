@@ -960,12 +960,22 @@ const printContent = `
 
       .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: center; color: #a8a29e; font-size: 12px; }
 
-      @media print {
-        body { padding: 10px; max-width: 100%; }
-        .technique { border: 1px solid #ccc; box-shadow: none; margin-bottom: 20px; }
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
+@media print {
+  body {
+    padding: 10px;
+    max-width: 100%;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .technique {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    margin-bottom: 20px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
     </style>
   </head>
   <body>
@@ -1059,19 +1069,30 @@ const printContent = `
   </html>
 `;
 
-    const blob = new Blob([printContent], { type: 'text/html' })
-    const url = URL.createObjectURL(blob)
-    const printWindow = window.open(url, '_blank')
 
-    if (printWindow) {
-      printWindow.onload = () => {
-        setTimeout(() => {
-          printWindow.print()
-        }, 250)
-      }
+       const printWindow = window.open('', '_blank');
+
+    if (!printWindow) {
+      alert("Autorise les fenêtres pop-up pour ClayBloom.");
+      return;
     }
 
-    URL.revokeObjectURL(url)
+    try {
+      printWindow.document.open();
+      printWindow.document.write(printContent);
+      printWindow.document.close();
+      printWindow.focus();
+
+      printWindow.setTimeout(() => {
+        if (!printWindow.closed) {
+          printWindow.print();
+        }
+      }, 1000);
+    } catch (error) {
+      console.error("Erreur d'impression :", error);
+      printWindow.close();
+      alert("Impossible de préparer le document à imprimer.");
+    }
   }
 
   return (
@@ -1128,7 +1149,7 @@ const printContent = `
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-4 rounded-4xl bg-white/40 blur-xl" />
+            <div className="absolute -inset-4 rounded-[2rem] bg-white/40 blur-xl" />
             <div className="relative rounded-4xl border border-white/70 bg-white/60 p-5 shadow-xl backdrop-blur sm:p-7">
               <div className="flex items-center justify-between gap-3">
                 <div>
