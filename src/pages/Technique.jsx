@@ -313,8 +313,8 @@ function SectionTitle({ eyebrow, title, description }) {
 
 function TechniqueCard({ technique, done, onSelect, onDelete, isCustom }) {
   return (
-    <article className="group overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-      <div className="relative h-48 overflow-hidden bg-rose-50">
+    <article className="group overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-[#3d2f47] dark:bg-[#2b2438] dark:hover:shadow-purple-950/30">
+      <div className="relative h-48 overflow-hidden bg-rose-50 dark:bg-[#211d2c]">
         <img
           src={technique.image}
           alt={`Illustration : ${technique.title}`}
@@ -324,33 +324,33 @@ function TechniqueCard({ technique, done, onSelect, onDelete, isCustom }) {
           }}
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
-        <span className="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-stone-700">
+        <span className="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-stone-700 dark:bg-[#2b2438]/95 dark:text-[#f7e8ef]">
           {technique.level}
         </span>
         {isCustom && (
-          <span className="absolute left-3 top-12 rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700">
+          <span className="absolute left-3 top-12 rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700 dark:bg-purple-500/20 dark:text-purple-300">
             Personnalisée
           </span>
         )}
         {done && (
-          <span className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">
+          <span className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300">
             <CheckCircle2 size={14} /> Terminée
           </span>
         )}
       </div>
 
       <div className="p-5">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-rose-500">
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-rose-500 dark:text-pink-400">
           {technique.category}
         </p>
-        <h3 className="text-lg font-bold text-stone-800">
+        <h3 className="text-lg font-bold text-stone-800 dark:text-[#f7e8ef]">
           {technique.title}
         </h3>
-        <p className="mt-2 min-h-15 text-sm leading-6 text-stone-500">
+        <p className="mt-2 min-h-15 text-sm leading-6 text-stone-500 dark:text-[#c4b5c2]">
           {technique.description}
         </p>
 
-        <div className="mt-4 flex items-center gap-2 text-sm text-stone-500">
+        <div className="mt-4 flex items-center gap-2 text-sm text-stone-500 dark:text-[#c4b5c2]">
           <Clock size={16} />
           {technique.duration}
           <span className="mx-1">·</span>
@@ -362,7 +362,7 @@ function TechniqueCard({ technique, done, onSelect, onDelete, isCustom }) {
           <button
             type="button"
             onClick={() => onSelect(technique.id)}
-            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-rose-50 px-4 py-3 text-sm font-semibold text-rose-700 transition hover:bg-rose-100"
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-rose-50 px-4 py-3 text-sm font-semibold text-rose-700 transition hover:bg-rose-100 dark:bg-[#3a2f47] dark:text-pink-300 dark:hover:bg-[#4a3a56]"
           >
             {done ? 'Revoir' : 'Apprendre'}
             <ChevronRight size={17} />
@@ -372,7 +372,7 @@ function TechniqueCard({ technique, done, onSelect, onDelete, isCustom }) {
             <button
               type="button"
               onClick={() => onDelete(technique.id)}
-              className="flex items-center justify-center rounded-xl border border-rose-200 px-3 py-3 text-rose-600 transition hover:bg-rose-50"
+              className="flex items-center justify-center rounded-xl border border-rose-200 px-3 py-3 text-rose-600 transition hover:bg-rose-50 dark:border-[#4a3a56] dark:text-pink-400 dark:hover:bg-[#3a2f47]"
               title="Supprimer"
             >
               <Trash2 size={17} />
@@ -453,15 +453,15 @@ function AddTechniqueModal({ onClose, onAdd }) {
     onClose()
   }
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-      <div className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white shadow-2xl">
-        <div className="sticky top-0 flex items-center justify-between border-b border-rose-100 bg-white px-6 py-4">
-          <h2 className="text-xl font-bold text-stone-800">Nouvelle technique</h2>
+return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 dark:bg-black/70">
+      <div className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white shadow-2xl dark:bg-[#2b2438] dark:shadow-black/50">
+        <div className="sticky top-0 flex items-center justify-between border-b border-rose-100 bg-white px-6 py-4 dark:border-[#3d2f47] dark:bg-[#2b2438]">
+          <h2 className="text-xl font-bold text-stone-800 dark:text-[#f7e8ef]">Nouvelle technique</h2>
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg p-2 text-stone-400 hover:bg-rose-50 hover:text-stone-600"
+            className="rounded-lg p-2 text-stone-400 hover:bg-rose-50 hover:text-stone-600 dark:text-[#8b7a91] dark:hover:bg-[#3a2f47] dark:hover:text-[#f7e8ef]"
           >
             ✕
           </button>
@@ -470,29 +470,29 @@ function AddTechniqueModal({ onClose, onAdd }) {
         <form onSubmit={handleSubmit} className="space-y-5 px-6 py-5">
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Titre *
               </label>
               <input
                 type="text"
                 value={formData.title}
                 onChange={(e) => handleChange('title', e.target.value)}
-                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 ${
-                  errors.title ? 'border-red-300' : 'border-rose-100'
+                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400 ${
+                  errors.title ? 'border-red-300 dark:border-red-500/50' : 'border-rose-100 dark:border-[#3d2f47]'
                 }`}
                 placeholder="Ex: Créer un bol en argile"
               />
-              {errors.title && <p className="mt-1 text-xs text-red-500">{errors.title}</p>}
+              {errors.title && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.title}</p>}
             </div>
 
             <div>
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Catégorie
               </label>
               <select
                 value={formData.category}
                 onChange={(e) => handleChange('category', e.target.value)}
-                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300"
+                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:border-[#3d2f47] dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:focus:border-pink-400"
               >
                 <option value="Les bases">Les bases</option>
                 <option value="Les gestes">Les gestes</option>
@@ -504,13 +504,13 @@ function AddTechniqueModal({ onClose, onAdd }) {
             </div>
 
             <div>
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Niveau
               </label>
               <select
                 value={formData.level}
                 onChange={(e) => handleChange('level', e.target.value)}
-                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300"
+                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:border-[#3d2f47] dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:focus:border-pink-400"
               >
                 <option value="Débutant">Débutant</option>
                 <option value="Intermédiaire">Intermédiaire</option>
@@ -519,13 +519,13 @@ function AddTechniqueModal({ onClose, onAdd }) {
             </div>
 
             <div>
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Difficulté
               </label>
               <select
                 value={formData.difficulty}
                 onChange={(e) => handleChange('difficulty', e.target.value)}
-                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300"
+                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:border-[#3d2f47] dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:focus:border-pink-400"
               >
                 <option value="Facile">Facile</option>
                 <option value="Moyen">Moyen</option>
@@ -534,158 +534,158 @@ function AddTechniqueModal({ onClose, onAdd }) {
             </div>
 
             <div>
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Durée
               </label>
               <input
                 type="text"
                 value={formData.duration}
                 onChange={(e) => handleChange('duration', e.target.value)}
-                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300"
+                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:border-[#3d2f47] dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400"
                 placeholder="Ex: 30 min"
               />
             </div>
 
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 URL de l'image (optionnel)
               </label>
               <input
                 type="url"
                 value={formData.image}
                 onChange={(e) => handleChange('image', e.target.value)}
-                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300"
+                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:border-[#3d2f47] dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400"
                 placeholder="https://..."
               />
             </div>
 
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Description *
               </label>
               <textarea
                 value={formData.description}
                 onChange={(e) => handleChange('description', e.target.value)}
                 rows={2}
-                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 ${
-                  errors.description ? 'border-red-300' : 'border-rose-100'
+                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400 ${
+                  errors.description ? 'border-red-300 dark:border-red-500/50' : 'border-rose-100 dark:border-[#3d2f47]'
                 }`}
                 placeholder="Décris la technique en une phrase..."
               />
-              {errors.description && <p className="mt-1 text-xs text-red-500">{errors.description}</p>}
+              {errors.description && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.description}</p>}
             </div>
 
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Objectifs (un par ligne) *
               </label>
               <textarea
                 value={formData.objectives}
                 onChange={(e) => handleChange('objectives', e.target.value)}
                 rows={3}
-                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 ${
-                  errors.objectives ? 'border-red-300' : 'border-rose-100'
+                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400 ${
+                  errors.objectives ? 'border-red-300 dark:border-red-500/50' : 'border-rose-100 dark:border-[#3d2f47]'
                 }`}
                 placeholder={"Maîtriser le geste de base\nCréer une forme régulière"}
               />
-              {errors.objectives && <p className="mt-1 text-xs text-red-500">{errors.objectives}</p>}
+              {errors.objectives && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.objectives}</p>}
             </div>
 
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Matériel nécessaire (un par ligne) *
               </label>
               <textarea
                 value={formData.materials}
                 onChange={(e) => handleChange('materials', e.target.value)}
                 rows={2}
-                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 ${
-                  errors.materials ? 'border-red-300' : 'border-rose-100'
+                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400 ${
+                  errors.materials ? 'border-red-300 dark:border-red-500/50' : 'border-rose-100 dark:border-[#3d2f47]'
                 }`}
                 placeholder={"Pâte à modeler\nOutil de coupe"}
               />
-              {errors.materials && <p className="mt-1 text-xs text-red-500">{errors.materials}</p>}
+              {errors.materials && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.materials}</p>}
             </div>
 
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Étapes à suivre (une par ligne) *
               </label>
               <textarea
                 value={formData.steps}
                 onChange={(e) => handleChange('steps', e.target.value)}
                 rows={4}
-                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 ${
-                  errors.steps ? 'border-red-300' : 'border-rose-100'
+                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400 ${
+                  errors.steps ? 'border-red-300 dark:border-red-500/50' : 'border-rose-100 dark:border-[#3d2f47]'
                 }`}
                 placeholder={"Préparer la surface\nFormer une boule\n..."}
               />
-              {errors.steps && <p className="mt-1 text-xs text-red-500">{errors.steps}</p>}
+              {errors.steps && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.steps}</p>}
             </div>
 
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Exercices pratiques (un par ligne) *
               </label>
               <textarea
                 value={formData.exercise}
                 onChange={(e) => handleChange('exercise', e.target.value)}
                 rows={3}
-                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 ${
-                  errors.exercise ? 'border-red-300' : 'border-rose-100'
+                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400 ${
+                  errors.exercise ? 'border-red-300 dark:border-red-500/50' : 'border-rose-100 dark:border-[#3d2f47]'
                 }`}
                 placeholder={"Créer 3 boules\nFormer un cylindre"}
               />
-              {errors.exercise && <p className="mt-1 text-xs text-red-500">{errors.exercise}</p>}
+              {errors.exercise && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.exercise}</p>}
             </div>
 
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Erreurs à éviter (une par ligne) *
               </label>
               <textarea
                 value={formData.mistakes}
                 onChange={(e) => handleChange('mistakes', e.target.value)}
                 rows={2}
-                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 ${
-                  errors.mistakes ? 'border-red-300' : 'border-rose-100'
+                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400 ${
+                  errors.mistakes ? 'border-red-300 dark:border-red-500/50' : 'border-rose-100 dark:border-[#3d2f47]'
                 }`}
                 placeholder={"Appuyer trop fort\nNe pas vérifier la régularité"}
               />
-              {errors.mistakes && <p className="mt-1 text-xs text-red-500">{errors.mistakes}</p>}
+              {errors.mistakes && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.mistakes}</p>}
             </div>
 
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Conseil ClayBloom *
               </label>
               <textarea
                 value={formData.tip}
                 onChange={(e) => handleChange('tip', e.target.value)}
                 rows={2}
-                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 ${
-                  errors.tip ? 'border-red-300' : 'border-rose-100'
+                className={`w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400 ${
+                  errors.tip ? 'border-red-300 dark:border-red-500/50' : 'border-rose-100 dark:border-[#3d2f47]'
                 }`}
                 placeholder="Un conseil pratique pour réussir..."
               />
-              {errors.tip && <p className="mt-1 text-xs text-red-500">{errors.tip}</p>}
+              {errors.tip && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.tip}</p>}
             </div>
 
             <div className="sm:col-span-2">
-              <label className="mb-1 block text-sm font-semibold text-stone-700">
+              <label className="mb-1 block text-sm font-semibold text-stone-700 dark:text-[#c4b5c2]">
                 Projet final (optionnel)
               </label>
               <input
                 type="text"
                 value={formData.project}
                 onChange={(e) => handleChange('project', e.target.value)}
-                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300"
+                className="w-full rounded-xl border border-rose-100 px-4 py-2.5 text-sm outline-none focus:border-rose-300 dark:border-[#3d2f47] dark:bg-[#211d2c] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400"
                 placeholder="Ex: Réaliser un petit vase décoratif"
               />
             </div>
           </div>
 
-          <div className="flex gap-3 border-t border-rose-100 pt-4">
+          <div className="flex gap-3 border-t border-rose-100 pt-4 dark:border-[#3d2f47]">
             <button
               type="submit"
               className="flex-1 rounded-xl bg-rose-500 px-4 py-3 font-semibold text-white transition hover:bg-rose-600"
@@ -695,7 +695,7 @@ function AddTechniqueModal({ onClose, onAdd }) {
             <button
               type="button"
               onClick={onClose}
-              className="rounded-xl border border-rose-200 px-4 py-3 font-semibold text-stone-600 transition hover:bg-rose-50"
+              className="rounded-xl border border-rose-200 px-4 py-3 font-semibold text-stone-600 transition hover:bg-rose-50 dark:border-[#4a3a56] dark:text-[#c4b5c2] dark:hover:bg-[#3a2f47]"
             >
               Annuler
             </button>
@@ -1112,25 +1112,25 @@ const printContent = `
     }, 1000);
   }
 
-  return (
-    <main className="min-h-screen bg-[#fffaf8] pb-16 text-stone-800">
+return (
+    <main className="min-h-screen bg-[#fffaf8] pb-16 text-stone-800 dark:bg-[#211d2c] dark:text-[#f7e8ef]">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-linear-to-br from-rose-100 via-orange-50 to-amber-50">
+      <section className="relative overflow-hidden bg-linear-to-br from-rose-100 via-orange-50 to-amber-50 dark:from-[#2f2438] dark:via-[#251f30] dark:to-[#2a2235]">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:px-12 lg:py-24">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white/70 px-4 py-2 text-sm font-medium text-rose-700">
+            <span className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white/70 px-4 py-2 text-sm font-medium text-rose-700 dark:border-[#4a3a56] dark:bg-[#2b2438]/80 dark:text-pink-300">
               <Sparkles size={16} />
               L'atelier ClayBloom
             </span>
 
-            <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-stone-800 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-stone-800 sm:text-5xl lg:text-6xl dark:text-[#f7e8ef]">
               Apprends les
-              <span className="block text-rose-500">
+              <span className="block text-rose-500 dark:text-pink-400">
                 techniques du modelage
               </span>
             </h1>
 
-            <p className="mt-5 max-w-xl text-base leading-7 text-stone-600 sm:text-lg">
+            <p className="mt-5 max-w-xl text-base leading-7 text-stone-600 sm:text-lg dark:text-[#c4b5c2]">
               Découvre les gestes essentiels, entraîne-toi avec des exercices
               guidés et avance à ton rythme dans ton apprentissage créatif.
             </p>
@@ -1139,7 +1139,7 @@ const printContent = `
               <button
                 type="button"
                 onClick={() => selectTechnique(allTechniques[0].id)}
-                className="inline-flex items-center gap-2 rounded-xl bg-rose-500 px-6 py-3.5 font-semibold text-white shadow-md shadow-rose-200 transition hover:bg-rose-600"
+                className="inline-flex items-center gap-2 rounded-xl bg-rose-500 px-6 py-3.5 font-semibold text-white shadow-md shadow-rose-200 transition hover:bg-rose-600 dark:shadow-none"
               >
                 Commencer à apprendre
                 <ChevronRight size={18} />
@@ -1148,7 +1148,7 @@ const printContent = `
               <button
                 type="button"
                 onClick={exportToPDF}
-                className="inline-flex items-center gap-2 rounded-xl border border-rose-300 bg-white px-6 py-3.5 font-semibold text-rose-700 shadow-sm transition hover:bg-rose-50"
+                className="inline-flex items-center gap-2 rounded-xl border border-rose-300 bg-white px-6 py-3.5 font-semibold text-rose-700 shadow-sm transition hover:bg-rose-50 dark:border-[#4a3a56] dark:bg-[#2b2438] dark:text-pink-300 dark:hover:bg-[#3a2f47]"
               >
                 <Download size={18} />
                 Exporter en PDF
@@ -1157,7 +1157,7 @@ const printContent = `
               <button
                 type="button"
                 onClick={() => setShowAddModal(true)}
-                className="inline-flex items-center gap-2 rounded-xl border border-purple-300 bg-white px-6 py-3.5 font-semibold text-purple-700 shadow-sm transition hover:bg-purple-50"
+                className="inline-flex items-center gap-2 rounded-xl border border-purple-300 bg-white px-6 py-3.5 font-semibold text-purple-700 shadow-sm transition hover:bg-purple-50 dark:border-purple-500/40 dark:bg-[#2b2438] dark:text-purple-300 dark:hover:bg-[#3a2f47]"
               >
                 <Plus size={18} />
                 Nouvelle technique
@@ -1166,24 +1166,24 @@ const printContent = `
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-white/40 blur-xl" />
-            <div className="relative rounded-4xl border border-white/70 bg-white/60 p-5 shadow-xl backdrop-blur sm:p-7">
+            <div className="absolute -inset-4 rounded-[2rem] bg-white/40 blur-xl dark:bg-white/5" />
+            <div className="relative rounded-4xl border border-white/70 bg-white/60 p-5 shadow-xl backdrop-blur sm:p-7 dark:border-[#3d2f47] dark:bg-[#2b2438]/80">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-sm font-medium text-stone-500">
+                  <p className="text-sm font-medium text-stone-500 dark:text-[#c4b5c2]">
                     Ma progression
                   </p>
-                  <p className="mt-1 text-3xl font-bold text-stone-800">
+                  <p className="mt-1 text-3xl font-bold text-stone-800 dark:text-[#f7e8ef]">
                     {percentage}%
                   </p>
                 </div>
-                <div className="rounded-2xl bg-rose-100 p-4 text-rose-600">
+                <div className="rounded-2xl bg-rose-100 p-4 text-rose-600 dark:bg-[#3a2f47] dark:text-pink-300">
                   <Trophy size={28} />
                 </div>
               </div>
 
               <div
-                className="mt-5 h-3 overflow-hidden rounded-full bg-rose-100"
+                className="mt-5 h-3 overflow-hidden rounded-full bg-rose-100 dark:bg-[#3a2f47]"
                 role="progressbar"
                 aria-label="Progression des techniques"
                 aria-valuemin={0}
@@ -1197,25 +1197,25 @@ const printContent = `
               </div>
 
               <div className="mt-6 grid grid-cols-2 gap-3">
-                <div className="rounded-2xl bg-white p-4">
-                  <BookOpen className="text-rose-500" size={21} />
+                <div className="rounded-2xl bg-white p-4 dark:bg-[#211d2c]">
+                  <BookOpen className="text-rose-500 dark:text-pink-400" size={21} />
                   <p className="mt-3 text-2xl font-bold">{completedCount}</p>
-                  <p className="mt-1 text-xs text-stone-500">
+                  <p className="mt-1 text-xs text-stone-500 dark:text-[#c4b5c2]">
                     Techniques terminées
                   </p>
                 </div>
-                <div className="rounded-2xl bg-white p-4">
-                  <Target className="text-rose-500" size={21} />
+                <div className="rounded-2xl bg-white p-4 dark:bg-[#211d2c]">
+                  <Target className="text-rose-500 dark:text-pink-400" size={21} />
                   <p className="mt-3 text-2xl font-bold">
                     {completedExercises}/{totalExercises}
                   </p>
-                  <p className="mt-1 text-xs text-stone-500">
+                  <p className="mt-1 text-xs text-stone-500 dark:text-[#c4b5c2]">
                     Exercices réalisés
                   </p>
                 </div>
               </div>
 
-              <p className="mt-4 text-sm leading-6 text-stone-500">
+              <p className="mt-4 text-sm leading-6 text-stone-500 dark:text-[#c4b5c2]">
                 Chaque petite étape compte. Reviens à l'atelier pour reprendre
                 là où tu t'es arrêté.
               </p>
@@ -1245,7 +1245,7 @@ const printContent = `
             <button
               type="button"
               onClick={exportToPDF}
-              className="inline-flex items-center gap-2 rounded-xl border border-rose-300 bg-white px-4 py-2.5 text-sm font-semibold text-rose-700 transition hover:bg-rose-50"
+              className="inline-flex items-center gap-2 rounded-xl border border-rose-300 bg-white px-4 py-2.5 text-sm font-semibold text-rose-700 transition hover:bg-rose-50 dark:border-[#4a3a56] dark:bg-[#2b2438] dark:text-pink-300 dark:hover:bg-[#3a2f47]"
             >
               <Download size={17} />
               PDF
@@ -1257,14 +1257,14 @@ const printContent = `
           <label className="relative block">
             <Search
               size={18}
-              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400"
+              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 dark:text-[#6d5d72]"
             />
             <input
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               placeholder="Rechercher une technique..."
               aria-label="Rechercher une technique"
-              className="w-full rounded-xl border border-rose-100 bg-white py-3 pl-10 pr-4 text-sm outline-none transition focus:border-rose-300 focus:ring-2 focus:ring-rose-100"
+              className="w-full rounded-xl border border-rose-100 bg-white py-3 pl-10 pr-4 text-sm outline-none transition focus:border-rose-300 focus:ring-2 focus:ring-rose-100 dark:border-[#3d2f47] dark:bg-[#2b2438] dark:text-[#f7e8ef] dark:placeholder:text-[#6d5d72] dark:focus:border-pink-400 dark:focus:ring-pink-500/20"
             />
           </label>
 
@@ -1273,7 +1273,7 @@ const printContent = `
               value={category}
               onChange={(event) => setCategory(event.target.value)}
               aria-label="Filtrer par catégorie"
-              className="w-full appearance-none rounded-xl border border-rose-100 bg-white px-4 py-3 pr-10 text-sm outline-none focus:border-rose-300"
+              className="w-full appearance-none rounded-xl border border-rose-100 bg-white px-4 py-3 pr-10 text-sm outline-none focus:border-rose-300 dark:border-[#3d2f47] dark:bg-[#2b2438] dark:text-[#f7e8ef] dark:focus:border-pink-400"
             >
               {categories.map((item) => (
                 <option key={item} value={item}>
@@ -1283,7 +1283,7 @@ const printContent = `
             </select>
             <ChevronDown
               size={16}
-              className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-stone-400"
+              className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-stone-400 dark:text-[#6d5d72]"
             />
           </label>
 
@@ -1292,7 +1292,7 @@ const printContent = `
               value={level}
               onChange={(event) => setLevel(event.target.value)}
               aria-label="Filtrer par niveau"
-              className="w-full appearance-none rounded-xl border border-rose-100 bg-white px-4 py-3 pr-10 text-sm outline-none focus:border-rose-300"
+              className="w-full appearance-none rounded-xl border border-rose-100 bg-white px-4 py-3 pr-10 text-sm outline-none focus:border-rose-300 dark:border-[#3d2f47] dark:bg-[#2b2438] dark:text-[#f7e8ef] dark:focus:border-pink-400"
             >
               {levels.map((item) => (
                 <option key={item} value={item}>
@@ -1302,7 +1302,7 @@ const printContent = `
             </select>
             <ChevronDown
               size={16}
-              className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-stone-400"
+              className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-stone-400 dark:text-[#6d5d72]"
             />
           </label>
 
@@ -1311,7 +1311,7 @@ const printContent = `
               value={difficulty}
               onChange={(event) => setDifficulty(event.target.value)}
               aria-label="Filtrer par difficulté"
-              className="w-full appearance-none rounded-xl border border-rose-100 bg-white px-4 py-3 pr-10 text-sm outline-none focus:border-rose-300"
+              className="w-full appearance-none rounded-xl border border-rose-100 bg-white px-4 py-3 pr-10 text-sm outline-none focus:border-rose-300 dark:border-[#3d2f47] dark:bg-[#2b2438] dark:text-[#f7e8ef] dark:focus:border-pink-400"
             >
               {difficulties.map((item) => (
                 <option key={item} value={item}>
@@ -1321,7 +1321,7 @@ const printContent = `
             </select>
             <ChevronDown
               size={16}
-              className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-stone-400"
+              className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-stone-400 dark:text-[#6d5d72]"
             />
           </label>
 
@@ -1331,8 +1331,8 @@ const printContent = `
             aria-pressed={showCompleted}
             className={`rounded-xl border px-4 py-3 text-sm font-semibold transition ${
               showCompleted
-                ? 'border-rose-400 bg-rose-100 text-rose-700'
-                : 'border-rose-100 bg-white text-stone-600 hover:bg-rose-50'
+                ? 'border-rose-400 bg-rose-100 text-rose-700 dark:border-pink-400 dark:bg-[#3a2f47] dark:text-pink-300'
+                : 'border-rose-100 bg-white text-stone-600 hover:bg-rose-50 dark:border-[#3d2f47] dark:bg-[#2b2438] dark:text-[#c4b5c2] dark:hover:bg-[#3a2f47]'
             }`}
           >
             {showCompleted ? 'Voir toutes' : 'Voir les terminées'}
@@ -1353,12 +1353,12 @@ const printContent = `
             ))}
           </div>
         ) : (
-          <div className="rounded-2xl border border-dashed border-rose-200 bg-white px-6 py-12 text-center">
+          <div className="rounded-2xl border border-dashed border-rose-200 bg-white px-6 py-12 text-center dark:border-[#4a3a56] dark:bg-[#2b2438]">
             <Search className="mx-auto text-rose-400" size={30} />
             <h3 className="mt-4 font-bold">Aucune technique trouvée</h3>
-  <p className="mt-2 text-sm text-stone-500">
-  Coche chaque exercice une fois réalisé.
-</p>
+            <p className="mt-2 text-sm text-stone-500 dark:text-[#c4b5c2]">
+              Coche chaque exercice une fois réalisé.
+            </p>
             <button
               type="button"
               onClick={() => {
@@ -1368,7 +1368,7 @@ const printContent = `
                 setDifficulty('Tous')
                 setShowCompleted(false)
               }}
-              className="mt-4 font-semibold text-rose-600 hover:text-rose-700"
+              className="mt-4 font-semibold text-rose-600 hover:text-rose-700 dark:text-pink-400 dark:hover:text-pink-300"
             >
               Réinitialiser les filtres
             </button>
@@ -1379,7 +1379,7 @@ const printContent = `
       {/* Atelier interactif */}
       <section
         id="atelier-technique"
-        className="scroll-mt-8 border-y border-rose-100 bg-white"
+        className="scroll-mt-8 border-y border-rose-100 bg-white dark:border-[#3d2f47] dark:bg-[#251f30]"
       >
         <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-12">
           <SectionTitle
@@ -1389,23 +1389,23 @@ const printContent = `
           />
 
           <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_340px]">
-            <div className="rounded-3xl border border-rose-100 bg-[#fffaf8] p-5 sm:p-8">
+            <div className="rounded-3xl border border-rose-100 bg-[#fffaf8] p-5 sm:p-8 dark:border-[#3d2f47] dark:bg-[#2b2438]">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-700">
+                <span className="rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-700 dark:bg-[#3a2f47] dark:text-pink-300">
                   {selected.category}
                 </span>
-                <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-stone-600">
+                <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-stone-600 dark:bg-[#211d2c] dark:text-[#c4b5c2]">
                   {selected.level}
                 </span>
-                <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-stone-600">
+                <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-stone-600 dark:bg-[#211d2c] dark:text-[#c4b5c2]">
                   {selected.difficulty}
                 </span>
-                <span className="flex items-center gap-1 text-xs text-stone-500">
+                <span className="flex items-center gap-1 text-xs text-stone-500 dark:text-[#c4b5c2]">
                   <Clock size={14} />
                   {selected.duration}
                 </span>
                 {selected.isCustom && (
-                  <span className="rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700">
+                  <span className="rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700 dark:bg-purple-500/20 dark:text-purple-300">
                     Personnalisée
                   </span>
                 )}
@@ -1414,22 +1414,22 @@ const printContent = `
               <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
                 {selected.title}
               </h3>
-              <p className="mt-3 text-sm leading-7 text-stone-600">
+              <p className="mt-3 text-sm leading-7 text-stone-600 dark:text-[#c4b5c2]">
                 {selected.description}
               </p>
 
               <div className="mt-7">
                 <h4 className="flex items-center gap-2 font-bold">
-                  <Target size={19} className="text-rose-500" />
+                  <Target size={19} className="text-rose-500 dark:text-pink-400" />
                   Objectifs
                 </h4>
                 <ul className="mt-3 grid gap-2 sm:grid-cols-2">
                   {selected.objectives.map((objective) => (
                     <li
                       key={objective}
-                      className="flex items-start gap-2 rounded-xl bg-white p-3 text-sm text-stone-600"
+                      className="flex items-start gap-2 rounded-xl bg-white p-3 text-sm text-stone-600 dark:bg-[#211d2c] dark:text-[#c4b5c2]"
                     >
-                      <Check size={16} className="mt-0.5 shrink-0 text-rose-500" />
+                      <Check size={16} className="mt-0.5 shrink-0 text-rose-500 dark:text-pink-400" />
                       {objective}
                     </li>
                   ))}
@@ -1438,16 +1438,16 @@ const printContent = `
 
               <div className="mt-7">
                 <h4 className="flex items-center gap-2 font-bold">
-                  <Hammer size={19} className="text-rose-500" />
+                  <Hammer size={19} className="text-rose-500 dark:text-pink-400" />
                   Matériel nécessaire
                 </h4>
                 <ul className="mt-3 grid gap-2 sm:grid-cols-2">
                   {selected.materials.map((material) => (
                     <li
                       key={material}
-                      className="flex items-start gap-2 rounded-xl bg-white p-3 text-sm text-stone-600"
+                      className="flex items-start gap-2 rounded-xl bg-white p-3 text-sm text-stone-600 dark:bg-[#211d2c] dark:text-[#c4b5c2]"
                     >
-                      <Check size={16} className="mt-0.5 shrink-0 text-rose-500" />
+                      <Check size={16} className="mt-0.5 shrink-0 text-rose-500 dark:text-pink-400" />
                       {material}
                     </li>
                   ))}
@@ -1456,16 +1456,16 @@ const printContent = `
 
               <div className="mt-8">
                 <h4 className="flex items-center gap-2 font-bold">
-                  <BookOpen size={19} className="text-rose-500" />
+                  <BookOpen size={19} className="text-rose-500 dark:text-pink-400" />
                   Les étapes à suivre
                 </h4>
                 <ol className="mt-4 space-y-3">
                   {selected.steps.map((step, index) => (
                     <li key={step} className="flex items-start gap-3">
-                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-rose-100 text-xs font-bold text-rose-700">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-rose-100 text-xs font-bold text-rose-700 dark:bg-[#3a2f47] dark:text-pink-300">
                         {index + 1}
                       </span>
-                      <p className="pt-1 text-sm leading-6 text-stone-600">
+                      <p className="pt-1 text-sm leading-6 text-stone-600 dark:text-[#c4b5c2]">
                         {step}
                       </p>
                     </li>
@@ -1473,22 +1473,22 @@ const printContent = `
                 </ol>
               </div>
 
-              <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-4">
-                <h4 className="flex items-center gap-2 font-bold text-amber-900">
+              <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-4 dark:border-amber-500/30 dark:bg-amber-500/10">
+                <h4 className="flex items-center gap-2 font-bold text-amber-900 dark:text-amber-200">
                   <Lightbulb size={19} />
                   Le conseil ClayBloom
                 </h4>
-                <p className="mt-2 text-sm leading-6 text-amber-900/80">
+                <p className="mt-2 text-sm leading-6 text-amber-900/80 dark:text-amber-200/80">
                   {selected.tip}
                 </p>
               </div>
 
               <div className="mt-8">
                 <h4 className="flex items-center gap-2 font-bold">
-                  <Target size={19} className="text-rose-500" />
+                  <Target size={19} className="text-rose-500 dark:text-pink-400" />
                   Mon exercice pratique
                 </h4>
-                <p className="mt-2 text-sm text-stone-500">
+                <p className="mt-2 text-sm text-stone-500 dark:text-[#c4b5c2]">
                   Coche chaque objectif une fois réalisé.
                 </p>
 
@@ -1501,8 +1501,8 @@ const printContent = `
                         key={task}
                         className={`flex cursor-pointer items-start gap-3 rounded-xl border p-4 transition ${
                           checked
-                            ? 'border-emerald-200 bg-emerald-50'
-                            : 'border-rose-100 bg-white hover:border-rose-200'
+                            ? 'border-emerald-200 bg-emerald-50 dark:border-emerald-500/30 dark:bg-emerald-500/10'
+                            : 'border-rose-100 bg-white hover:border-rose-200 dark:border-[#3d2f47] dark:bg-[#211d2c] dark:hover:border-pink-500/40'
                         }`}
                       >
                         <input
@@ -1514,8 +1514,8 @@ const printContent = `
                         <span
                           className={`text-sm leading-6 ${
                             checked
-                              ? 'text-emerald-800'
-                              : 'text-stone-700'
+                              ? 'text-emerald-800 dark:text-emerald-200'
+                              : 'text-stone-700 dark:text-[#c4b5c2]'
                           }`}
                         >
                           {task}
@@ -1523,7 +1523,7 @@ const printContent = `
                         {checked && (
                           <CheckCircle2
                             size={18}
-                            className="ml-auto mt-0.5 shrink-0 text-emerald-600"
+                            className="ml-auto mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"
                           />
                         )}
                       </label>
@@ -1531,14 +1531,14 @@ const printContent = `
                   })}
                 </div>
 
-                <div className="mt-4 flex items-center justify-between text-sm text-stone-500">
+                <div className="mt-4 flex items-center justify-between text-sm text-stone-500 dark:text-[#c4b5c2]">
                   <span>Exercices réalisés</span>
-                  <span className="font-semibold text-stone-700">
+                  <span className="font-semibold text-stone-700 dark:text-[#f7e8ef]">
                     {selectedExercises.length}/{selected.exercise.length}
                   </span>
                 </div>
 
-                <div className="mt-2 h-2 overflow-hidden rounded-full bg-rose-100">
+                <div className="mt-2 h-2 overflow-hidden rounded-full bg-rose-100 dark:bg-[#3a2f47]">
                   <div
                     className="h-full rounded-full bg-emerald-400 transition-all"
                     style={{
@@ -1553,7 +1553,7 @@ const printContent = `
                 onClick={toggleCompleted}
                 className={`mt-7 flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 font-semibold transition ${
                   selectedDone
-                    ? 'border border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100'
+                    ? 'border border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-200 dark:hover:bg-emerald-500/20'
                     : 'bg-rose-500 text-white hover:bg-rose-600'
                 }`}
               >
@@ -1570,7 +1570,7 @@ const printContent = `
                 )}
               </button>
 
-              <p className="mt-3 text-center text-xs leading-5 text-stone-400">
+              <p className="mt-3 text-center text-xs leading-5 text-stone-400 dark:text-[#8b7a91]">
                 Valide la technique lorsque tu as terminé la pratique. Tu peux
                 modifier ton suivi à tout moment.
               </p>
@@ -1578,20 +1578,20 @@ const printContent = `
 
             {/* Colonne latérale */}
             <aside className="space-y-5 lg:sticky lg:top-6">
-              <div className="rounded-2xl border border-rose-100 bg-rose-50/70 p-5">
+              <div className="rounded-2xl border border-rose-100 bg-rose-50/70 p-5 dark:border-[#3d2f47] dark:bg-[#2b2438]">
                 <h4 className="font-bold">Ton parcours</h4>
-                <p className="mt-1 text-sm text-stone-500">
+                <p className="mt-1 text-sm text-stone-500 dark:text-[#c4b5c2]">
                   {completedCount} technique(s) sur {allTechniques.length}
                 </p>
 
-                <div className="mt-4 h-2 overflow-hidden rounded-full bg-white">
+                <div className="mt-4 h-2 overflow-hidden rounded-full bg-white dark:bg-[#211d2c]">
                   <div
                     className="h-full rounded-full bg-rose-400 transition-all"
                     style={{ width: `${percentage}%` }}
                   />
                 </div>
 
-                <p className="mt-3 text-2xl font-bold text-rose-600">
+                <p className="mt-3 text-2xl font-bold text-rose-600 dark:text-pink-400">
                   {percentage}%
                 </p>
 
@@ -1607,33 +1607,33 @@ const printContent = `
                         onClick={() => selectTechnique(item.id)}
                         className={`flex w-full items-center gap-3 rounded-xl p-3 text-left text-sm transition ${
                           active
-                            ? 'bg-white shadow-sm ring-1 ring-rose-200'
-                            : 'hover:bg-white/70'
+                            ? 'bg-white shadow-sm ring-1 ring-rose-200 dark:bg-[#211d2c] dark:ring-pink-500/40'
+                            : 'hover:bg-white/70 dark:hover:bg-[#3a2f47]'
                         }`}
                       >
                         {done ? (
                           <CheckCircle2
                             size={18}
-                            className="shrink-0 text-emerald-600"
+                            className="shrink-0 text-emerald-600 dark:text-emerald-400"
                           />
                         ) : (
                           <Circle
                             size={18}
-                            className="shrink-0 text-stone-300"
+                            className="shrink-0 text-stone-300 dark:text-[#5a4a63]"
                           />
                         )}
                         <span className="flex-1 font-medium truncate">
                           {item.title}
                         </span>
                         {item.isCustom && (
-                          <span className="rounded-full bg-purple-100 px-2 py-0.5 text-[10px] font-semibold text-purple-700">
+                          <span className="rounded-full bg-purple-100 px-2 py-0.5 text-[10px] font-semibold text-purple-700 dark:bg-purple-500/20 dark:text-purple-300">
                             Perso
                           </span>
                         )}
                         {active && (
                           <ChevronRight
                             size={16}
-                            className="shrink-0 text-rose-500"
+                            className="shrink-0 text-rose-500 dark:text-pink-400"
                           />
                         )}
                       </button>
@@ -1642,13 +1642,13 @@ const printContent = `
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-stone-200 bg-white p-5">
+              <div className="rounded-2xl border border-stone-200 bg-white p-5 dark:border-[#3d2f47] dark:bg-[#2b2438]">
                 <h4 className="font-bold">À éviter</h4>
                 <ul className="mt-3 space-y-3">
                   {selected.mistakes.map((mistake) => (
                     <li
                       key={mistake}
-                      className="flex items-start gap-2 text-sm leading-6 text-stone-600"
+                      className="flex items-start gap-2 text-sm leading-6 text-stone-600 dark:text-[#c4b5c2]"
                     >
                       <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" />
                       {mistake}
@@ -1657,9 +1657,9 @@ const printContent = `
                 </ul>
               </div>
 
-              <div className="rounded-2xl border border-stone-200 bg-white p-5">
+              <div className="rounded-2xl border border-stone-200 bg-white p-5 dark:border-[#3d2f47] dark:bg-[#2b2438]">
                 <h4 className="font-bold">Gérer ma progression</h4>
-                <p className="mt-2 text-sm leading-6 text-stone-500">
+                <p className="mt-2 text-sm leading-6 text-stone-500 dark:text-[#c4b5c2]">
                   Tes validations et exercices sont enregistrés sur cet
                   appareil dans ton navigateur.
                 </p>
@@ -1668,14 +1668,14 @@ const printContent = `
                   <button
                     type="button"
                     onClick={() => setShowResetConfirm(true)}
-                    className="mt-4 flex items-center gap-2 text-sm font-semibold text-stone-500 hover:text-rose-600"
+                    className="mt-4 flex items-center gap-2 text-sm font-semibold text-stone-500 hover:text-rose-600 dark:text-[#c4b5c2] dark:hover:text-pink-400"
                   >
                     <RotateCcw size={16} />
                     Réinitialiser ma progression
                   </button>
                 ) : (
-                  <div className="mt-4 rounded-xl bg-rose-50 p-3">
-                    <p className="text-sm text-stone-700">
+                  <div className="mt-4 rounded-xl bg-rose-50 p-3 dark:bg-[#3a2f47]">
+                    <p className="text-sm text-stone-700 dark:text-[#f7e8ef]">
                       Effacer toutes les validations et tous les exercices ?
                     </p>
                     <div className="mt-3 flex gap-2">
@@ -1689,7 +1689,7 @@ const printContent = `
                       <button
                         type="button"
                         onClick={() => setShowResetConfirm(false)}
-                        className="rounded-lg bg-white px-3 py-2 text-sm font-semibold text-stone-600"
+                        className="rounded-lg bg-white px-3 py-2 text-sm font-semibold text-stone-600 dark:bg-[#211d2c] dark:text-[#c4b5c2]"
                       >
                         Annuler
                       </button>
@@ -1704,16 +1704,16 @@ const printContent = `
 
       {/* Conseils */}
       <section className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-12">
-        <div className="rounded-3xl bg-linear-to-r from-rose-100 via-orange-50 to-amber-100 p-7 sm:p-10">
+        <div className="rounded-3xl bg-linear-to-r from-rose-100 via-orange-50 to-amber-100 p-7 sm:p-10 dark:from-[#2f2438] dark:via-[#251f30] dark:to-[#2a2235]">
           <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-            <div className="rounded-2xl bg-white p-4 text-rose-500 shadow-sm">
+            <div className="rounded-2xl bg-white p-4 text-rose-500 shadow-sm dark:bg-[#2b2438] dark:text-pink-400">
               <Sparkles size={30} />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-bold">
                 La créativité se construit avec la pratique
               </h2>
-              <p className="mt-2 max-w-2xl text-sm leading-7 text-stone-600">
+              <p className="mt-2 max-w-2xl text-sm leading-7 text-stone-600 dark:text-[#c4b5c2]">
                 Avance étape par étape, prends le temps d'expérimenter et
                 conserve tes essais pour observer tes progrès. Chaque création
                 est une occasion d'apprendre.
@@ -1722,7 +1722,7 @@ const printContent = `
             <button
               type="button"
               onClick={() => selectTechnique(allTechniques[0].id)}
-              className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-rose-700 shadow-sm transition hover:bg-rose-50"
+              className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-rose-700 shadow-sm transition hover:bg-rose-50 dark:bg-[#2b2438] dark:text-pink-300 dark:hover:bg-[#3a2f47]"
             >
               Reprendre l'atelier
               <ChevronRight size={17} />

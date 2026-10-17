@@ -5,7 +5,6 @@ import {
   ArrowRight,
   Flower2,
   Heart,
-
   Sparkles,
   Star,
 } from 'lucide-react'
@@ -16,43 +15,43 @@ import { techniques } from '../data/techniques'
 
 import TutorialCard from '../components/TutorialCard'
 
+// Titre réutilisable des sections
 function SectionHeading({ eyebrow, title, description }) {
   return (
     <div className="mb-7">
-      <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-pink-500">
+      <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-pink-500 dark:text-pink-300">
         {eyebrow}
       </p>
 
-      <h2 className="text-2xl font-bold tracking-tight text-[#493747] sm:text-3xl">
+      <h2 className="text-2xl font-bold tracking-tight text-[#493747] transition-colors dark:text-[#F7E8EF] sm:text-3xl">
         {title}
       </h2>
 
-      <p className="mt-2 text-sm leading-6 text-[#887985] sm:text-base">
+      <p className="mt-2 text-sm leading-6 text-[#887985] transition-colors dark:text-[#C9BCCC] sm:text-base">
         {description}
       </p>
     </div>
   )
 }
 
-
-
+// Section principale
 function Hero() {
   return (
     <section className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-12 sm:py-16 lg:grid-cols-2 lg:px-8 lg:py-20">
       <div>
-        <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-pink-100 bg-white px-4 py-2 text-xs font-semibold text-pink-600 shadow-sm sm:text-sm">
+        <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-pink-100 bg-white px-4 py-2 text-xs font-semibold text-pink-600 shadow-sm transition-colors dark:border-[#493B52] dark:bg-[#30293A] dark:text-pink-300 sm:text-sm">
           <Sparkles size={16} />
           Ton petit atelier créatif
         </span>
 
-        <h1 className="max-w-xl text-4xl font-extrabold leading-[1.13] tracking-tight text-[#493747] sm:text-5xl lg:text-6xl">
+        <h1 className="max-w-xl text-4xl font-extrabold leading-[1.13] tracking-tight text-[#493747] transition-colors dark:text-[#F7E8EF] sm:text-5xl lg:text-6xl">
           De petites idées,
-          <span className="mt-2 block text-pink-500">
+          <span className="mt-2 block text-pink-500 dark:text-pink-300">
             de grandes créations.
           </span>
         </h1>
 
-        <p className="mt-6 max-w-lg text-base leading-8 text-[#887985] sm:text-lg">
+        <p className="mt-6 max-w-lg text-base leading-8 text-[#887985] transition-colors dark:text-[#C9BCCC] sm:text-lg">
           Découvre comment transformer de la pâte à modeler
           en fleurs délicates, figurines kawaii et petits objets
           adorables. Un pas à la fois, à ton rythme.
@@ -61,7 +60,7 @@ function Hero() {
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
             to="/creations"
-            className="inline-flex items-center gap-2 rounded-full bg-pink-500 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-pink-200 transition hover:-translate-y-0.5 hover:bg-pink-600"
+            className="inline-flex items-center gap-2 rounded-full bg-pink-500 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-pink-200 transition hover:-translate-y-0.5 hover:bg-pink-600 dark:shadow-none"
           >
             Explorer les tutoriels
             <ArrowRight size={18} />
@@ -69,15 +68,15 @@ function Hero() {
 
           <Link
             to="/creations"
-            className="inline-flex items-center gap-2 rounded-full border border-pink-100 bg-white px-6 py-3.5 text-sm font-semibold text-[#766474] transition hover:bg-pink-50"
+            className="inline-flex items-center gap-2 rounded-full border border-pink-100 bg-white px-6 py-3.5 text-sm font-semibold text-[#766474] transition hover:bg-pink-50 dark:border-[#493B52] dark:bg-[#30293A] dark:text-[#F7E8EF] dark:hover:bg-[#403448]"
           >
             Découvrir les créations
           </Link>
         </div>
 
-        <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#887985]">
+        <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#887985] dark:text-[#C9BCCC]">
           <span className="flex items-center gap-2">
-            <Heart size={16} className="text-pink-500" />
+            <Heart size={16} className="text-pink-500 dark:text-pink-300" />
             Facile à suivre
           </span>
 
@@ -87,34 +86,34 @@ function Hero() {
           </span>
 
           <span className="flex items-center gap-2">
-            <Flower2 size={16} className="text-green-600" />
+            <Flower2 size={16} className="text-green-600 dark:text-green-400" />
             100 % créativité
           </span>
         </div>
       </div>
 
       <div className="relative">
-        <div className="absolute -inset-4 rounded-[2.5rem] bg-linear-to-br from-pink-100 via-purple-100 to-amber-50 blur-2xl" />
+        <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-pink-100 via-purple-100 to-amber-50 blur-2xl dark:from-pink-950/30 dark:via-purple-950/30 dark:to-amber-950/20" />
 
-        <div className="relative overflow-hidden rounded-4xl border-4 border-white shadow-xl shadow-pink-100">
+        <div className="relative overflow-hidden rounded-4xl border-4 border-white shadow-xl shadow-pink-100 dark:border-[#493B52] dark:shadow-black/20">
           <img
             src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1200&q=85"
             alt="Composition florale aux couleurs douces"
             className="h-85 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-110"
           />
 
-          <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-lg backdrop-blur-md sm:inset-x-6 sm:bottom-6 sm:p-5">
+          <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-lg backdrop-blur-md dark:border-[#55445F]/80 dark:bg-[#211D2B]/90 sm:inset-x-6 sm:bottom-6 sm:p-5">
             <div className="flex items-center justify-between gap-3">
               <div>
-                <p className="text-xs font-semibold text-pink-500">
+                <p className="text-xs font-semibold text-pink-500 dark:text-pink-300">
                   LE PROJET DU MOMENT
                 </p>
 
-                <p className="mt-1 font-bold text-[#493747]">
+                <p className="mt-1 font-bold text-[#493747] dark:text-[#F7E8EF]">
                   Un bouquet tout doux
                 </p>
 
-                <p className="mt-1 text-xs text-[#887985]">
+                <p className="mt-1 text-xs text-[#887985] dark:text-[#C9BCCC]">
                   8 étapes · Niveau débutant
                 </p>
               </div>
@@ -130,7 +129,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="absolute -right-2 -top-4 flex h-16 w-16 animate-bounce items-center justify-center rounded-2xl bg-white text-pink-500 shadow-lg sm:-right-5 sm:top-8">
+        <div className="absolute -right-2 -top-4 flex h-16 w-16 animate-bounce items-center justify-center rounded-2xl bg-white text-pink-500 shadow-lg transition-colors dark:bg-[#30293A] dark:text-pink-300 sm:-right-5 sm:top-8">
           <Flower2 size={34} />
         </div>
       </div>
@@ -138,6 +137,7 @@ function Hero() {
   )
 }
 
+// Section des catégories
 function Categories() {
   return (
     <section
@@ -155,7 +155,7 @@ function Categories() {
           <Link
             key={category.title}
             to="/creations"
-            className="group overflow-hidden rounded-2xl border border-pink-100/80 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-pink-100/70"
+            className="group overflow-hidden rounded-2xl border border-pink-100/80 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-pink-100/70 dark:border-[#493B52] dark:bg-[#30293A] dark:hover:shadow-black/20"
           >
             <div className={`overflow-hidden ${category.color}`}>
               <img
@@ -167,11 +167,11 @@ function Categories() {
             </div>
 
             <div className="p-3">
-              <h3 className="text-sm font-bold text-[#493747]">
+              <h3 className="text-sm font-bold text-[#493747] dark:text-[#F7E8EF]">
                 {category.title}
               </h3>
 
-              <p className="mt-1 text-xs text-[#998590]">
+              <p className="mt-1 text-xs text-[#998590] dark:text-[#C9BCCC]">
                 {category.count}
               </p>
             </div>
@@ -182,7 +182,7 @@ function Categories() {
       <div className="mt-6 text-center">
         <Link
           to="/creations"
-          className="inline-flex items-center gap-2 text-sm font-bold text-pink-600 transition hover:text-pink-700"
+          className="inline-flex items-center gap-2 text-sm font-bold text-pink-600 transition hover:text-pink-700 dark:text-pink-300 dark:hover:text-pink-200"
         >
           Voir toutes les créations
           <ArrowRight size={17} />
@@ -192,6 +192,7 @@ function Categories() {
   )
 }
 
+// Section des tutoriels
 function Tutorials() {
   const [favorites, setFavorites] = useState({})
 
@@ -205,7 +206,7 @@ function Tutorials() {
   return (
     <section
       id="tutoriels"
-      className="scroll-mt-24 bg-linear-to-brrom-pink-50/80 to-purple-50/70 py-14 sm:py-16"
+      className="scroll-mt-24 bg-gradient-to-br from-pink-50/80 to-purple-50/70 py-14 transition-colors duration-300 dark:from-[#282231] dark:to-[#302638] sm:py-16"
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
@@ -226,7 +227,7 @@ function Tutorials() {
             ))}
           </div>
         ) : (
-          <p className="rounded-2xl bg-white p-6 text-center text-[#887985]">
+          <p className="rounded-2xl bg-white p-6 text-center text-[#887985] dark:bg-[#30293A] dark:text-[#C9BCCC]">
             Nos premiers tutoriels arrivent bientôt !
           </p>
         )}
@@ -234,7 +235,7 @@ function Tutorials() {
         <div className="mt-8 text-center">
           <Link
             to="/creations"
-            className="inline-flex items-center gap-2 rounded-full border border-pink-200 bg-white px-6 py-3 font-semibold text-pink-600 transition hover:bg-pink-50"
+            className="inline-flex items-center gap-2 rounded-full border border-pink-200 bg-white px-6 py-3 font-semibold text-pink-600 transition hover:bg-pink-50 dark:border-[#55445F] dark:bg-[#30293A] dark:text-pink-300 dark:hover:bg-[#403448]"
           >
             Explorer tous les tutoriels
             <ArrowRight size={18} />
@@ -245,23 +246,24 @@ function Tutorials() {
   )
 }
 
+// Section des techniques
 function Techniques() {
   return (
     <section
       id="techniques"
       className="mx-auto max-w-7xl scroll-mt-24 px-5 py-16 lg:px-8"
     >
-      <div className="grid items-center gap-8 rounded-4xl bg-[#F4EAFB] p-6 shadow-sm sm:p-10 lg:grid-cols-2 lg:p-12">
+      <div className="grid items-center gap-8 rounded-4xl bg-[#F4EAFB] p-6 shadow-sm transition-colors duration-300 dark:bg-[#302638] sm:p-10 lg:grid-cols-2 lg:p-12">
         <div>
-          <span className="text-sm font-semibold tracking-wider text-purple-600">
+          <span className="text-sm font-semibold tracking-wider text-purple-600 dark:text-purple-300">
             ON APPREND ENSEMBLE
           </span>
 
-          <h2 className="mt-3 text-3xl font-extrabold leading-tight text-[#493747] sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-extrabold leading-tight text-[#493747] transition-colors dark:text-[#F7E8EF] sm:text-4xl">
             Les petites techniques qui changent tout.
           </h2>
 
-          <p className="mt-4 max-w-lg leading-7 text-[#887985]">
+          <p className="mt-4 max-w-lg leading-7 text-[#887985] dark:text-[#C9BCCC]">
             Avant de créer des figurines, découvre les gestes
             essentiels du modelage grâce à des explications
             simples et illustrées.
@@ -269,7 +271,7 @@ function Techniques() {
 
           <Link
             to="/techniques"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-purple-500 px-6 py-3 font-semibold text-white shadow-md shadow-purple-200 transition hover:bg-purple-600"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-purple-500 px-6 py-3 font-semibold text-white shadow-md shadow-purple-200 transition hover:bg-purple-600 dark:shadow-none"
           >
             Explorer les techniques
             <ArrowRight size={18} />
@@ -280,13 +282,13 @@ function Techniques() {
           {techniques.map((technique, index) => (
             <div
               key={technique}
-              className="flex min-h-32 flex-col justify-between rounded-2xl border border-white bg-white/80 p-4 shadow-sm transition hover:shadow-md"
+              className="flex min-h-32 flex-col justify-between rounded-2xl border border-white bg-white/80 p-4 shadow-sm transition hover:shadow-md dark:border-[#55445F] dark:bg-[#211D2B]/70"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-pink-100 font-bold text-pink-600">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-pink-100 font-bold text-pink-600 dark:bg-[#493344] dark:text-pink-300">
                 {String(index + 1).padStart(2, '0')}
               </span>
 
-              <p className="mt-4 text-sm font-bold text-[#493747]">
+              <p className="mt-4 text-sm font-bold text-[#493747] dark:text-[#F7E8EF]">
                 {technique}
               </p>
             </div>
@@ -297,21 +299,16 @@ function Techniques() {
   )
 }
 
-
-
+// Page d'accueil
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#FFFAF6] font-sans">
-      
-
+    <div className="min-h-screen overflow-x-hidden bg-[#FFFAF6] font-sans text-[#493747] transition-colors duration-300 dark:bg-[#211D2B] dark:text-[#F7E8EF]">
       <main>
         <Hero />
         <Categories />
         <Tutorials />
         <Techniques />
       </main>
-
-      
     </div>
   )
 }
