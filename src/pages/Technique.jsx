@@ -1070,29 +1070,46 @@ const printContent = `
 `;
 
 
-       const printWindow = window.open('', '_blank');
+      const iframe = document.createElement('iframe');
 
-    if (!printWindow) {
-      alert("Autorise les fenêtres pop-up pour ClayBloom.");
-      return;
-    }
+    iframe.style.position = 'fixed';
+    iframe.style.right = '0';
+    iframe.style.bottom = '0';
+    iframe.style.width = '1px';
+    iframe.style.height = '1px';
+    iframe.style.border = '0';
+    iframe.style.opacity = '0';
 
-    try {
-      printWindow.document.open();
-      printWindow.document.write(printContent);
-      printWindow.document.close();
-      printWindow.focus();
+    document.body.appendChild(iframe);
 
-      printWindow.setTimeout(() => {
-        if (!printWindow.closed) {
-          printWindow.print();
-        }
-      }, 1000);
-    } catch (error) {
-      console.error("Erreur d'impression :", error);
-      printWindow.close();
-      alert("Impossible de préparer le document à imprimer.");
-    }
+    const printDocument =
+      iframe.contentDocument || iframe.contentWindow.document;
+
+    printDocument.open();
+    printDocument.write(printContent);
+    printDocument.close();
+
+    const printFrame = iframe.contentWindow;
+
+    printFrame.addEventListener(
+      'afterprint',
+      () => {
+        iframe.remove();
+      },
+      { once: true }
+    );
+
+    // Attendre que le document soit prêt avant l'impression
+    window.setTimeout(() => {
+      try {
+        printFrame.focus();
+        printFrame.print();
+      } catch (error) {
+        console.error("Erreur d'impression :", error);
+        iframe.remove();
+        alert("Impossible de lancer l'impression. Réessaie.");
+      }
+    }, 1000);
   }
 
   return (
