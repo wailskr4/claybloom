@@ -11,7 +11,7 @@ export default function Footer() {
         </Link>
 
         <p className="text-sm text-[#998590] dark:text-[#c4b5c2]">
-          {t("footer.basline")}
+          {t("footer.baseline")}
           
         </p>
 
