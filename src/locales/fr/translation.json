@@ -1,4 +1,9 @@
 {
+  "footer":{
+  "baseline":"Un petit pas aujourd'hui, une grande création demain. Pour une personne avec une finesse spécial 💚💛",
+  "titlefooter":"Claymore"
+},
+
   "tutorials": {
     "eyebrow": "Mon atelier créatif",
     "title": "Chaque création commence par un petit geste.",
@@ -27,7 +32,6 @@
     "inProgress": "En cours",
     "empty": "Aucun tutoriel trouvé",
     "emptyDescription": "Essaie un autre mot-clé ou modifie tes filtres.",
-    "footer": "Chaque étape est une petite victoire 🌸 — ClayBloom",
 
     "exploreButton": "Explorer les tutoriels",
     "availableCount": "Tutoriels disponibles",

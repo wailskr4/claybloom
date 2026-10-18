@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from "react-i18next";
+
 export default function Footer() {
+    const { t } = useTranslation();
   return (
     <footer className="border-t border-pink-100 bg-white dark:border-[#3d2f47] dark:bg-[#2b2438]">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
@@ -8,11 +11,12 @@ export default function Footer() {
         </Link>
 
         <p className="text-sm text-[#998590] dark:text-[#c4b5c2]">
-          Un petit pas aujourd'hui, une grande création demain. Pour une personne avec une finesse spécial 💚💛
+          {t("footer.basline")}
+          
         </p>
 
         <p className="text-xs text-[#998590] dark:text-[#c4b5c2]">
-          © {new Date().getFullYear()} ClayBloom
+          © {new Date().getFullYear()} {t("footer.titlefooter")}
         </p>
       </div>
     </footer>

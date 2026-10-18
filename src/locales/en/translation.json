@@ -1,4 +1,10 @@
 {
+
+"footer":{
+  "baseline":"A small step today, a great creation tomorrow. For someone with a special kind of refinement 💚💛",
+  "titlefooter":"Claymore"
+},
+
   "tutorials": {
     "eyebrow": "My creative studio",
     "title": "Every creation begins with a little step.",
@@ -71,8 +77,7 @@
     "progressCompleted": "Tutorial completed",
     "btnReview": "Review tutorial",
     "btnResume": "Resume",
-    "btnStart": "Start",
-    "footer": "Every step is a little victory 🌸 — ClayBloom"
+    "btnStart": "Start"
   },
   "navbar": {
     "tagline": "Create, shape, and let your creativity bloom",
