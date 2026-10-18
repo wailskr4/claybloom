@@ -148,7 +148,7 @@ export default function Navbar() {
           </div>
 
           <div className="mt-4 flex justify-center border-t border-pink-100 pt-4 dark:border-[#3d2f47]">
-            <LanguageSwitcher />
+           
           </div>
         </div>
       )}
