@@ -1,0 +1,1901 @@
+{
+  "tutorials": {
+    "eyebrow": "Mon atelier créatif",
+    "title": "Chaque création commence par un petit geste.",
+    "description": "Apprends à ton rythme grâce à des tutoriels illustrés, suis tes progrès et transforme tes idées en jolies créations.",
+    "explore": "Explorer les tutoriels",
+    "available": "Tutoriels disponibles",
+    "completed": "Tutoriels terminés",
+    "progress": "Ma progression globale",
+    "firstSteps": "Tes premiers pas",
+    "beginners": "Pour débuter",
+    "continue": "Continuer mes tutoriels",
+    "successes": "Tes réussites",
+    "all": "Explorer tous les tutoriels",
+    "search": "Rechercher une création...",
+    "category": "Catégorie",
+    "level": "Niveau",
+    "allCategories": "Toutes les catégories",
+    "allLevels": "Tous les niveaux",
+    "found": "tutoriel(s) trouvé(s)",
+    "reset": "Réinitialiser les filtres",
+    "start": "Commencer",
+    "resume": "Reprendre",
+    "review": "Revoir le tutoriel",
+    "finished": "Terminé",
+    "notStarted": "À commencer",
+    "inProgress": "En cours",
+    "empty": "Aucun tutoriel trouvé",
+    "emptyDescription": "Essaie un autre mot-clé ou modifie tes filtres.",
+    "footer": "Chaque étape est une petite victoire 🌸 — ClayBloom",
+
+    "exploreButton": "Explorer les tutoriels",
+    "availableCount": "Tutoriels disponibles",
+    "completedCount": "Tutoriels terminés",
+    "globalProgressTitle": "Ma progression globale",
+    "globalProgressDesc": "Étapes réalisées sur l'ensemble des guides",
+
+    "beginnersEyebrow": "Tes premiers pas",
+    "beginnersTitle": "Pour débuter",
+    "beginnersDesc": "Commence par des projets accessibles et découvre le plaisir du modelage.",
+    "beginnersEmptyTitle": "Tu as découvert tous les projets débutants !",
+    "beginnersEmptyDesc": "Explore les autres tutoriels pour découvrir de nouvelles techniques.",
+
+    "inProgressEyebrow": "Reprends là où tu en étais",
+    "inProgressTitle": "Continuer mes tutoriels",
+    "inProgressDesc": "Tes projets en cours sont ici. Ta progression est conservée sur cet appareil.",
+    "inProgressEmptyTitle": "Ton prochain projet t'attend",
+    "inProgressEmptyDesc": "Commence un tutoriel et coche ses étapes au fur et à mesure. Tu le retrouveras ici.",
+
+    "completedEyebrow": "Tes réussites",
+    "completedTitle": "Tutoriels terminés",
+    "completedDesc": "Retrouve les guides que tu as entièrement réalisés.",
+    "completedEmptyTitle": "Ta première réussite est à venir",
+    "completedEmptyDesc": "Lorsque tu auras coché toutes les étapes d'un tutoriel, il apparaîtra ici.",
+
+    "exploreEyebrow": "À toi de choisir",
+    "exploreAllTitle": "Explorer tous les tutoriels",
+    "exploreAllDesc": "Recherche une création ou choisis une catégorie et un niveau qui te correspondent.",
+    "searchPlaceholder": "Rechercher une création...",
+    "categoryLabel": "Catégorie",
+    "levelLabel": "Niveau",
+    "foundCount": "tutoriel(s) trouvé(s)",
+    "resetFilters": "Réinitialiser les filtres",
+    "noResultTitle": "Aucun tutoriel trouvé",
+    "noResultDesc": "Essaie un autre mot-clé ou modifie tes filtres.",
+
+    "cardSweetImage": "Une création pleine de douceur",
+    "stepsCount": "étapes",
+    "statusNotStarted": "À commencer",
+    "statusInProgress": "En cours",
+    "statusCompleted": "Terminé",
+    "progressNotStarted": "Prêt à commencer",
+    "progressCompleted": "Tutoriel terminé",
+    "btnReview": "Revoir le tutoriel",
+    "btnResume": "Reprendre",
+    "btnStart": "Commencer"
+  },
+
+  "navbar": {
+    "tagline": "Crée, modèle, fais fleurir ta créativité",
+    "home": "Accueil",
+    "creations": "Créations",
+    "tutorials": "Tutoriels",
+    "techniques": "Techniques",
+    "searchCreation": "Rechercher une création",
+    "start": "Commencer",
+    "closeMenu": "Fermer le menu",
+    "openMenu": "Ouvrir le menu",
+    "exploreCreations": "Explorer les créations"
+  },
+
+  "home": {
+    "heroBadge": "Ton petit atelier créatif",
+    "heroTitle": "De petites idées,",
+    "heroTitleAccent": "de grandes créations.",
+    "heroDescription": "Découvre comment transformer de la pâte à modeler en fleurs délicates, figurines kawaii et petits objets adorables. Un pas à la fois, à ton rythme.",
+    "exploreTutorials": "Explorer les tutoriels",
+    "learnTechniques": "Apprendre les techniques",
+    "easyToFollow": "Facile à suivre",
+    "beginnerFriendly": "Idéal pour débuter",
+    "creative": "100 % créativité",
+    "featuredLabel": "Ton prochain projet",
+    "featuredTitle": "Un bouquet tout doux",
+    "featuredDescription": "À toi de créer quelque chose d'unique",
+    "categoriesEyebrow": "Ton univers créatif",
+    "categoriesTitle": "Qu'as-tu envie de créer ?",
+    "categoriesDescription": "Choisis une catégorie et trouve l'inspiration pour ton prochain projet.",
+    "viewAllCreations": "Voir toutes les créations",
+    "tutorialsEyebrow": "Les favoris de l'atelier",
+    "tutorialsTitle": "Des créations à essayer",
+    "tutorialsDescription": "Découvre des projets inspirants et garde tes tutoriels préférés à portée de main.",
+    "emptyTutorials": "Nos premiers tutoriels arrivent bientôt !",
+    "viewAllTutorials": "Explorer tous les tutoriels",
+    "techniquesEyebrow": "On apprend ensemble",
+    "techniquesTitle": "Les petites techniques qui changent tout.",
+    "techniquesDescription": "Découvre les gestes essentiels du modelage grâce à des explications simples pour progresser à ton rythme.",
+    "exploreTechniques": "Explorer les techniques"
+  },
+
+  "creations": {
+    "hero": {
+      "badge": "Mon univers créatif",
+      "title": "Donne vie à",
+      "highlight": "tes idées créatives",
+      "description": "Explore nos tutoriels de modelage, découvre de nouvelles techniques et crée de jolies pièces à ton rythme."
+    },
+    "search": {
+      "label": "Trouver une création",
+      "placeholder": "Rechercher un tutoriel..."
+    },
+    "filters": {
+      "category": "Catégorie",
+      "allCategories": "Toutes les catégories",
+      "difficulty": "Niveau de difficulté",
+      "allLevels": "Tous les niveaux",
+      "progress": "Ma progression",
+      "allStatuses": "Tous les statuts"
+    },
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    },
+    "progress": {
+      "notStarted": "À commencer",
+      "inProgress": "En cours",
+      "completed": "Terminé"
+    },
+    "results": {
+      "all": "Toutes les créations",
+      "favorites": "Mes favoris",
+      "count_one": "{{count}} création trouvée",
+      "count_other": "{{count}} créations trouvées",
+      "count": "{{count}} création(s) trouvée(s)"
+    },
+    "tabs": {
+      "all": "Tout explorer",
+      "favorites": "Mes favoris"
+    },
+    "empty": {
+      "noFavorites": "Pas encore de favoris",
+      "noResults": "Aucune création trouvée",
+      "favoritesDescription": "Les créations que tu ajoutes à tes favoris apparaîtront ici.",
+      "resultsDescription": "Essaie un autre mot-clé ou modifie tes filtres pour découvrir d'autres créations.",
+      "reset": "Réinitialiser les filtres"
+    }
+  },
+
+  "tutorialCard": {
+    "progressAria": "Progression de {{title}}",
+    "stepsProgress": "{{completed}} / {{total}} étapes terminées",
+    "stepsCount_one": "{{count}} étape",
+    "stepsCount_other": "{{count}} étapes",
+    "discoverGuide": "Découvrir le guide"
+  },
+  "categorie": {
+    "flowers": "Fleurs & bouquets",
+    "kawaiiFigures": "Figurines kawaii",
+    "smilingFlowers": "Fleurs souriantes",
+    "kawaiiSweets": "Gourmandises kawaii",
+    "jewelry": "Bijoux & accessoires",
+    "homeDecor": "Déco & maison"
+  },
+  "categoryCount_one": "{{count}} tutoriel",
+  "categoryCount_other": "{{count}} tutoriels",
+
+  "notFoundTitle": "Tutoriel introuvable",
+  "notFoundDesc": "Ce guide n'existe pas ou n'est plus disponible.",
+  "backToCreations": "Retour aux créations",
+  "backShort": "Retour",
+  "allCreations": "Toutes les créations",
+  "breadcrumbHome": "Accueil",
+  "breadcrumbCreations": "Créations",
+  "sweetImage": "Une création pleine de douceur",
+  "stepsLabel": "étapes",
+  "startTutorialBtn": "Commencer le tutoriel",
+  "removeFavorite": "Retirer des favoris",
+  "addFavorite": "Ajouter aux favoris",
+  "paletteTitle": "Palette de couleurs",
+  "paletteDesc": "Les teintes proposées pour ta création.",
+  "beforeStarting": "Avant de commencer",
+  "materialsTitle": "Ton matériel créatif",
+  "materialsDesc": "Coche les éléments que tu as déjà préparés.",
+  "materialsCount": "{{checked}} / {{total}} éléments préparés",
+  "noMaterials": "Aucun matériel particulier n'a été renseigné pour ce tutoriel.",
+  "curePolymer": "Pâte polymère : cuisson nécessaire",
+  "cureAirDry": "Pâte autodurcissante : séchage à l'air libre",
+  "cureDefault": "Séchage ou finition",
+  "cureNotice": "Séchage et finition",
+  "cureWarning": "Suis toujours les instructions du fabricant de ta pâte, notamment pour la température et la durée de cuisson.",
+  "yourTurn": "À toi de jouer",
+  "stepsCreationTitle": "Les étapes de création",
+  "stepsCreationDesc": "Prends ton temps et avance à ton rythme.",
+  "yourProgress": "Ta progression",
+  "stepsProgress": "{{completed}} étape(s) sur {{total}}",
+  "stepCompleted": "Étape terminée",
+  "markAsCompleted": "Marquer comme terminée",
+  "congratsTitle": "Bravo, tu as terminé !",
+  "congratsDesc": "Ta création est terminée. Félicitations pour ce joli projet !",
+  "exploreCreations": "Explorer les créations",
+  "resetProgress": "Réinitialiser ma progression",
+  "atelierSecrets": "Les petits secrets de l'atelier",
+  "successTitle": "Pour une création réussie",
+  "successDesc": "Quelques astuces pour personnaliser ton résultat et éviter les erreurs courantes.",
+  "tipsTitle": "Conseils pratiques",
+  "mistakesTitle": "Erreurs à éviter",
+  "variationsTitle": "Essaie aussi ces variantes",
+  "footerText": "Fait avec amour et un peu de pâte créative 🌸 — ClayBloom",
+
+  "tutorialDetail": {
+    "materialsHint": "Coche les éléments que tu as préparés.",
+    "materialsTitle": "Ton matériel créatif",
+    "instructionsTitle": "Les étapes de réalisation",
+    "progressTitle": "Ta progression",
+    "addFavorite": "Ajouter aux favoris",
+    "removeFavorite": "Retirer des favoris",
+    "variationsTitle": "Essaie aussi ces variantes",
+    "mistakesTitle": "Erreurs à éviter",
+    "tipsTitle": "Conseils pratiques",
+    "notFound": "Tutoriel introuvable",
+    "notFoundDescription": "Ce guide n'existe pas ou n'est plus disponible.",
+    "backToCreations": "Retour aux créations",
+    "breadcrumbAria": "Fil d'Ariane",
+    "resetProgress": "Réinitialiser ma progression",
+    "imageUnavailable": "Image indisponible"
+  },
+
+  "tutorialData": {
+    "bouquetPastel": {
+      "title": "Un bouquet de fleurs pastel",
+      "description": "Réalise un joli bouquet de fleurs aux couleurs douces pour décorer ton espace.",
+      "materials": [
+        "Pâte autodurcissante ou pâte polymère (rose pâle, lavande, menthe, blanc crème)",
+        "Un petit rouleau acrylique",
+        "Un outil fin pour les détails (stylet ou cure-dent)",
+        "Du fil floral ou des tiges adaptées",
+        "Un couteau de précision ou emporte-pièce rond",
+        "Un peu de colle forte"
+      ],
+      "instructions": [
+        {
+          "title": "Préparer la pâte",
+          "duration": "10 min",
+          "description": "Choisis trois ou quatre couleurs pastel. Malaxe doucement chaque couleur entre tes mains pendant 2-3 minutes jusqu'à obtenir une pâte souple et homogène. Si la pâte est trop dure, réchauffe-la entre tes paumes. Divise chaque couleur en petites portions égales.",
+          "tip": "Travaille sur une surface propre et lisse, comme une planche en verre ou du papier cuisson."
+        },
+        {
+          "title": "Former les pétales",
+          "duration": "15 min",
+          "description": "Pour chaque fleur, crée 5 à 7 petites boules de la taille d'un petit pois. Aplatis chaque boule entre ton pouce et ton index pour former des pétales ovales d'environ 3-4 mm d'épaisseur. Les pétales extérieurs doivent être légèrement plus grands que ceux du centre. Lisse les bords avec ton doigt légèrement humidifié.",
+          "tip": "Garde les pétales que tu n'utilises pas encore sous un film plastique pour éviter qu'ils sèchent."
+        },
+        {
+          "title": "Assembler les fleurs",
+          "duration": "10 min",
+          "description": "Commence par le centre : forme une petite boule de couleur contrastante (jaune pâle ou blanc). Dispose les pétales autour en chevauchant légèrement chaque pétale sur le précédent, comme des tuiles. Presse délicatement le centre pour tout unir. Pour un effet réaliste, fronce légèrement les bords des pétales extérieurs.",
+          "tip": "Utilise un outil à pointe boule pour marquer une légère dépression au centre de chaque fleur."
+        },
+        {
+          "title": "Composer le bouquet",
+          "duration": "10 min",
+          "description": "Enroule le fil floral avec du ruban de soie ou peins-le en vert. Fixe chaque fleur sur sa tige avec de la colle forte. Assemble 3 à 5 fleurs en bouquet en torsadant les tiges ensemble. Ajuste la hauteur de chaque fleur pour créer un effet naturel. Laisse sécher à l'air libre 24-48h ou fais cuire selon les instructions du fabricant.",
+          "tip": "Ajoute quelques feuilles en pâte verte entre les fleurs pour plus de volume."
+        }
+      ],
+      "tips": [
+        "Travaille la pâte à température ambiante pour une meilleure malléabilité.",
+        "Utilise un vernis mat pour un rendu naturel ou brillant pour un effet plus sophistiqué."
+      ],
+      "commonMistakes": [
+        "Pétales trop épais : la fleur paraîtra lourde. Vise 2-3 mm maximum.",
+        "Séchage trop rapide : évite la chaleur directe qui fait craqueler la pâte."
+      ],
+      "variations": [
+        "Ajoute des centres de fleurs en micro-billes dorées.",
+        "Crée des fleurs blanches avec des bords teintés de rose."
+      ]
+    },
+    "petitCompagnon": {
+      "title": "Créer son petit compagnon",
+      "description": "Imagine une petite figurine adorable avec un visage expressif et des détails tout mignons.",
+      "materials": [
+        "Pâte de plusieurs couleurs (corps principal + accent)",
+        "Un petit rouleau",
+        "Un outil de modelage (stylet, cure-dent, outil à bille)",
+        "Un support de travail propre (planche en verre ou papier cuisson)",
+        "Un couteau de précision",
+        "Un peu d'eau ou de colle pour assembler"
+      ],
+      "instructions": [
+        {
+          "title": "Créer la forme principale",
+          "duration": "10 min",
+          "description": "Choisis la couleur principale de ton personnage. Forme une boule de la taille d'une noix pour le corps, puis roule-la légèrement pour créer une forme ovale ou cylindrique selon ton design. Pour la tête, forme une boule légèrement plus petite et aplatie. Assemble-les en pressant doucement et en lissant la jonction avec un outil à bille ou ton doigt humidifié.",
+          "tip": "La règle d'or du kawaii : la tête doit représenter environ 50% de la figurine totale."
+        },
+        {
+          "title": "Ajouter les détails",
+          "duration": "10 min",
+          "description": "Prépare de petites formes pour les oreilles (triangles ou demi-cercles), les bras (petits boudins), et les accessoires. Fixe chaque élément en pressant fermement et en lissant les bords de jonction. Pour les oreilles, creuse légèrement l'intérieur avec un outil à bille. Ajoute une queue en formant un petit cône incurvé.",
+          "tip": "Si les petites pièces ne tiennent pas, utilise un peu de colle ou d'eau comme \"colle à pâte\"."
+        },
+        {
+          "title": "Dessiner le visage",
+          "duration": "5 min",
+          "description": "Avec un outil à pointe fine ou un cure-dent, marque l'emplacement des yeux : deux petits points ou ovales espacés de la largeur d'un œil. Ajoute une petite bouche en forme de 'w' ou d'arc. Pour les joues, ajoute deux petits cercles de pâte rose ou de peinture. Tu peux aussi ajouter des reflets blancs dans les yeux avec de la peinture.",
+          "tip": "L'expression kawaii vient des grands yeux rapprochés et des petites bouches."
+        },
+        {
+          "title": "Finaliser la figurine",
+          "duration": "5 min",
+          "description": "Vérifie que tous les éléments sont bien fixés en pressant doucement. Lisse toutes les imperfections avec un doigt légèrement humide. Pose la figurine sur une surface plane et laisse sécher 24-48h à l'air libre, ou fais cuire selon les indications du fabricant. Une fois sec, tu peux vernir pour protéger.",
+          "tip": "Retourne la figurine toutes les 12h pendant le séchage pour éviter qu'elle ne colle."
+        }
+      ],
+      "tips": [
+        "Commence par des formes simples : rond, ovale, cône.",
+        "Utilise des outils ménagers : cure-dent, paille, bout de crayon."
+      ],
+      "commonMistakes": [
+        "Trop d'eau pour assembler : la pâte devient gluante et perd sa forme.",
+        "Figurine trop grande : elle risque de fissurer en séchant. Reste sous 8 cm de haut."
+      ],
+      "variations": [
+        "Transforme ton compagnon en porte-clés avec un œillet métallique.",
+        "Crée une famille avec des tailles différentes."
+      ]
+    },
+    "fleurSoleil": {
+      "title": "Une fleur pleine de soleil",
+      "description": "Fabrique une fleur lumineuse et ajoute-lui un petit visage souriant.",
+      "materials": [
+        "Pâte jaune vif pour les pétales",
+        "Pâte orange ou marron pour le centre",
+        "Pâte verte pour les feuilles",
+        "Un outil fin (stylet ou cure-dent)",
+        "Un support de travail",
+        "Peinture noire ou pâte noire pour le visage"
+      ],
+      "instructions": [
+        {
+          "title": "Préparer le centre",
+          "duration": "15 min",
+          "description": "Forme une boule de pâte orange ou marron de la taille d'une bille. Aplatis-la légèrement pour créer un disque d'environ 2 cm de diamètre. Avec un outil à pointe, texture la surface en créant de petits points ou une spirale pour imiter le cœur d'une fleur. C'est sur cette base que viendront se fixer les pétales.",
+          "tip": "Le centre doit être légèrement bombé pour donner du volume à la fleur."
+        },
+        {
+          "title": "Modeler les pétales",
+          "duration": "20 min",
+          "description": "Forme 12 à 15 boules de pâte jaune de tailles décroissantes. Les plus grandes pour l'extérieur, les plus petites pour l'intérieur. Aplatis chaque boule en forme de goutte d'eau : large à la base, pointue au bout. Les pétales extérieurs doivent être d'environ 3 cm de long. Lisse les bords avec ton doigt.",
+          "tip": "Pour un effet naturel, fronce légèrement les bords des pétales avec un outil fin."
+        },
+        {
+          "title": "Assembler la fleur",
+          "duration": "15 min",
+          "description": "Commence par la rangée extérieure : fixe les plus grands pétales autour du centre en espaçant régulièrement. Superpose une deuxième rangée de pétales moyens dans les interstices de la première rangée. Termine par une rangée intérieure de petits pétales. Chaque pétale doit chevaucher légèrement le précédent.",
+          "tip": "Presse la base de chaque pétale fermement pour qu'il ne se détache pas en séchant."
+        },
+        {
+          "title": "Ajouter le sourire",
+          "duration": "10 min",
+          "description": "Avec de la peinture noire ou de la pâte noire, dessine deux petits yeux ronds espacés et un grand sourire en arc. Ajoute deux petites joues roses avec de la peinture ou de la pâte rose. Tu peux ajouter des feuilles vertes à la base de la fleur. Laisse sécher complètement avant de manipuler.",
+          "tip": "Utilise un cure-dent pour les détails fins du visage."
+        }
+      ],
+      "tips": [
+        "Plus il y a de pétales, plus la fleur paraît luxuriante.",
+        "Varie les teintes de jaune pour un effet dégradé naturel."
+      ],
+      "commonMistakes": [
+        "Pétales de tailles identiques : la fleur paraît artificielle.",
+        "Visage trop grand : cela gâche l'effet kawaii. Reste discret."
+      ],
+      "variations": [
+        "Transforme-la en broche avec une attache métallique.",
+        "Crée une version avec des pétales blancs et un centre jaune."
+      ]
+    },
+    "bouclesMarbrees": {
+      "title": "Boucles d'oreilles marbrées",
+      "description": "Crée un ensemble de boucles d'oreilles élégantes avec un effet marbré tendance.",
+      "materials": [
+        "Pâte polymère (2 ou 3 couleurs complémentaires : blanc, rose poudré, gris perle)",
+        "Un rouleau acrylique",
+        "Des emporte-pièces géométriques (cercles, demi-lunes, ovales)",
+        "Crochets pour boucles d'oreilles et anneaux de jonction",
+        "Une paille ou un emporte-pièce pour le trou",
+        "Du papier de verre fin (grain 400)"
+      ],
+      "instructions": [
+        {
+          "title": "Mélanger les couleurs",
+          "duration": "10 min",
+          "description": "Forme des boudins de chaque couleur de la taille d'un crayon. Place-les côte à côte et torsade-les ensemble comme une tresse. Replie le tout en deux et torsade à nouveau. Répète 3 à 4 fois maximum pour garder des marbrures visibles. Forme une boule finale et aplatis-la légèrement.",
+          "tip": "Ne mélange pas trop : tu perdrais l'effet marbré. Arrête-toi quand les couleurs commencent à se fondre."
+        },
+        {
+          "title": "Étaler la pâte",
+          "duration": "5 min",
+          "description": "Place la boule marbrée entre deux feuilles de papier cuisson. Aplatis-la au rouleau avec des mouvements réguliers dans tous les sens. Vise une épaisseur uniforme de 2 à 3 mm. Retourne la pâte régulièrement pour un étalage homogène. Le motif marbré doit apparaître à la surface.",
+          "tip": "Si la pâte colle au rouleau, place une feuille de papier cuisson entre les deux."
+        },
+        {
+          "title": "Découper les formes",
+          "duration": "10 min",
+          "description": "Positionne tes emporte-pièces sur la pâte étalée et presse fermement pour découper. Pour chaque paire de boucles, découpe deux formes identiques. Avec une paille ou un petit emporte-pièce, perce un trou à 3 mm du bord supérieur. Retire délicatement les formes avec une spatule.",
+          "tip": "Le trou doit être assez grand pour passer l'anneau de jonction après cuisson."
+        },
+        {
+          "title": "Cuisson et assemblage",
+          "duration": "15 min",
+          "description": "Préchauffe le four selon les instructions de ta pâte (généralement 110-130°C). Place les pièces sur une plaque recouverte de papier cuisson et fais cuire 15-30 minutes. Laisse refroidir complètement. Ponce légèrement les bords si nécessaire. Monte les boucles avec les anneaux et crochets à l'aide d'une pince plate.",
+          "tip": "Ne surchauffe pas : la pâte polymère brûle et jaunit. Mieux vaut cuire plus longtemps à basse température."
+        }
+      ],
+      "tips": [
+        "Teste le mélange marbré sur une petite quantité de pâte d'abord.",
+        "Utilise des emporte-pièces métalliques pour des découpes nettes."
+      ],
+      "commonMistakes": [
+        "Cuisson trop chaude : la pâte jaunit et devient fragile.",
+        "Trous trop près du bord : la boucle risque de casser."
+      ],
+      "variations": [
+        "Ajoute des paillettes dans la pâte pour un effet scintillant.",
+        "Crée des formes asymétriques pour un style moderne."
+      ]
+    },
+    "chatGourmand": {
+      "title": "Petit chat gourmand",
+      "description": "Fabrique un adorable chaton tenant un petit donut coloré entre ses pattes.",
+      "materials": [
+        "Pâte blanche pour le corps",
+        "Pâte rose pour le glaçage",
+        "Pâte beige/marron clair pour le donut",
+        "Peinture acrylique noire pour les détails",
+        "Micro-billes décoratives ou paillettes",
+        "Outil à pointe boule",
+        "Un cure-dent pour les moustaches"
+      ],
+      "instructions": [
+        {
+          "title": "Modeler le chaton",
+          "duration": "20 min",
+          "description": "Forme une grosse boule blanche pour le corps (taille d'une balle de ping-pong) et une boule légèrement plus petite pour la tête. Assemble-les en pressant et en lissant la jonction. Pour la tête, ajoute deux triangles pour les oreilles et creuse légèrement l'intérieur. Forme deux petits bras cylindriques et deux pieds ovales. Ajoute une queue en cône incurvé.",
+          "tip": "La tête doit être légèrement inclinée vers l'avant pour donner un air curieux."
+        },
+        {
+          "title": "Préparer le mini donut",
+          "duration": "10 min",
+          "description": "Forme une petite boule beige de la taille d'une noisette. Aplatis-la légèrement et perce un trou au centre avec un cure-dent. Avec de la pâte rose, forme un cercle plat légèrement plus grand que le donut et pose-le dessus pour imiter le glaçage. Fais couler le glaçage sur les bords en formant de petites vagues. Dépose quelques micro-billes colorées sur le glaçage.",
+          "tip": "Le glaçage doit dépasser légèrement du donut pour un effet réaliste."
+        },
+        {
+          "title": "Assembler le tout",
+          "duration": "10 min",
+          "description": "Positionne le donut contre le ventre du chat, légèrement sur le côté. Modèle deux petits bras qui viennent maintenir le donut : un bras passe devant, l'autre derrière. Presse fermement pour que tout tienne ensemble. Ajuste la position pour que le chat semble regarder son donut avec envie.",
+          "tip": "Si les pièces ne tiennent pas, utilise un peu de colle ou un cure-dent comme armature."
+        },
+        {
+          "title": "Peindre le visage",
+          "duration": "10 min",
+          "description": "Après cuisson ou séchage complet, dessine les yeux fermés en forme d'arcs avec de la peinture noire fine. Ajoute un petit nez triangulaire rose et une bouche en 'w'. Avec un cure-dent, trace trois fines moustaches de chaque côté. Ajoute des joues roses avec de la peinture ou du blush.",
+          "tip": "Utilise un pinceau très fin (000) pour les détails du visage."
+        }
+      ],
+      "tips": [
+        "Le donut peut être remplacé par un cookie, un gâteau ou une glace.",
+        "Ajoute des taches de couleur sur le chat avec de la peinture."
+      ],
+      "commonMistakes": [
+        "Bras trop fins : ils risquent de casser. Garde-les épais.",
+        "Donut trop lourd : il fait basculer la figurine."
+      ],
+      "variations": [
+        "Version chien avec un os ou un biscuit.",
+        "Version lapin avec une carotte."
+      ]
+    },
+    "videPocheFeuille": {
+      "title": "Vide-poche feuille dorée",
+      "description": "Moule une superbe coupelle en forme de feuille tropicale aux finitions dorées.",
+      "materials": [
+        "Pâte autodurcissante blanche (500g)",
+        "Une vraie feuille grande et texturée (philodendron, monstera)",
+        "Un couteau de précision / scalpel créatif",
+        "Peinture dorée acrylique",
+        "Vernis de finition brillant ou mat",
+        "Un bol creux comme moule",
+        "Film étirable",
+        "Du papier de verre fin"
+      ],
+      "instructions": [
+        {
+          "title": "Étaler la plaque de pâte",
+          "duration": "15 min",
+          "description": "Travaille la pâte autodurcissante sur une surface propre et lisse. Étale-la au rouleau en partant du centre vers les bords. Vise une épaisseur uniforme de 5 mm. Retourne la pâte régulièrement pour éviter qu'elle ne colle. La plaque finale doit être légèrement plus grande que ta feuille modèle.",
+          "tip": "Si la pâte colle, saupoudre légèrement de fécule de maïs."
+        },
+        {
+          "title": "Empreinte et découpe",
+          "duration": "20 min",
+          "description": "Place ta vraie feuille sur la pâte étalée, côté veines vers le bas. Presse fermement avec le rouleau pour imprimer les nervures. Retire délicatement la feuille. Avec le scalpel, découpe le contour en suivant la forme de la feuille. Lisse les bords coupés avec un doigt humidifié.",
+          "tip": "Appuie plus fort sur le rouleau au centre de la feuille pour bien marquer les nervures principales."
+        },
+        {
+          "title": "Donner la forme de coupe",
+          "duration": "10 min",
+          "description": "Tapisse un bol creux de film étirable en laissant dépasser les bords. Dépose la feuille de pâte à l'intérieur en l'adaptant à la courbure du bol. Les bords peuvent remonter légèrement pour créer les côtés de la coupelle. Laisse sécher 24 à 48h sans démouler.",
+          "tip": "Retourne la coupelle sur le bol à mi-séchage pour que le dessous sèche aussi."
+        },
+        {
+          "title": "Dorure et vernis",
+          "duration": "30 min",
+          "description": "Une fois la pâte complètement sèche et dure, sors la coupelle du moule. Ponce légèrement les imperfections avec du papier de verre fin. Avec un pinceau fin, peins les bords ou certaines nervures avec de la peinture dorée. Laisse sécher la peinture, puis applique un vernis protecteur sur toute la surface.",
+          "tip": "Pour un effet subtil, dore uniquement les bords. Pour un effet luxueux, dore également les nervures principales."
+        }
+      ],
+      "tips": [
+        "Choisis une feuille avec des nervures bien marquées.",
+        "Travaille rapidement : la pâte autodurcissante commence à sécher en 30 minutes."
+      ],
+      "commonMistakes": [
+        "Pâte trop fine : la coupelle casse en démoulant. Reste à 5 mm minimum.",
+        "Séchage insuffisant : la coupelle se déforme. Attends 48h complètes."
+      ],
+      "variations": [
+        "Utilise plusieurs petites feuilles pour créer un ensemble.",
+        "Teinte la pâte avec du colorant avant de l'étaler."
+      ]
+    },
+    "cupcakeSuspendre": {
+      "title": "Cupcake kawaii à suspendre",
+      "description": "Modèle un mini cupcake tout sourire avec sa belle couronne de glaçage, à offrir en porte-clés ou breloque.",
+      "materials": [
+        "Pâte polymère beige pour la caissette",
+        "Pâte blanche pour le glaçage",
+        "Pâte rose pour les joues et décorations",
+        "Un emporte-pièce ou un petit bol pour le moule",
+        "Un anneau de breloque avec œillet",
+        "Paillettes ou mini cœurs décoratifs",
+        "Un outil à pointe fine"
+      ],
+      "instructions": [
+        {
+          "title": "Former la caissette",
+          "duration": "10 min",
+          "description": "Forme une boule de pâte beige et façonne un cône évasé : large en haut, étroit en bas. Avec un outil fin ou un cure-dent, marque des stries verticales régulières tout autour pour imiter les plis de la caissette en papier. Creuse légèrement le dessus pour accueillir le gâteau.",
+          "tip": "Utilise un petit bol comme moule pour obtenir une forme régulière."
+        },
+        {
+          "title": "Ajouter le gâteau et le glaçage",
+          "duration": "10 min",
+          "description": "Forme un disque de pâte beige légèrement plus petit que l'ouverture de la caissette et pose-le dessus. Pour le glaçage, forme un boudin blanc et enroule-le en spirale en partant du centre vers l'extérieur. Laisse dépasser le glaçage sur les bords pour un effet coulant. Ajoute des petites boules colorées comme des sprinkles.",
+          "tip": "Le glaçage doit avoir un aspect irrégulier pour paraître naturel."
+        },
+        {
+          "title": "Dessiner le visage",
+          "duration": "5 min",
+          "description": "Sur le devant de la caissette, ajoute deux petits yeux noirs avec de la pâte ou de la peinture. Dessine une petite bouche en forme de 'w' ou d'arc. Ajoute deux joues roses de chaque côté. Tu peux aussi ajouter des cils ou des sourcils pour plus d'expression.",
+          "tip": "Place le visage sur la caissette, pas sur le glaçage, pour qu'il soit bien visible."
+        },
+        {
+          "title": "Cuire et monter la breloque",
+          "duration": "10 min",
+          "description": "Avec une aiguille ou un cure-dent, perce un trou dans le haut du glaçage et insère l'œillet métallique. Fais cuire selon les instructions du fabricant (généralement 15-30 min à 110-130°C). Laisse refroidir complètement. Applique du vernis brillant sur le glaçage pour lui donner de l'éclat, puis monte l'anneau et la chaîne.",
+          "tip": "L'œillet doit être bien enfoncé pour ne pas se détacher."
+        }
+      ],
+      "tips": [
+        "Varie les couleurs du glaçage : rose, menthe, lavande.",
+        "Ajoute une petite cerise en pâte rouge sur le dessus."
+      ],
+      "commonMistakes": [
+        "Oublier l'œillet avant cuisson : impossible à ajouter après.",
+        "Glaçage trop lourd : il écrase la caissette."
+      ],
+      "variations": [
+        "Transforme-le en aimant pour le frigo.",
+        "Crée une série de cupcakes aux parfums différents."
+      ]
+    },
+    "maisonChampignon": {
+      "title": "Maison champignon féerique",
+      "description": "Construis une adorable maison de lutin coiffée d'un grand chapeau de champignon rouge à pois.",
+      "materials": [
+        "Pâte autodurcissante blanche (1 kg) pour les murs",
+        "Pâte autodurcissante rouge pour le chapeau",
+        "Un cylindre ou un verre comme gabarit",
+        "Outils de modelage et couteau fin",
+        "Peintures acryliques (blanc, vert, brun)",
+        "Petites fleurs artificielles ou en pâte",
+        "Un vernis protecteur"
+      ],
+      "instructions": [
+        {
+          "title": "Bâtir les murs",
+          "duration": "30 min",
+          "description": "Étale la pâte blanche en une plaque de 5 mm d'épaisseur. Enroule-la autour d'un cylindre ou d'un verre de la taille désirée (environ 10 cm de diamètre). Joins les bords en lissant avec un doigt humidifié. Retire le gabarit délicatement. Texture les murs en dessinant des lignes horizontales et verticales pour imiter des briques ou des pierres.",
+          "tip": "Travaille sur du papier cuisson pour pouvoir tourner la pièce facilement."
+        },
+        {
+          "title": "Modeler le chapeau",
+          "duration": "30 min",
+          "description": "Forme une grande demi-sphère rouge de la taille d'une orange. Aplatis le dessous pour qu'elle repose bien sur les murs. Avec un outil, creuse une ouverture pour la porte. Ajoute des petites boules blanches de différentes tailles sur le chapeau pour les pois. Presse-les fermement pour qu'elles adhèrent.",
+          "tip": "Le chapeau doit être légèrement plus large que les murs pour créer un avant-toit."
+        },
+        {
+          "title": "Ajouter les détails",
+          "duration": "30 min",
+          "description": "Sculpte une porte arrondie et des fenêtres ovales. Creuse-les dans les murs ou ajoute des cadres en pâte. Modèle de petits champignons, des fleurs, des feuilles pour décorer les murs. Ajoute un chemin de petites pierres à la base. Tu peux ajouter une cheminée ou des lucarnes sur le chapeau.",
+          "tip": "Fixe chaque détail avec un peu d'eau et presse fermement."
+        },
+        {
+          "title": "Séchage et peinture",
+          "duration": "30 min + séchage",
+          "description": "Laisse sécher 48h à l'air libre, loin de la chaleur directe. Une fois sec, ponce légèrement les imperfections. Peins les détails : contours de porte et fenêtres en brun, feuilles en vert, pois en blanc pur. Ajoute des ombres avec des teintes plus foncées. Termine par un vernis protecteur mat ou brillant.",
+          "tip": "Retourne la maison toutes les 12h pendant le séchage pour que le dessous sèche aussi."
+        }
+      ],
+      "tips": [
+        "Construis sur plusieurs jours : murs un jour, chapeau le lendemain.",
+        "Ajoute une LED à l'intérieur pour un effet lumineux."
+      ],
+      "commonMistakes": [
+        "Pâte trop humide : la structure s'affaisse. Laisse sécher un peu avant de monter.",
+        "Détails trop lourds : ils tombent pendant le séchage. Fixe-les avec de la colle."
+      ],
+      "variations": [
+        "Version hiver avec du blanc pour la neige.",
+        "Version nuit avec des fenêtres peintes en jaune lumineux."
+      ]
+    },
+    "magnetsGourmands": {
+      "title": "Magnets gourmands pour le frigo",
+      "description": "Sculpte une série de petites douceurs souriantes — donut, avocat, œuf au plat — à coller sur ton réfrigérateur.",
+      "materials": [
+        "Pâte polymère de plusieurs couleurs (beige, vert, jaune, rose, blanc)",
+        "Des aimants autocollants ou à coller",
+        "Un outil pointu pour les visages",
+        "Vernis brillant",
+        "Un cure-dent pour les détails",
+        "De la colle forte si les aimants ne sont pas autocollants"
+      ],
+      "instructions": [
+        {
+          "title": "Choisir tes gourmandises",
+          "duration": "5 min",
+          "description": "Sélectionne trois ou quatre aliments mignons : un donut, un avocat, une part de pizza, un œuf au plat, une fraise. Dessine un croquis rapide de chacun pour visualiser les couleurs et les proportions. Prépare toutes les couleurs de pâte nécessaires avant de commencer.",
+          "tip": "Commence par des formes simples : rondes ou ovales."
+        },
+        {
+          "title": "Modeler chaque pièce",
+          "duration": "20 min",
+          "description": "Pour le donut : forme un anneau beige et ajoute un glaçage coloré par-dessus. Pour l'avocat : forme une poire verte, creuse légèrement et ajoute un noyau marron. Pour l'œuf : forme un blanc irrégulier et ajoute un jaune bombé. Pour chaque pièce, texture la surface pour imiter la réalité (grains de riz, croûte de pizza, etc.).",
+          "tip": "Garde les pièces petites (3-4 cm) pour que les magnets restent légers."
+        },
+        {
+          "title": "Dessiner les visages",
+          "duration": "15 min",
+          "description": "Sur chaque gourmandise, ajoute deux petits yeux noirs avec un outil à pointe ou de la pâte noire. Dessine une petite bouche en \"w\" ou en arc. Ajoute des joues roses de chaque côté. Pour plus de personnalité, varie les expressions : un œil clin d'œil, une langue qui sort, des cils.",
+          "tip": "Les yeux doivent être petits et rapprochés pour l'effet kawaii."
+        },
+        {
+          "title": "Cuire et coller les aimants",
+          "duration": "10 min",
+          "description": "Place toutes les pièces sur une plaque recouverte de papier cuisson. Fais cuire selon les instructions du fabricant. Laisse refroidir complètement. Applique du vernis brillant pour protéger et faire briller. Colle un aimant à l'arrière de chaque pièce avec de la colle forte. Laisse sécher la colle 24h avant utilisation.",
+          "tip": "Teste l'aimant sur le frigo avant de coller pour vérifier la force d'adhérence."
+        }
+      ],
+      "tips": [
+        "Crée une collection thématique : fruits, fast-food, desserts.",
+        "Utilise des emporte-pièces pour des formes parfaites."
+      ],
+      "commonMistakes": [
+        "Pièces trop épaisses : elles sont trop lourdes pour l'aimant.",
+        "Visage trop grand : cela gâche l'effet mignon."
+      ],
+      "variations": [
+        "Transforme-les en pinces à linge décoratives.",
+        "Crée des magnets de saison : citrouille d'Halloween, sapin de Noël."
+      ]
+    },
+    "tortueBureau": {
+      "title": "Tortue de bureau toute douce",
+      "description": "Sculpte une petite tortue au regard tendre, parfaite pour veiller sur ton bureau.",
+      "materials": [
+        "Pâte verte pour le corps",
+        "Pâte marron ou kaki pour la carapace",
+        "Pâte rose pour les joues",
+        "Un outil à pointe boule",
+        "Peinture ou pâte noire pour les yeux",
+        "Vernis brillant",
+        "Un cure-dent pour les motifs"
+      ],
+      "instructions": [
+        {
+          "title": "Modeler le corps",
+          "duration": "15 min",
+          "description": "Forme un ovale aplati de pâte verte pour le corps (environ 5 cm de long). Modèle une tête ronde qui dépasse à l'avant et quatre pattes cylindriques courtes. Ajoute une petite queue conique à l'arrière. Lisse toutes les jonctions avec un outil à bille ou ton doigt humidifié. Le ventre doit être plat pour que la tortue soit stable.",
+          "tip": "La tête doit être proportionnée : environ 1/3 de la longueur du corps."
+        },
+        {
+          "title": "Créer la carapace",
+          "duration": "15 min",
+          "description": "Forme une demi-sphère de pâte marron légèrement plus grande que le corps. Aplatis le dessous pour qu'elle repose bien sur le dos. Avec un cure-dent ou un outil à pointe, trace les motifs de la carapace : un grand hexagone central entouré de motifs géométriques. Les lignes doivent être assez profondes pour rester visibles après cuisson.",
+          "tip": "Regarde des photos de vraies tortues pour t'inspirer des motifs."
+        },
+        {
+          "title": "Ajouter le visage",
+          "duration": "10 min",
+          "description": "Sur la tête, ajoute deux grands yeux noirs ronds avec de la pâte ou de la peinture. Ajoute des reflets blancs pour donner de la vie. Dessine un petit sourire en arc sous les yeux. Ajoute deux joues roses de chaque côté. Tu peux ajouter des petites narines avec un outil à pointe.",
+          "tip": "Les yeux doivent être grands et rapprochés pour l'effet kawaii."
+        },
+        {
+          "title": "Cuisson et finition",
+          "duration": "5 min",
+          "description": "Assemble la carapace sur le dos du corps en pressant fermement. Fais cuire selon les instructions du fabricant, ou laisse sécher 24-48h. Une fois refroidie, vernis uniquement la carapace pour lui donner un joli brillant. Laisse le corps mat pour un contraste de texture.",
+          "tip": "Si la carapace ne tient pas, utilise un peu de colle avant cuisson."
+        }
+      ],
+      "tips": [
+        "Varie les couleurs : tortue bleue, rose ou violette.",
+        "Ajoute des accessoires : un chapeau, un nœud, des lunettes."
+      ],
+      "commonMistakes": [
+        "Carapace trop lourde : elle écrase le corps. Garde-la fine.",
+        "Pattes trop fines : elles cassent facilement."
+      ],
+      "variations": [
+        "Transforme-la en tirelire avec une fente dans la carapace.",
+        "Crée une famille avec des bébés tortues."
+      ]
+    },
+    "potSouriant": {
+      "title": "Petit pot souriant pour plante",
+      "description": "Transforme un simple petit pot en compagnon souriant qui accueille ta succulente préférée.",
+      "materials": [
+        "Petit pot en terre cuite (8-10 cm de diamètre) ou bol en pâte",
+        "Peintures acryliques (blanc, rose, noir, couleurs au choix)",
+        "Un pinceau fin et un pinceau plat",
+        "Un vernis protecteur",
+        "Une petite plante succulente",
+        "De la terre pour cactus",
+        "Du ruban de masquage (optionnel)"
+      ],
+      "instructions": [
+        {
+          "title": "Préparer le pot",
+          "duration": "10 min",
+          "description": "Si tu utilises un pot en terre cuite, nettoie-le avec un chiffon humide pour enlever la poussière. Laisse sécher complètement. Si tu préfères créer un bol en pâte autodurcissante, forme un pot évasé avec un rebord et laisse sécher 48h. Ponce légèrement les imperfections.",
+          "tip": "Un pot neuf n'a pas besoin d'être lavé, juste dépoussiéré."
+        },
+        {
+          "title": "Peindre les motifs",
+          "duration": "15 min",
+          "description": "Applique une couche de peinture blanche ou de la couleur de ton choix sur tout le pot. Laisse sécher. Avec un pinceau fin, ajoute des motifs : des points, des rayures, des vagues, des cœurs. Utilise du ruban de masquage pour des lignes droites. Laisse libre cours à ta créativité.",
+          "tip": "Deux couches fines sont mieux qu'une épaisse."
+        },
+        {
+          "title": "Dessiner le visage",
+          "duration": "10 min",
+          "description": "Sur le devant du pot, dessine deux yeux fermés en forme d'arcs avec de la peinture noire. Ajoute des cils si tu veux. Dessine une grande bouche souriante. Ajoute deux joues roses bien rondes. Le visage doit être centré et proportionné à la taille du pot.",
+          "tip": "Utilise un crayon pour esquisser le visage avant de peindre."
+        },
+        {
+          "title": "Planter la succulente",
+          "duration": "5 min",
+          "description": "Une fois la peinture complètement sèche, applique un vernis protecteur sur tout le pot. Laisse sécher. Remplis le pot de terre spéciale cactus jusqu'à 2 cm du bord. Plante ta succulente en creusant un petit trou. Tasse légèrement la terre. Ajoute du gravier décoratif si tu veux.",
+          "tip": "Choisis une succulente petite et facile d'entretien comme une échéveria."
+        }
+      ],
+      "tips": [
+        "Crée une famille de pots avec différentes expressions.",
+        "Utilise des peintures résistantes à l'eau pour l'extérieur."
+      ],
+      "commonMistakes": [
+        "Peindre sur un pot humide : la peinture n'adhère pas.",
+        "Trop d'eau pour la plante : les succulentes n'aiment pas l'humidité."
+      ],
+      "variations": [
+        "Transforme le pot en animal : chat, lapin, ours.",
+        "Ajoute des messages inspirants sur le pot."
+      ]
+    },
+    "pendentifLune": {
+      "title": "Pendentif lune & étoiles",
+      "description": "Crée un pendentif céleste avec un croissant de lune et de petites étoiles dorées.",
+      "materials": [
+        "Pâte polymère bleu nuit, jaune pâle et lilas",
+        "Emporte-pièces lune et étoile (ou gabarit en papier)",
+        "Pâte à poudre dorée ou peinture dorée",
+        "Anneau de jonction, chaîne et pince plate",
+        "Un cure-dent pour le trou",
+        "Du papier de verre fin"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Suis la température et le temps indiqués sur ta pâte."
+      },
+      "instructions": [
+        {
+          "title": "Étaler la pâte",
+          "duration": "5 min",
+          "description": "Étale la pâte bleu nuit sur environ 3 mm d'épaisseur entre deux feuilles de papier cuisson. Fais de même avec les couleurs claires (jaune pâle et lilas). Utilise des guides d'épaisseur si tu en as pour un résultat uniforme.",
+          "tip": "Étale toujours sur une feuille de papier cuisson pour ne pas déformer la pâte en la déplaçant."
+        },
+        {
+          "title": "Découper les formes",
+          "duration": "10 min",
+          "description": "Découpe un croissant de lune dans la pâte bleu nuit. Pour cela, découpe un cercle, puis superpose un cercle plus petit décalé et retire l'excédent. Découpe deux ou trois étoiles de tailles différentes dans les couleurs claires. Avec une paille ou un cure-dent, fais le trou pour l'anneau à 5 mm du sommet de la lune.",
+          "tip": "Fais le trou pour l'anneau avec une paille ou une aiguille avant la cuisson."
+        },
+        {
+          "title": "Décorer",
+          "duration": "10 min",
+          "description": "Positionne les étoiles sur le croissant de lune en les pressant légèrement pour qu'elles adhèrent. Ajoute des petits points de peinture dorée pour imiter les étoiles dans le ciel. Tu peux aussi ajouter de la poudre dorée sur la surface pour un effet scintillant. Texture légèrement la surface de la lune pour imiter les cratères.",
+          "tip": "Utilise un cure-dent pour déposer de minuscules points de peinture dorée."
+        },
+        {
+          "title": "Cuire et monter",
+          "duration": "10 min",
+          "description": "Place le pendentif sur une plaque recouverte de papier cuisson. Fais cuire selon les indications du fabricant (généralement 15-30 min à 110-130°C). Laisse refroidir complètement. Ponce légèrement les bords si nécessaire. Ouvre l'anneau de jonction avec une pince plate, passe-le dans le trou, ajoute la chaîne et referme.",
+          "tip": "Si le trou est trop petit, perce-le à nouveau avec une perceuse manuelle après cuisson."
+        }
+      ],
+      "tips": [
+        "Étale toujours sur une feuille de papier cuisson pour ne pas déformer la pâte en la déplaçant.",
+        "Passe un doigt légèrement humide sur les bords pour effacer les traces de découpe."
+      ],
+      "commonMistakes": [
+        "Percer le trou trop près du bord : la pâte risque de casser."
+      ],
+      "variations": [
+        "Ajoute une phase de lune complète sur plusieurs pendentifs.",
+        "Utilise des paillettes pour un effet galaxie."
+      ]
+    },
+    "plateauSushis": {
+      "title": "Plateau de mini sushis",
+      "description": "Modèle une mini assiette de sushis souriants : nigiri saumon, maki et œuf.",
+      "materials": [
+        "Pâte polymère blanche, rose saumon, verte, noire et jaune",
+        "Un couteau fin ou une lame de modelage",
+        "Un outil à pointe boule",
+        "Une brosse à dents propre pour la texture",
+        "Vernis brillant",
+        "Un petit plateau ou assiette décorative"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Vernis seulement après refroidissement complet."
+      },
+      "instructions": [
+        {
+          "title": "Préparer le riz",
+          "duration": "10 min",
+          "description": "Forme de petits ovales blancs pour les nigiri (environ 2 cm de long) et des petits cylindres pour les maki (environ 1,5 cm de diamètre). Pour texturer le riz, presse légèrement la pâte sur une brosse à dents propre ou un tamis. Le résultat doit ressembler à des grains de riz collés ensemble.",
+          "tip": "Pour le riz, texture la pâte blanche en la pressant sur un tamis ou une brosse à dents propre."
+        },
+        {
+          "title": "Ajouter les garnitures",
+          "duration": "20 min",
+          "description": "Pour les nigiri : étale une fine lamelle de pâte rose saumon et pose-la sur le riz. Marque des stries pour imiter la texture du poisson. Pour les maki : enroule une bande de pâte noire autour du cylindre de riz, puis ajoute un centre coloré (vert pour le concombre, jaune pour l'œuf, rose pour le thon). Pour les nigiri œuf : ajoute une fine tranche jaune rectangulaire.",
+          "tip": "Garde une feuille d'essuie-tout sous la main pour éviter les traces de couleur."
+        },
+        {
+          "title": "Dessiner les visages",
+          "duration": "15 min",
+          "description": "Sur chaque sushi, ajoute deux petits yeux noirs avec l'outil à pointe boule. Dessine une petite bouche en 'w' ou en arc. Ajoute des joues roses de chaque côté. Pour plus de réalisme, varie les expressions : certains peuvent être contents, d'autres surpris ou endormis.",
+          "tip": "Les yeux doivent être petits et rapprochés pour l'effet kawaii."
+        },
+        {
+          "title": "Cuire et vernir",
+          "duration": "15 min",
+          "description": "Place tous les sushis sur une plaque recouverte de papier cuisson. Fais cuire selon les instructions du fabricant. Laisse refroidir complètement. Applique du vernis brillant sur les garnitures pour imiter la brillance du poisson frais. Laisse le riz mat pour un contraste réaliste. Dispose-les sur un petit plateau.",
+          "tip": "Vernis seulement après refroidissement complet."
+        }
+      ],
+      "tips": [
+        "Pour le riz, texture la pâte blanche en la pressant sur un tamis ou une brosse à dents propre.",
+        "Garde une feuille d'essuie-tout sous la main pour éviter les traces de couleur."
+      ],
+      "commonMistakes": [
+        "Mélanger les couleurs sans se laver les mains entre chaque pâte."
+      ],
+      "variations": [
+        "Transforme-les en magnets ou en boucles d'oreilles.",
+        "Ajoute des baguettes miniatures en pâte marron."
+      ]
+    },
+    "porteClesNuage": {
+      "title": "Porte-clés nuage arc-en-ciel",
+      "description": "Fabrique un petit nuage tout doux avec un arc-en-ciel qui sort de dessous.",
+      "materials": [
+        "Pâte polymère blanche, rouge, jaune, verte et bleue",
+        "Rouleau acrylique",
+        "Anneau de porte-clés avec chaînette",
+        "Un cure-dent pour le trou",
+        "Vernis mat ou brillant",
+        "Une paille pour le trou"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Insère l'anneau avant la cuisson."
+      },
+      "instructions": [
+        {
+          "title": "Former l'arc-en-ciel",
+          "duration": "10 min",
+          "description": "Roule quatre petits boudins de couleur (rouge, jaune, vert, bleu) de la même épaisseur et de la même longueur. Place-les côte à côte et presse légèrement pour les coller entre eux. Courbe l'ensemble en arc en veillant à ce que les couleurs restent bien alignées. Coupe les extrémités en biseau pour un rendu net.",
+          "tip": "Roule les boudins de couleur à la même épaisseur pour un arc-en-ciel régulier."
+        },
+        {
+          "title": "Modeler le nuage",
+          "duration": "10 min",
+          "description": "Forme trois ou quatre boules blanches de tailles différentes (la plus grande au centre). Assemble-les en les pressant légèrement pour former un nuage. Aplatis légèrement le dessous pour que le nuage repose bien. Lisse les jonctions entre les boules avec un doigt humidifié.",
+          "tip": "Le nuage doit être plus large que l'arc-en-ciel pour bien le couvrir."
+        },
+        {
+          "title": "Assembler",
+          "duration": "5 min",
+          "description": "Positionne le nuage devant les extrémités de l'arc-en-ciel en le pressant fermement pour que tout tienne ensemble. Avec une paille ou un cure-dent, perce un trou en haut du nuage pour l'œillet. Insère l'œillet métallique en le vissant légèrement.",
+          "tip": "Insère l'œillet avant la cuisson."
+        },
+        {
+          "title": "Cuire et finir",
+          "duration": "5 min",
+          "description": "Place le porte-clés sur une plaque recouverte de papier cuisson. Fais cuire selon les indications du fabricant. Laisse refroidir complètement. Applique du vernis pour protéger et faire briller. Accroche la chaînette et l'anneau du porte-clés.",
+          "tip": "Cuire sans avoir inséré l'œillet : il sera impossible de l'ajouter après."
+        }
+      ],
+      "tips": [
+        "Roule les boudins de couleur à la même épaisseur pour un arc-en-ciel régulier."
+      ],
+      "commonMistakes": [
+        "Cuire sans avoir inséré l'œillet : il sera impossible de l'ajouter après."
+      ],
+      "variations": [
+        "Version pastel ou version néon."
+      ]
+    },
+    "bebeDino": {
+      "title": "Bébé dino dans son œuf",
+      "description": "Crée un petit dinosaure qui sort de sa coquille d'œuf, parfait pour décorer ton bureau.",
+      "materials": [
+        "Pâte polymère verte, crème et rose",
+        "Outil à pointe boule",
+        "Petit pinceau et peinture noire",
+        "Vernis brillant",
+        "Un cure-dent pour les détails",
+        "Du papier cuisson"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Pose la figurine sur du papier cuisson."
+      },
+      "instructions": [
+        {
+          "title": "Former la coquille",
+          "duration": "15 min",
+          "description": "Forme une boule de pâte crème de la taille d'une balle de ping-pong. Aplatis légèrement le dessous pour qu'elle soit stable. Avec un couteau ou un outil fin, coupe le haut de la boule en zigzag pour créer l'effet de coquille brisée. Retire la partie supérieure et creuse l'intérieur pour faire de la place au bébé dino.",
+          "tip": "Brise les bords de la coquille avec un outil pour un effet naturel et irrégulier."
+        },
+        {
+          "title": "Modeler le bébé dino",
+          "duration": "15 min",
+          "description": "Forme un corps ovale vert qui s'assied dans la coquille. La partie inférieure doit être cachée dans l'œuf. Modèle une petite tête ronde qui dépasse et deux bras minuscules qui s'accrochent au bord de la coquille. Ajoute une petite queue qui dépasse à l'arrière.",
+          "tip": "Fais la tête plus petite que le corps pour éviter qu'elle ne penche."
+        },
+        {
+          "title": "Ajouter les détails",
+          "duration": "15 min",
+          "description": "Ajoute des petites pointes dorsales en forme de triangles le long du dos. Forme une mini fleur rose avec cinq pétales et pose-la sur la tête ou dans une main. Ajoute des joues roses et des taches de couleur sur la coquille. Texture la coquille avec de petits points pour imiter la surface d'un œuf.",
+          "tip": "Les pointes dorsales doivent être petites et arrondies pour l'effet bébé."
+        },
+        {
+          "title": "Cuisson et visage",
+          "duration": "10 min",
+          "description": "Place la figurine sur du papier cuisson. Fais cuire selon les indications du fabricant. Laisse refroidir complètement. Avec de la peinture noire fine, dessine deux grands yeux ronds avec des reflets blancs. Ajoute un petit sourire. Vernis la coquille pour lui donner de l'éclat.",
+          "tip": "Pose la figurine sur du papier cuisson pour la cuisson."
+        }
+      ],
+      "tips": [
+        "Brise les bords de la coquille avec un outil pour un effet naturel et irrégulier."
+      ],
+      "commonMistakes": [
+        "Faire la tête trop lourde : elle penche pendant la cuisson. Garde-la plus petite que le corps."
+      ],
+      "variations": [
+        "Un dragon, un poussin ou un petit dinosaure bleu."
+      ]
+    },
+    "barrettesFruits": {
+      "title": "Barrettes fruits d'été",
+      "description": "Fais des barrettes en forme de cerises, citrons et fraises à clipser dans les cheveux.",
+      "materials": [
+        "Pâte polymère rouge, jaune, verte et blanche",
+        "Barrettes métalliques à coller",
+        "Colle cyanoacrylate ou colle forte",
+        "Vernis brillant",
+        "Un outil à pointe fine",
+        "Un cure-dent pour les détails"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Colle les barrettes après cuisson."
+      },
+      "instructions": [
+        {
+          "title": "Choisir les fruits",
+          "duration": "5 min",
+          "description": "Prépare les couleurs de la fraise (rouge + vert), de la cerise (rouge foncé + vert) et du citron (jaune + vert). Forme de petites boules de chaque couleur. Dessine un croquis rapide de chaque fruit pour visualiser les proportions.",
+          "tip": "Garde les fruits petits (2-3 cm) pour qu'ils restent légers sur les cheveux."
+        },
+        {
+          "title": "Modeler les fruits",
+          "duration": "20 min",
+          "description": "Pour la fraise : forme un cône arrondi rouge et aplatis légèrement le dessous. Pour la cerise : forme deux petites sphères rouges foncées. Pour le citron : forme un ovale jaune avec des extrémités pointues. Chaque fruit doit avoir un dos plat pour une meilleure adhérence sur la barrette.",
+          "tip": "Fais les pièces plates au dos pour une meilleure adhérence."
+        },
+        {
+          "title": "Ajouter les détails",
+          "duration": "10 min",
+          "description": "Pour la fraise : ajoute des petits points blancs avec un cure-dent et une couronne de feuilles vertes. Pour la cerise : ajoute une tige verte et une feuille. Pour le citron : ajoute une tranche avec des segments blancs. Ajoute des visages kawaii sur chaque fruit : yeux noirs, bouche, joues roses.",
+          "tip": "Fais les pépins avec une pointe fine pour que les fruits restent légers."
+        },
+        {
+          "title": "Cuire et coller",
+          "duration": "5 min",
+          "description": "Place les fruits sur une plaque recouverte de papier cuisson. Fais cuire selon les instructions du fabricant. Laisse refroidir complètement. Applique du vernis brillant pour protéger. Colle chaque fruit sur sa barrette avec de la colle forte. Laisse sécher 24h avant utilisation.",
+          "tip": "Colle les barrettes après cuisson."
+        }
+      ],
+      "tips": [
+        "Fais les pépins avec une pointe fine pour que les fruits restent légers."
+      ],
+      "commonMistakes": [
+        "Faire des pièces trop épaisses : la barrette devient lourde."
+      ],
+      "variations": [
+        "Des motifs de fleurs, d'étoiles ou de petits cœurs."
+      ]
+    },
+    "coupelleTerrazzo": {
+      "title": "Coupelle effet terrazzo",
+      "description": "Réalise une coupelle au look terrazzo moderne avec de petits éclats colorés.",
+      "materials": [
+        "Pâte autodurcissante blanche (300g)",
+        "Pâte polymère de 3 couleurs pour les éclats (corail, sauge, marine)",
+        "Un bol ou une assiette pour le moule",
+        "Papier de verre fin (grain 400)",
+        "Vernis mat",
+        "Film étirable",
+        "Un rouleau"
+      ],
+      "cure": {
+        "type": "air-dry",
+        "note": "Séchage 24 à 48 h. Si tu mélanges avec de la polymère, vérifie que le mélange sèche correctement."
+      },
+      "instructions": [
+        {
+          "title": "Préparer les éclats",
+          "duration": "15 min",
+          "description": "Étale tes pâtes colorées en fines plaques de 2 mm d'épaisseur. Laisse-les durcir légèrement pendant 10 minutes. Avec un couteau ou des ciseaux, coupe-les en petits morceaux irréguliers de tailles variées (de 2 mm à 1 cm). Mélange délicatement tous les éclats.",
+          "tip": "Hache les éclats en morceaux de tailles variées pour un effet plus naturel."
+        },
+        {
+          "title": "Incruster dans la pâte",
+          "duration": "15 min",
+          "description": "Étale la pâte blanche autodurcissante en une plaque de 5 mm d'épaisseur. Disperse les éclats colorés sur toute la surface en les pressant légèrement dans la pâte. Passe le rouleau par-dessus pour les aplatir et les incruster. La surface doit être lisse.",
+          "tip": "Passe le rouleau dans tous les sens pour bien intégrer les éclats."
+        },
+        {
+          "title": "Façonner la coupelle",
+          "duration": "10 min",
+          "description": "Découpe un cercle dans la pâte terrazzo. Tapisse un bol de film étirable et pose le cercle dedans en l'adaptant à la courbure. Lisse les bords qui remontent. Laisse sécher 24 à 48h sans démouler.",
+          "tip": "Retourne la coupelle à mi-séchage pour que le dessous sèche aussi."
+        },
+        {
+          "title": "Séchage et finition",
+          "duration": "30 min active + séchage",
+          "description": "Une fois complètement sèche, sors la coupelle du moule. Ponce légèrement les bords et la surface avec du papier de verre fin. Essuie la poussière. Applique un vernis mat pour protéger et faire ressortir les couleurs. Laisse sécher le vernis 24h avant utilisation.",
+          "tip": "Ponce légèrement après séchage pour révéler les éclats."
+        }
+      ],
+      "tips": [
+        "Hache les éclats en morceaux de tailles variées pour un effet plus naturel.",
+        "Ponce légèrement après séchage pour révéler les éclats."
+      ],
+      "commonMistakes": [
+        "Trop de couleurs : garde 3 teintes maximum pour un rendu harmonieux."
+      ],
+      "variations": [
+        "Un plateau pour bagues, un dessous de verre ou un cendrier déco."
+      ]
+    },
+    "miniCactus": {
+      "title": "Mini cactus fleuri",
+      "description": "Crée un cactus miniature avec une petite fleur rose, dans son pot en terre cuite.",
+      "materials": [
+        "Pâte polymère verte, rose et terracotta",
+        "Outil à pointe fine",
+        "Cure-dent pour les épines",
+        "Vernis mat",
+        "Un petit pot en terre cuite ou en pâte",
+        "Du papier cuisson"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Cuis le pot et le cactus ensemble."
+      },
+      "instructions": [
+        {
+          "title": "Modeler le pot",
+          "duration": "10 min",
+          "description": "Forme un petit pot évasé terracotta avec un rebord légèrement plus large. Creuse l'intérieur. Si tu utilises un vrai pot en terre cuite, nettoie-le et laisse sécher. Texture l'extérieur avec de fines stries verticales pour imiter la terre cuite.",
+          "tip": "Le pot doit être stable : vérifie qu'il ne bascule pas."
+        },
+        {
+          "title": "Créer le cactus",
+          "duration": "10 min",
+          "description": "Forme un corps ovale vert qui s'élance vers le haut. Ajoute un ou deux petits bras sur les côtés en formant des cylindres courbés. Presse fermement pour que les bras adhèrent. Avec un cure-dent, marque des stries verticales pour imiter les côtes du cactus.",
+          "tip": "Trop de bras sur le cactus : il devient instable."
+        },
+        {
+          "title": "Ajouter la fleur",
+          "duration": "10 min",
+          "description": "Forme une mini fleur rose avec cinq pétales : cinq petites gouttes disposées en cercle autour d'un centre jaune. Pose-la au sommet du cactus en la pressant légèrement. Ajoute de minuscules points blancs sur le cactus pour les épines avec un cure-dent.",
+          "tip": "Fais les épines avec de minuscules points blancs plutôt que de vraies pointes."
+        },
+        {
+          "title": "Cuire et assembler",
+          "duration": "10 min",
+          "description": "Place le pot et le cactus sur une plaque recouverte de papier cuisson. Fais cuire selon les instructions du fabricant. Laisse refroidir complètement. Vernis la partie verte du cactus pour lui donner de l'éclat. Laisse le pot mat pour un effet terre cuite naturelle. Colle le cactus dans le pot si nécessaire.",
+          "tip": "Cuis le pot et le cactus ensemble pour gagner du temps."
+        }
+      ],
+      "tips": [
+        "Fais les épines avec de minuscules points blancs plutôt que de vraies pointes."
+      ],
+      "commonMistakes": [
+        "Trop de bras sur le cactus : il devient instable."
+      ],
+      "variations": [
+        "Un trio de cactus de tailles différentes."
+      ]
+    },
+    "supportBagueChat": {
+      "title": "Support à bague petit chat",
+      "description": "Fabrique un petit chat dont les bras tendus servent à poser tes bagues.",
+      "materials": [
+        "Pâte polymère blanche, crème et rose",
+        "Outil à pointe boule",
+        "Peinture noire ou pâte noire",
+        "Vernis brillant",
+        "Du papier cuisson"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Pose-le à plat sur du papier cuisson."
+      },
+      "instructions": [
+        {
+          "title": "Former le corps",
+          "duration": "10 min",
+          "description": "Façonne un corps rond et aplatis légèrement le dessous pour qu'il soit stable. La forme doit être celle d'un chat assis : un triangle arrondi avec une base large. Lisse toutes les imperfections avec un doigt humidifié.",
+          "tip": "Le chat doit être assez lourd à la base pour ne pas basculer."
+        },
+        {
+          "title": "Ajouter les bras",
+          "duration": "5 min",
+          "description": "Modèle deux bras tendus vers l'avant et colle-les sur les côtés du corps. Les bras doivent être assez épais pour supporter le poids des bagues. Forme une petite queue qui s'enroule à côté du corps.",
+          "tip": "Rends les bras bien épais pour qu'ils supportent le poids des bagues."
+        },
+        {
+          "title": "Créer le visage",
+          "duration": "10 min",
+          "description": "Ajoute deux triangles pour les oreilles et creuse légèrement l'intérieur. Forme un petit museau triangulaire rose. Ajoute les yeux avec de la peinture noire ou de la pâte noire : deux grands ovales ou deux petits points. Ajoute les joues roses et les moustaches avec un cure-dent.",
+          "tip": "Oublier de lisser le dessous : la pièce ne tient pas bien à plat."
+        },
+        {
+          "title": "Cuire et vernir",
+          "duration": "5 min",
+          "description": "Pose le chat à plat sur du papier cuisson. Fais cuire selon les indications du fabricant. Laisse refroidir complètement. Applique un vernis brillant pour protéger et faire briller. Ton support à bagues est prêt !",
+          "tip": "Pose-le à plat sur du papier cuisson."
+        }
+      ],
+      "tips": [
+        "Rends les bras bien épais pour qu'ils supportent le poids des bagues."
+      ],
+      "commonMistakes": [
+        "Oublier de lisser le dessous : la pièce ne tient pas bien à plat."
+      ],
+      "variations": [
+        "Version chien, lapin ou ours."
+      ]
+    },
+    "bouclesPapillon": {
+      "title": "Boucles d'oreilles papillon",
+      "description": "Crée des boucles d'oreilles papillon colorées avec des ailes délicates et des motifs naturels.",
+      "materials": [
+        "Pâte polymère de plusieurs couleurs (rose, jaune, violet, turquoise)",
+        "Emporte-pièce papillon ou gabarit en papier",
+        "Un rouleau acrylique",
+        "Crochets pour boucles d'oreilles",
+        "Anneaux de jonction",
+        "Un cure-dent pour les trous",
+        "Vernis brillant",
+        "Pince plate"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Cuire à 110-130°C selon le fabricant."
+      },
+      "instructions": [
+        {
+          "title": "Préparer les ailes",
+          "duration": "15 min",
+          "description": "Étale la pâte en une plaque de 3 mm d'épaisseur. Superpose des couches de couleurs différentes pour créer un dégradé. Découpe deux grandes ailes et deux petites ailes pour chaque boucle. Lisse les bords avec un doigt humidifié.",
+          "tip": "Utilise un gabarit en papier pour des ailes symétriques."
+        },
+        {
+          "title": "Créer le corps",
+          "duration": "10 min",
+          "description": "Forme un petit cylindre pour le corps du papillon. Avec un cure-dent, marque des stries horizontales. Ajoute deux petites antennes en formant des boudins très fins. Fixe le corps entre les ailes en pressant légèrement.",
+          "tip": "Le corps doit être proportionné : environ 1/3 de la taille des ailes."
+        },
+        {
+          "title": "Décorer",
+          "duration": "15 min",
+          "description": "Avec un outil à pointe, dessine les motifs sur les ailes : des cercles, des lignes, des points. Ajoute des détails en pâte contrastante. Crée des effets de texture en pressant légèrement. Ajoute des paillettes si tu veux.",
+          "tip": "Les motifs doivent être symétriques sur les deux ailes."
+        },
+        {
+          "title": "Cuire et assembler",
+          "duration": "10 min",
+          "description": "Perce les trous pour les crochets avec une paille. Fais cuire selon les instructions. Laisse refroidir. Applique du vernis brillant. Monte les boucles avec les anneaux et crochets.",
+          "tip": "Vernis seulement après refroidissement complet."
+        }
+      ],
+      "tips": [
+        "Utilise un gabarit en papier pour des ailes parfaitement symétriques.",
+        "Varie les couleurs pour créer des papillons uniques."
+      ],
+      "commonMistakes": [
+        "Ailes trop fines : elles cassent facilement. Reste à 3 mm minimum."
+      ],
+      "variations": [
+        "Version avec des fleurs sur les ailes.",
+        "Version avec des ailes transparentes en pâte translucide."
+      ]
+    },
+    "marquePageChat": {
+      "title": "Marque-page chat lisant",
+      "description": "Fabrique un marque-page en forme de chat qui lit un livre, parfait pour les amoureux des livres.",
+      "materials": [
+        "Pâte polymère beige ou blanche",
+        "Pâte rose et noire",
+        "Un rouleau",
+        "Un cure-dent",
+        "Un ruban ou une cordelette",
+        "Un emporte-pièce rectangulaire ou un couteau",
+        "Vernis mat"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Cuire à plat sur du papier cuisson."
+      },
+      "instructions": [
+        {
+          "title": "Former la base",
+          "duration": "5 min",
+          "description": "Étale la pâte beige en une plaque de 3 mm d'épaisseur. Découpe un rectangle de 4 cm sur 8 cm pour la base du marque-page. Arrondis les coins. Lisse les bords.",
+          "tip": "La base doit être assez grande pour être visible entre les pages."
+        },
+        {
+          "title": "Modeler le chat",
+          "duration": "10 min",
+          "description": "Forme une petite tête ronde de chat avec deux oreilles triangulaires. Ajoute un petit corps assis. Positionne le chat au bas du rectangle, comme s'il lisait. Ajoute un petit livre ouvert entre ses pattes avec de la pâte blanche.",
+          "tip": "Le chat doit être en relief pour un effet 3D."
+        },
+        {
+          "title": "Ajouter les détails",
+          "duration": "5 min",
+          "description": "Dessine le visage : yeux fermés, nez rose, moustaches. Ajoute des motifs sur le rectangle : des lignes pour imiter des pages, des étoiles, des cœurs. Texture le livre avec des stries fines.",
+          "tip": "Utilise un cure-dent pour les détails fins."
+        },
+        {
+          "title": "Cuire et finir",
+          "duration": "5 min",
+          "description": "Perce un trou en haut avec une paille. Fais cuire selon les instructions. Laisse refroidir. Applique du vernis mat. Passe un ruban ou une cordelette dans le trou.",
+          "tip": "Le ruban permet de repérer facilement ta page."
+        }
+      ],
+      "tips": [
+        "Ajoute des motifs personnalisés : prénom, citation favorite.",
+        "Crée d'autres animaux : chien, hibou, lapin."
+      ],
+      "commonMistakes": [
+        "Chat trop lourd : il fait plier le marque-page. Garde-le petit."
+      ],
+      "variations": [
+        "Version avec plusieurs chats empilés.",
+        "Version avec un paysage de fond."
+      ]
+    },
+    "tasseCafe": {
+      "title": "Tasse à café coquette",
+      "description": "Sculpte une tasse de café latte avec un visage adorable et des motifs cœur dans la mousse.",
+      "materials": [
+        "Pâte polymère blanche, beige, rose et marron",
+        "Un rouleau",
+        "Un outil à pointe boule",
+        "Un cure-dent",
+        "Un petit bol comme moule",
+        "Vernis brillant"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Cuire le bol et la tasse séparément."
+      },
+      "instructions": [
+        {
+          "title": "Former la tasse",
+          "duration": "20 min",
+          "description": "Forme un cylindre évasé pour la tasse. Creuse l'intérieur. Ajoute une anse en formant un anneau et en le fixant sur le côté. Lisse toutes les jonctions. La tasse doit être assez grande pour accueillir le café (environ 4 cm de diamètre).",
+          "tip": "Utilise un petit bol comme moule pour la forme intérieure."
+        },
+        {
+          "title": "Créer le café",
+          "duration": "15 min",
+          "description": "Remplis la tasse avec de la pâte beige pour le café. Lisse la surface. Avec de la pâte blanche, forme des motifs de cœur ou de feuilles sur la surface pour imiter l'art latte. Ajoute une petite cuillère en pâte métallique.",
+          "tip": "Les motifs doivent être en relief pour être visibles."
+        },
+        {
+          "title": "Ajouter le visage",
+          "duration": "10 min",
+          "description": "Sur le devant de la tasse, ajoute deux grands yeux noirs avec des reflets blancs. Dessine un petit sourire. Ajoute des joues roses. Tu peux ajouter des bras et des jambes pour que la tasse semble vivante.",
+          "tip": "Le visage doit être centré et proportionné."
+        },
+        {
+          "title": "Cuire et vernir",
+          "duration": "10 min",
+          "description": "Fais cuire selon les instructions. Laisse refroidir. Applique du vernis brillant sur le café pour lui donner de l'éclat. Laisse la tasse mate ou vernis-la légèrement.",
+          "tip": "Vernis seulement le café pour un contraste réaliste."
+        }
+      ],
+      "tips": [
+        "Crée d'autres boissons : thé, chocolat chaud, smoothie.",
+        "Ajoute des motifs saisonniers : flocon de neige, feuille d'automne."
+      ],
+      "commonMistakes": [
+        "Tasse trop fine : elle casse facilement. Reste à 3 mm minimum."
+      ],
+      "variations": [
+        "Version avec un couvercle et une paille.",
+        "Version avec des motifs de saison."
+      ]
+    },
+    "boiteCoquillage": {
+      "title": "Boîte à trésors coquillage",
+      "description": "Fabrique une boîte à bijoux en forme de coquillage nacré avec des reflets irisés.",
+      "materials": [
+        "Pâte autodurcissante blanche (500g)",
+        "Peintures nacrées (rose, bleu, violet)",
+        "Un bol comme moule",
+        "Film étirable",
+        "Un couteau de précision",
+        "Du papier de verre fin",
+        "Vernis brillant",
+        "Un fermoir décoratif"
+      ],
+      "cure": {
+        "type": "air-dry",
+        "note": "Séchage 48h complet."
+      },
+      "instructions": [
+        {
+          "title": "Créer les deux moitiés",
+          "duration": "30 min",
+          "description": "Étale la pâte en une plaque de 5 mm. Tapisse deux bols de tailles légèrement différentes de film étirable. Dépose la pâte dans chaque bol pour former les deux moitiés du coquillage. Laisse sécher 48h. Démoule délicatement.",
+          "tip": "La moitié supérieure doit être légèrement plus grande pour s'emboîter."
+        },
+        {
+          "title": "Sculpter les détails",
+          "duration": "20 min",
+          "description": "Sur le dessus du coquillage, sculpte des stries radiales pour imiter les coquillages. Avec un outil à pointe, marque des lignes fines et régulières. Lisse les bords. Ajoute une charnière en pâte ou utilise un fermoir métallique.",
+          "tip": "Les stries doivent converger vers un point central."
+        },
+        {
+          "title": "Peindre l'effet nacré",
+          "duration": "25 min",
+          "description": "Mélange des peintures nacrées rose, bleu et violet. Applique en couches fines avec une éponge pour créer un effet irisé. Ajoute des reflets dorés sur les stries. Laisse sécher entre chaque couche.",
+          "tip": "L'effet nacré vient de la superposition de couches translucides."
+        },
+        {
+          "title": "Finition",
+          "duration": "15 min",
+          "description": "Ponce légèrement les imperfections. Applique un vernis brillant pour protéger et faire briller. Installe le fermoir. Ta boîte à trésors est prête !",
+          "tip": "Ajoute un petit miroir à l'intérieur pour plus d'élégance."
+        }
+      ],
+      "tips": [
+        "Utilise de vrais coquillages comme modèle.",
+        "Ajoute des perles ou des strass pour décorer."
+      ],
+      "commonMistakes": [
+        "Pâte trop fine : la boîte casse en ouvrant. Reste à 5 mm minimum."
+      ],
+      "variations": [
+        "Version en forme d'étoile de mer.",
+        "Version avec des motifs de vagues."
+      ]
+    },
+    "porteSavonCitron": {
+      "title": "Porte-savon citron",
+      "description": "Crée un porte-savon en forme de citron tranché, frais et vitaminé pour ta salle de bain.",
+      "materials": [
+        "Pâte autodurcissante blanche et jaune",
+        "Peintures acryliques (jaune, vert, blanc)",
+        "Un couteau",
+        "Un bol comme moule",
+        "Film étirable",
+        "Vernis imperméable"
+      ],
+      "cure": {
+        "type": "air-dry",
+        "note": "Séchage 48h + vernis imperméable."
+      },
+      "instructions": [
+        {
+          "title": "Former la base",
+          "duration": "10 min",
+          "description": "Étale la pâte blanche en une plaque de 5 mm. Découpe un cercle de 12 cm de diamètre. Tapisse un bol de film étirable et pose le cercle dedans pour donner une forme creuse. Laisse sécher 24h.",
+          "tip": "La base doit être assez grande pour accueillir un savon."
+        },
+        {
+          "title": "Créer le citron",
+          "duration": "15 min",
+          "description": "Forme une demi-sphère jaune pour le citron. Aplatis le dessous. Avec un couteau, découpe le citron en tranche. Texture la surface avec des stries radiales pour imiter les segments. Ajoute une petite feuille verte et une tige.",
+          "tip": "Les segments doivent être bien marqués pour un effet réaliste."
+        },
+        {
+          "title": "Peindre",
+          "duration": "5 min",
+          "description": "Peins le citron en jaune vif. Ajoute des détails blancs pour la chair du citron. Peins la feuille en vert. Laisse sécher.",
+          "tip": "Utilise des teintes vives pour un effet frais."
+        },
+        {
+          "title": "Assembler et vernir",
+          "duration": "5 min",
+          "description": "Colle le citron sur la base. Applique un vernis imperméable pour protéger de l'eau. Laisse sécher 24h avant utilisation.",
+          "tip": "Le vernis imperméable est essentiel pour une utilisation en salle de bain."
+        }
+      ],
+      "tips": [
+        "Crée d'autres fruits : orange, pamplemousse, lime.",
+        "Ajoute un drain pour l'eau."
+      ],
+      "commonMistakes": [
+        "Vernis non imperméable : la pièce se dégrade à l'eau."
+      ],
+      "variations": [
+        "Version avec plusieurs tranches de citron.",
+        "Version avec des fleurs de citronnier."
+      ]
+    },
+    "renardEndormi": {
+      "title": "Figurine renard endormi",
+      "description": "Sculpte un petit renard endormi, roulé en boule avec sa queue touffue, parfait pour la déco.",
+      "materials": [
+        "Pâte polymère orange, blanche et noire",
+        "Un outil à pointe boule",
+        "Un cure-dent",
+        "Peinture noire",
+        "Vernis mat",
+        "Du papier cuisson"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Cuire à plat pour éviter le basculement."
+      },
+      "instructions": [
+        {
+          "title": "Former le corps",
+          "duration": "20 min",
+          "description": "Forme un gros ovale orange pour le corps du renard. Aplatis légèrement un côté pour qu'il soit stable. Le renard est roulé en boule, donc le corps doit être compact et rond.",
+          "tip": "Le corps doit être stable : vérifie qu'il ne bascule pas."
+        },
+        {
+          "title": "Ajouter la tête et les pattes",
+          "duration": "15 min",
+          "description": "Forme une tête ronde qui repose sur le corps. Ajoute deux oreilles triangulaires orange avec des intérieurs blancs. Modèle deux petites pattes avant qui dépassent. Ajoute une petite queue touffue en formant un cône et en texturant avec un cure-dent.",
+          "tip": "La queue doit être généreuse pour l'effet renard."
+        },
+        {
+          "title": "Dessiner le visage",
+          "duration": "10 min",
+          "description": "Dessine des yeux fermés en arcs avec de la peinture noire. Ajoute un petit nez noir et un museau blanc. Ajoute des joues roses. Le renard doit avoir l'air paisible et endormi.",
+          "tip": "Les yeux fermés donnent l'impression de sommeil."
+        },
+        {
+          "title": "Cuire et vernir",
+          "duration": "5 min",
+          "description": "Pose le renard à plat sur du papier cuisson. Fais cuire selon les instructions. Laisse refroidir. Applique un vernis mat pour un rendu doux.",
+          "tip": "Vernis mat pour un effet pelucheux."
+        }
+      ],
+      "tips": [
+        "Varie les couleurs : renard blanc, renard gris.",
+        "Ajoute un petit oreiller sous la tête."
+      ],
+      "commonMistakes": [
+        "Tête trop lourde : elle bascule. Garde-la proportionnée."
+      ],
+      "variations": [
+        "Version avec un petit oiseau sur le dos.",
+        "Version avec des étoiles autour."
+      ]
+    }
+  },
+
+  "techniques": {
+    "preparer-pate": {
+      "title": "Préparer et assouplir la pâte",
+      "duration": "15 min",
+      "description": "Apprenez à préparer une pâte homogène, à reconnaître la texture idéale pour le modelage et à éviter les erreurs de débutant.",
+      "objectives": [
+        "Comprendre la texture idéale pour modeler",
+        "Préparer une pâte souple et régulière",
+        "Éviter les erreurs de préparation"
+      ],
+      "materials": [
+        "Pâte à modeler adaptée au projet",
+        "Surface de travail propre",
+        "Outil de découpe adapté"
+      ],
+      "steps": [
+        "Lisez les instructions du fabricant et préparez la surface de travail.",
+        "Prenez une petite quantité de pâte.",
+        "Malaxez progressivement selon les recommandations du produit.",
+        "Vérifiez la texture et assurez-vous qu'elle se travaille facilement.",
+        "Formez une boule d'essai pour valider l'élasticité."
+      ],
+      "exercise": [
+        "Préparez une petite portion de pâte.",
+        "Formez une boule régulière.",
+        "Formez un petit cylindre sans déformer la pâte."
+      ],
+      "mistakes": [
+        "Travailler sur une surface sale.",
+        "Malaxer une pâte qui ne nécessite pas cette préparation.",
+        "Mélanger des produits incompatibles."
+      ],
+      "tip": "Travaillez par petites quantités. Si la pâte devient collante ou se fissure, consultez les recommandations du fabricant avant de continuer.",
+      "project": "Créez une petite boule parfaite et un cylindre régulier."
+    },
+    "formes-simples": {
+      "title": "Maîtriser les formes simples",
+      "duration": "20 min",
+      "description": "Apprenez à former des boules, des cylindres et des formes ovales pour construire vos créations.",
+      "objectives": [
+        "Créer des formes régulières",
+        "Maîtriser la pression des doigts",
+        "Assembler des formes simples"
+      ],
+      "materials": [
+        "Pâte à modeler",
+        "Surface de travail",
+        "Règle (optionnel)"
+      ],
+      "steps": [
+        "Divisez la pâte en portions comparables.",
+        "Roulez une portion entre vos paumes pour former une boule.",
+        "Roulez doucement pour obtenir un cylindre.",
+        "Ajustez les extrémités pour obtenir une forme ovale.",
+        "Comparez les formes pour vérifier leur régularité."
+      ],
+      "exercise": [
+        "Formez trois boules de tailles différentes.",
+        "Créez deux cylindres de longueurs différentes.",
+        "Réalisez un petit ensemble de formes harmonieuses."
+      ],
+      "mistakes": [
+        "Appuyer trop fort et déformer la pièce.",
+        "Changer brusquement la pression des doigts.",
+        "Ne pas vérifier la régularité des formes."
+      ],
+      "tip": "Des mouvements légers et réguliers donnent généralement un résultat plus homogène.",
+      "project": "Créez une petite composition de 5 formes simples."
+    },
+    "petales-fleurs": {
+      "title": "Modeler pétales et feuilles",
+      "duration": "25 min",
+      "description": "Découvrez comment transformer de petites portions de pâte en pétales et feuilles décoratifs.",
+      "objectives": [
+        "Créer des pétales fins et réguliers",
+        "Ajouter des nervures naturelles",
+        "Assembler une petite fleur"
+      ],
+      "materials": [
+        "Pâte de plusieurs couleurs",
+        "Petit outil arrondi",
+        "Surface lisse"
+      ],
+      "steps": [
+        "Formez de petites boules de pâte.",
+        "Aplatissez doucement chaque boule pour créer un pétale.",
+        "Amincissez légèrement une extrémité pour donner une forme naturelle.",
+        "Formez une feuille et ajoutez une nervure si nécessaire.",
+        "Assemblez les pièces pour réaliser une petite fleur."
+      ],
+      "exercise": [
+        "Créez cinq pétales de taille similaire.",
+        "Formez deux feuilles.",
+        "Assemblez les pièces pour réaliser une petite fleur."
+      ],
+      "mistakes": [
+        "Faire des pétales trop épais pour le projet.",
+        "Étirer trop une pièce fragile.",
+        "Appuyer excessivement avec les outils."
+      ],
+      "tip": "Préparez vos pièces avant de les assembler : la composition sera plus régulière.",
+      "project": "Créez une fleur complète avec 5 pétales et 2 feuilles."
+    },
+    "textures-details": {
+      "title": "Créer des textures et des détails",
+      "duration": "20 min",
+      "description": "Ajoutez des motifs, des reliefs et de petits détails pour personnaliser vos créations.",
+      "objectives": [
+        "Créer des motifs réguliers",
+        "Utiliser des outils de texture",
+        "Personnaliser une pièce"
+      ],
+      "materials": [
+        "Pâte à modeler",
+        "Outils de texture",
+        "Objets texturés adaptés"
+      ],
+      "steps": [
+        "Préparez une plaque de pâte d'épaisseur régulière.",
+        "Choisissez un outil propre et adapté.",
+        "Testez la pression sur une chute de pâte.",
+        "Répétez le motif avec un espacement régulier.",
+        "Nettoyez l'outil entre chaque utilisation."
+      ],
+      "exercise": [
+        "Créez trois motifs différents sur une chute de pâte.",
+        "Réalisez une rangée de motifs réguliers.",
+        "Choisissez une texture pour décorer une petite pièce."
+      ],
+      "mistakes": [
+        "Appuyer trop fort et déchirer la surface.",
+        "Utiliser un outil sale.",
+        "Multiplier les motifs sans cohérence."
+      ],
+      "tip": "Testez toujours sur une chute avant de texturer votre création finale.",
+      "project": "Décorez une petite plaque avec 3 textures différentes."
+    },
+    "assemblage": {
+      "title": "Assembler plusieurs pièces",
+      "duration": "25 min",
+      "description": "Apprenez à joindre plusieurs éléments pour obtenir une création stable et soignée.",
+      "objectives": [
+        "Assembler des pièces sans les déformer",
+        "Choisir la bonne méthode de jonction",
+        "Vérifier la stabilité"
+      ],
+      "materials": [
+        "Pièces modelées",
+        "Outil adapté",
+        "Support de travail"
+      ],
+      "steps": [
+        "Préparez les éléments et vérifiez leur position.",
+        "Identifiez la méthode de jonction adaptée au type de pâte.",
+        "Assemblez délicatement sans déformer les pièces.",
+        "Vérifiez la stabilité et suivez les instructions de séchage ou de cuisson.",
+        "Laissez sécher ou faites cuire selon les instructions."
+      ],
+      "exercise": [
+        "Créez deux formes simples.",
+        "Assemblez-les pour former un petit objet.",
+        "Vérifiez la solidité de la jonction sans forcer."
+      ],
+      "mistakes": [
+        "Assembler des pâtes incompatibles.",
+        "Utiliser une méthode de collage inadaptée.",
+        "Déplacer les pièces avant que la jonction soit stable."
+      ],
+      "tip": "La méthode d'assemblage dépend du matériau : consultez toujours les instructions du fabricant avant d'ajouter de l'eau, de la colle ou un autre produit.",
+      "project": "Assemblez un petit objet de 3 pièces."
+    },
+    "finitions": {
+      "title": "Réaliser des finitions parfaites",
+      "duration": "20 min",
+      "description": "Apprenez à inspecter, corriger et protéger vos créations avec des produits compatibles.",
+      "objectives": [
+        "Repérer les défauts",
+        "Corriger les imperfections",
+        "Appliquer une finition adaptée"
+      ],
+      "materials": [
+        "Création terminée",
+        "Outils de finition adaptés",
+        "Protection de surface si nécessaire"
+      ],
+      "steps": [
+        "Examinez la pièce et repérez les imperfections.",
+        "Corrigez les défauts uniquement avec une méthode adaptée au matériau.",
+        "Respectez les temps de séchage ou les instructions de cuisson.",
+        "Appliquez une finition uniquement si elle est compatible avec la pâte.",
+        "Nettoyez les outils après utilisation."
+      ],
+      "exercise": [
+        "Inspectez une petite création sous plusieurs angles.",
+        "Repérez trois détails à améliorer.",
+        "Rédigez une courte liste de contrôle avant de considérer la pièce comme terminée."
+      ],
+      "mistakes": [
+        "Appliquer du vernis avant le séchage complet.",
+        "Utiliser une finition incompatible.",
+        "Ignorer les consignes de ventilation ou de sécurité du produit."
+      ],
+      "tip": "La pâte autodurcissante et la pâte polymère ne se traitent pas de la même façon. Suivez toujours les instructions du produit.",
+      "project": "Terminez une pièce avec une finition adaptée."
+    }
+  },
+
+  "library": {
+    "eyebrow": "La bibliothèque",
+    "title": "Explorer les techniques",
+    "description": "Choisissez un thème, découvrez les explications et passez à la pratique.",
+    "searchPlaceholder": "Rechercher une technique...",
+    "categoryLabel": "Filtrer par catégorie",
+    "levelLabel": "Filtrer par niveau",
+    "difficultyLabel": "Filtrer par difficulté",
+    "showCompleted": "Afficher les terminées",
+    "showAll": "Tout afficher",
+    "addButton": "Ajouter",
+    "pdfButton": "PDF",
+    "emptyState": {
+      "title": "Aucune technique trouvée",
+      "description": "Essayez d'ajuster vos filtres ou d'ajouter une nouvelle technique.",
+      "resetButton": "Réinitialiser les filtres"
+    }
+  },
+  "workshop": {
+    "eyebrow": "Pratiquons",
+    "exercisesCompletedLabel": "exercices",
+    "title": "Mon atelier interactif",
+    "description": "Suivez les étapes, complétez les exercices et validez la technique lorsque vous êtes prêt.",
+    "objectivesTitle": "Objectifs",
+    "materialsTitle": "Matériel requis",
+    "stepsTitle": "Étapes à suivre",
+    "exerciseTitle": "Mon exercice pratique",
+    "exerciseDescription": "Cochez chaque exercice une fois terminé.",
+    "exercisesCompleted": "Exercices terminés",
+    "tipTitle": "L'astuce ClayBloom",
+    "avoidTitle": "À éviter",
+    "validateButton": "Marquer cette technique comme terminée",
+    "unvalidateButton": "Technique terminée — annuler la validation",
+    "validationNote": "Validez la technique lorsque vous avez fini la pratique. Vous pouvez modifier votre suivi à tout moment.",
+    "customBadge": "Personnalisé",
+    "journeyTitle": "Votre parcours",
+    "journeyDescription": "{{completed}} technique(s) sur {{total}}",
+    "progressLabel": "Progression",
+    "resetButton": "Réinitialiser ma progression",
+    "resetConfirm": "Effacer toutes les validations et tous les exercices ?",
+    "confirmButton": "Confirmer",
+    "cancelButton": "Annuler",
+    "storageTitle": "Vos données",
+    "storageNote": "Vos validations et exercices sont enregistrés sur cet appareil dans votre navigateur."
+  },
+  "hero": {
+    "badge": "L'atelier ClayBloom",
+    "title": "Apprenez les",
+    "titleHighlight": "techniques de modelage",
+    "description": "Découvrez les gestes essentiels, entraînez-vous avec des exercices guidés et progressez à votre rythme dans votre apprentissage créatif.",
+    "startButton": "Commencer l'apprentissage",
+    "exportButton": "Exporter en PDF",
+    "newTechniqueButton": "Nouvelle technique",
+    "progressLabel": "Ma progression",
+    "techniquesCompleted": "Techniques terminées",
+    "exercisesDone": "Exercices terminés",
+    "motivationText": "Chaque petit pas compte. Revenez à l'atelier pour reprendre là où vous vous êtes arrêté."
+  },
+  "cta": {
+    "title": "La créativité se construit avec la pratique",
+    "description": "Avancez pas à pas, prenez le temps d'expérimenter et gardez vos essais pour observer vos progrès. Chaque création est une opportunité d'apprendre.",
+    "button": "Retour à l'atelier"
+  },
+  "modal": {
+    "title": "Nouvelle technique",
+    "close": "Fermer",
+    "defaultProject": "Pratiquez cette technique sur une petite pièce",
+    "deleteConfirm": "Supprimer cette technique ? Cette action est irréversible.",
+    "form": {
+      "title": "Titre *",
+      "titlePlaceholder": "Ex : Créer un bol en argile",
+      "category": "Catégorie",
+      "level": "Niveau",
+      "difficulty": "Difficulté",
+      "duration": "Durée",
+      "durationPlaceholder": "Ex : 30 min",
+      "image": "URL de l'image (optionnel)",
+      "imagePlaceholder": "https://...",
+      "description": "Description *",
+      "descriptionPlaceholder": "Décrivez la technique en une phrase...",
+      "objectives": "Objectifs (un par ligne) *",
+      "objectivesPlaceholder": "Maîtriser le geste de base\nCréer une forme régulière",
+      "materials": "Matériel requis (un par ligne) *",
+      "materialsPlaceholder": "Pâte à modeler\nOutil de découpe",
+      "steps": "Étapes à suivre (une par ligne) *",
+      "stepsPlaceholder": "Préparer la surface\nFormer une boule\n...",
+      "exercise": "Exercices pratiques (un par ligne) *",
+      "exercisePlaceholder": "Créer 3 boules\nFormer un cylindre",
+      "mistakes": "Erreurs à éviter (une par ligne) *",
+      "mistakesPlaceholder": "Appuyer trop fort\nNe pas vérifier la régularité",
+      "tip": "Astuce ClayBloom *",
+      "tipPlaceholder": "Un conseil pratique pour réussir...",
+      "project": "Projet final (optionnel)",
+      "projectPlaceholder": "Ex : Réaliser un petit vase décoratif"
+    },
+    "errors": {
+      "titleRequired": "Le titre est requis",
+      "descriptionRequired": "La description est requise",
+      "objectivesRequired": "Les objectifs sont requis",
+      "materialsRequired": "Le matériel est requis",
+      "stepsRequired": "Les étapes sont requises",
+      "exerciseRequired": "Les exercices sont requis",
+      "mistakesRequired": "Les erreurs à éviter sont requises",
+      "tipRequired": "L'astuce est requise"
+    },
+    "submit": "Ajouter la technique",
+    "cancel": "Annuler"
+  },
+  "categories": {
+    "all": "Toutes",
+    "basics": "Les bases",
+    "gestures": "Les gestes",
+    "decoration": "Décoration",
+    "assembly": "Assemblage",
+    "finishes": "Finitions",
+    "custom": "Personnalisé"
+  },
+  "levels": {
+    "all": "Tous",
+    "beginner": "Débutant",
+    "intermediate": "Intermédiaire",
+    "advanced": "Avancé"
+  },
+  "difficulties": {
+    "all": "Toutes",
+    "easy": "Facile",
+    "medium": "Moyen",
+    "hard": "Difficile"
+  },
+  "buttons": {
+    "learn": "Apprendre",
+    "review": "Réviser",
+    "delete": "Supprimer",
+    "completed": "Terminée",
+    "custom": "Personnalisé"
+  },
+  "pdf": {
+    "title": "Guide des techniques",
+    "footer": "Document généré par ClayBloom - L'atelier créatif de modelage",
+    "progress": "Progression : {{percentage}}% • {{completed}}/{{total}} techniques terminées",
+    "printError": "Impossible de lancer l'impression. Veuillez réessayer.",
+    "objectives": "Objectifs",
+    "materials": "Matériel requis",
+    "steps": "Étapes à suivre",
+    "exercises": "Exercices pratiques",
+    "tip": "Astuce ClayBloom",
+    "mistakes": "Erreurs à éviter",
+    "project": "Projet final",
+    "subtitle": "Guide complet des techniques — {{count}} techniques • {{date}}"
+  }
+}

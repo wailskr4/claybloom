@@ -1,0 +1,1896 @@
+{
+  "tutorials": {
+    "eyebrow": "My creative studio",
+    "title": "Every creation begins with a little step.",
+    "description": "Learn at your own pace with illustrated tutorials, track your progress, and turn your ideas into lovely creations.",
+    "explore": "Explore tutorials",
+    "available": "Available tutorials",
+    "completed": "Completed tutorials",
+    "progress": "My overall progress",
+    "firstSteps": "Your first steps",
+    "beginners": "Getting started",
+    "continue": "Continue my tutorials",
+    "successes": "Your achievements",
+    "all": "Explore all tutorials",
+    "search": "Search for a creation...",
+    "category": "Category",
+    "level": "Level",
+    "allCategories": "All categories",
+    "allLevels": "All levels",
+    "found": "tutorial(s) found",
+    "reset": "Reset filters",
+    "start": "Start tutorial",
+    "resume": "Resume",
+    "review": "Review tutorial",
+    "finished": "Completed",
+    "notStarted": "Not started",
+    "inProgress": "In progress",
+    "empty": "No tutorials found",
+    "emptyDescription": "Try another keyword or change your filters.",
+    "exploreButton": "Explore tutorials",
+    "availableCount": "Available tutorials",
+    "completedCount": "Completed tutorials",
+    "globalProgressTitle": "My overall progress",
+    "globalProgressDesc": "Steps completed across all guides",
+
+    "beginnersEyebrow": "Your first steps",
+    "beginnersTitle": "To get started",
+    "beginnersDesc": "Start with accessible projects and discover the joy of modeling.",
+    "beginnersEmptyTitle": "You've discovered all beginner projects!",
+    "beginnersEmptyDesc": "Explore other tutorials to discover new techniques.",
+
+    "inProgressEyebrow": "Pick up where you left off",
+    "inProgressTitle": "Continue my tutorials",
+    "inProgressDesc": "Your ongoing projects are here. Your progress is saved on this device.",
+    "inProgressEmptyTitle": "Your next project is waiting",
+    "inProgressEmptyDesc": "Start a tutorial and check off its steps as you go. You'll find it here.",
+
+    "completedEyebrow": "Your achievements",
+    "completedTitle": "Completed tutorials",
+    "completedDesc": "Find the guides you have fully completed.",
+    "completedEmptyTitle": "Your first success is coming",
+    "completedEmptyDesc": "When you check off all steps in a tutorial, it will appear here.",
+
+    "exploreEyebrow": "Up to you",
+    "exploreAllTitle": "Explore all tutorials",
+    "exploreAllDesc": "Search for a creation or choose a category and level that suit you.",
+    "searchPlaceholder": "Search for a creation...",
+    "categoryLabel": "Category",
+    "levelLabel": "Level",
+    "foundCount": "tutorial(s) found",
+    "resetFilters": "Reset filters",
+    "noResultTitle": "No tutorials found",
+    "noResultDesc": "Try another keyword or change your filters.",
+
+    "cardSweetImage": "A creation full of sweetness",
+    "stepsCount": "steps",
+    "statusNotStarted": "Not started",
+    "statusInProgress": "In progress",
+    "statusCompleted": "Completed",
+    "progressNotStarted": "Ready to start",
+    "progressCompleted": "Tutorial completed",
+    "btnReview": "Review tutorial",
+    "btnResume": "Resume",
+    "btnStart": "Start",
+    "footer": "Every step is a little victory 🌸 — ClayBloom"
+  },
+  "navbar": {
+    "tagline": "Create, shape, and let your creativity bloom",
+    "home": "Home",
+    "creations": "Creations",
+    "tutorials": "Tutorials",
+    "techniques": "Techniques",
+    "searchCreation": "Search for a creation",
+    "start": "Get started",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "exploreCreations": "Explore creations"
+  },
+  "home": {
+    "heroBadge": "Your little creative studio",
+    "heroTitle": "Little ideas,",
+    "heroTitleAccent": "big creations.",
+    "heroDescription": "Discover how to transform modeling clay into delicate flowers, kawaii figurines, and adorable little objects. One step at a time, at your own pace.",
+    "exploreTutorials": "Explore tutorials",
+    "learnTechniques": "Learn techniques",
+    "easyToFollow": "Easy to follow",
+    "beginnerFriendly": "Beginner-friendly",
+    "creative": "100% creativity",
+    "featuredLabel": "Your next project",
+    "featuredTitle": "A lovely little bouquet",
+    "featuredDescription": "Create something uniquely yours",
+    "categoriesEyebrow": "Your creative universe",
+    "categoriesTitle": "What would you like to create?",
+    "categoriesDescription": "Choose a category and find inspiration for your next project.",
+    "viewAllCreations": "View all creations",
+    "tutorialsEyebrow": "Studio favorites",
+    "tutorialsTitle": "Creations to try",
+    "tutorialsDescription": "Discover inspiring projects and keep your favorite tutorials close at hand.",
+    "emptyTutorials": "Our first tutorials are coming soon!",
+    "viewAllTutorials": "Explore all tutorials",
+    "techniquesEyebrow": "Let's learn together",
+    "techniquesTitle": "Little techniques that make a big difference.",
+    "techniquesDescription": "Discover essential modeling techniques through simple explanations and improve at your own pace.",
+    "exploreTechniques": "Explore techniques"
+  },
+
+  "creations": {
+    "hero": {
+      "badge": "My creative world",
+      "title": "Bring your ideas",
+      "highlight": "to life",
+      "description": "Explore our clay modelling tutorials, discover new techniques, and create beautiful pieces at your own pace."
+    },
+    "search": {
+      "label": "Find a creation",
+      "placeholder": "Search for a tutorial..."
+    },
+    "filters": {
+      "category": "Category",
+      "allCategories": "All categories",
+      "difficulty": "Difficulty level",
+      "allLevels": "All levels",
+      "progress": "My progress",
+      "allStatuses": "All statuses"
+    },
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "progress": {
+      "notStarted": "Not started",
+      "inProgress": "In progress",
+      "completed": "Completed"
+    },
+    "results": {
+      "all": "All creations",
+      "favorites": "My favorites",
+      "count_one": "{{count}} creation found",
+      "count_other": "{{count}} creations found",
+      "count": "{{count}} creation(s) found"
+    },
+    "tabs": {
+      "all": "Explore all",
+      "favorites": "My favorites"
+    },
+    "empty": {
+      "noFavorites": "No favorites yet",
+      "noResults": "No creations found",
+      "favoritesDescription": "Creations you add to your favorites will appear here.",
+      "resultsDescription": "Try another keyword or adjust your filters to discover more creations.",
+      "reset": "Reset filters"
+    }
+  },
+  "tutorialCard": {
+    "progressAria": "Progress of {{title}}",
+    "stepsProgress": "{{completed}} / {{total}} steps completed",
+    "stepsCount_one": "{{count}} step",
+    "stepsCount_other": "{{count}} steps",
+    "discoverGuide": "Explore the guide"
+  },
+  "categorie": {
+    "flowers": "Flowers & bouquets",
+    "kawaiiFigures": "Kawaii figures",
+    "smilingFlowers": "Smiling flowers",
+    "kawaiiSweets": "Kawaii sweets",
+    "jewelry": "Jewelry & accessories",
+    "homeDecor": "Home decor"
+  },
+  "categoryCount_one": "{{count}} tutorial",
+  "categoryCount_other": "{{count}} tutorials",
+
+  "notFoundTitle": "Tutorial not found",
+  "notFoundDesc": "This guide does not exist or is no longer available.",
+  "backToCreations": "Back to creations",
+  "backShort": "Back",
+  "allCreations": "All creations",
+  "breadcrumbHome": "Home",
+  "breadcrumbCreations": "Creations",
+  "sweetImage": "A creation full of sweetness",
+  "stepsLabel": "steps",
+  "startTutorialBtn": "Start tutorial",
+  "removeFavorite": "Remove from favorites",
+  "addFavorite": "Add to favorites",
+  "paletteTitle": "Color palette",
+  "paletteDesc": "The suggested shades for your creation.",
+  "beforeStarting": "Before you start",
+  "materialsTitle": "Your creative materials",
+  "materialsDesc": "Check off the items you have already prepared.",
+  "materialsCount": "{{checked}} / {{total}} items prepared",
+  "noMaterials": "No specific materials were specified for this tutorial.",
+  "curePolymer": "Polymer clay: baking required",
+  "cureAirDry": "Air-dry clay: air drying",
+  "cureDefault": "Drying or finishing",
+  "cureNotice": "Drying and finishing",
+  "cureWarning": "Always follow your clay manufacturer's instructions, especially for baking temperature and duration.",
+  "yourTurn": "Your turn to play",
+  "stepsCreationTitle": "Creation steps",
+  "stepsCreationDesc": "Take your time and go at your own pace.",
+  "yourProgress": "Your progress",
+  "stepsProgress": "{{completed}} of {{total}} step(s)",
+  "stepCompleted": "Step completed",
+  "markAsCompleted": "Mark as completed",
+  "congratsTitle": "Well done, you're finished!",
+  "congratsDesc": "Your creation is complete. Congratulations on this lovely project!",
+  "exploreCreations": "Explore creations",
+  "resetProgress": "Reset my progress",
+  "atelierSecrets": "Studio secrets",
+  "successTitle": "For a successful creation",
+  "successDesc": "A few tips to personalize your result and avoid common mistakes.",
+  "tipsTitle": "Practical tips",
+  "mistakesTitle": "Mistakes to avoid",
+  "variationsTitle": "Try these variations too",
+
+  "tutorialDetail": {
+    "materialsHint": "Check off the items you have prepared.",
+    "materialsTitle": "Your creative materials",
+    "instructionsTitle": "Steps for completion",
+    "progressTitle": "Your progress",
+    "addFavorite": "Add to favorites",
+    "removeFavorite": "Remove from favorites",
+    "variationsTitle": "Try these variations too",
+    "mistakesTitle": "Mistakes to avoid",
+    "tipsTitle": "Practical tips",
+    "notFound": "Tutorial not found",
+    "notFoundDescription": "This guide doesn't exist or is no longer available.",
+    "backToCreations": "Back to creations",
+    "breadcrumbAria": "Breadcrumb",
+    "resetProgress": "Reset my progress",
+    "imageUnavailable": "Image unavailable"
+  },
+
+  "tutorialData": {
+    "bouquetPastel": {
+      "title": "A pastel flower bouquet",
+      "description": "Make a pretty bouquet of soft-colored flowers to decorate your space.",
+      "materials": [
+        "Self-hardening or polymer clay (pale pink, lavender, mint, cream white)",
+        "A small acrylic roller",
+        "A fine detail tool (stylus or toothpick)",
+        "Floral wire or suitable stems",
+        "A precision knife or round cookie cutter",
+        "Some strong glue"
+      ],
+      "instructions": [
+        {
+          "title": "Prepare the clay",
+          "duration": "10 min",
+          "description": "Choose three or four pastel colors. Gently knead each color between your hands for 2-3 minutes until you get a soft, homogeneous clay. If the clay is too hard, warm it between your palms. Divide each color into equal small portions.",
+          "tip": "Work on a clean, smooth surface, like a glass board or baking paper."
+        },
+        {
+          "title": "Form the petals",
+          "duration": "15 min",
+          "description": "For each flower, create 5 to 7 small pea-sized balls. Flatten each ball between your thumb and index finger to form oval petals about 3-4 mm thick. The outer petals should be slightly larger than the inner ones. Smooth the edges with your slightly moistened finger.",
+          "tip": "Keep the petals you're not using yet under plastic wrap to prevent them from drying out."
+        },
+        {
+          "title": "Assemble the flowers",
+          "duration": "10 min",
+          "description": "Start with the center: form a small ball of contrasting color (pale yellow or white). Arrange the petals around, slightly overlapping each petal on the previous one, like tiles. Gently press the center to unite everything. For a realistic effect, slightly ruffle the edges of the outer petals.",
+          "tip": "Use a ball-point tool to mark a slight depression in the center of each flower."
+        },
+        {
+          "title": "Compose the bouquet",
+          "duration": "10 min",
+          "description": "Wrap the floral wire with silk ribbon or paint it green. Fix each flower on its stem with strong glue. Assemble 3 to 5 flowers into a bouquet by twisting the stems together. Adjust the height of each flower to create a natural effect. Let dry in the open air 24-48h or bake according to the manufacturer's instructions.",
+          "tip": "Add some green clay leaves between the flowers for more volume."
+        }
+      ],
+      "tips": [
+        "Work the clay at room temperature for better malleability.",
+        "Use a matte varnish for a natural look or glossy for a more sophisticated effect."
+      ],
+      "commonMistakes": [
+        "Petals too thick: the flower will look heavy. Aim for 2-3 mm maximum.",
+        "Drying too fast: avoid direct heat which makes the clay crack."
+      ],
+      "variations": [
+        "Add flower centers in golden micro-beads.",
+        "Create white flowers with pink-tinted edges."
+      ]
+    },
+    "petitCompagnon": {
+      "title": "Create your little companion",
+      "description": "Imagine an adorable little figurine with an expressive face and cute details.",
+      "materials": [
+        "Clay in several colors (main body + accent)",
+        "A small roller",
+        "A modeling tool (stylus, toothpick, ball tool)",
+        "A clean work surface (glass board or baking paper)",
+        "A precision knife",
+        "A little water or glue for assembly"
+      ],
+      "instructions": [
+        {
+          "title": "Create the main shape",
+          "duration": "10 min",
+          "description": "Choose the main color of your character. Form a walnut-sized ball for the body, then roll it slightly to create an oval or cylindrical shape depending on your design. For the head, form a slightly smaller, flattened ball. Assemble them by pressing gently and smoothing the joint with a ball tool or your moistened finger.",
+          "tip": "The golden rule of kawaii: the head should represent about 50% of the total figurine."
+        },
+        {
+          "title": "Add the details",
+          "duration": "10 min",
+          "description": "Prepare small shapes for the ears (triangles or semicircles), arms (small rolls), and accessories. Fix each element by pressing firmly and smoothing the joint edges. For the ears, hollow out the inside slightly with a ball tool. Add a tail by forming a small curved cone.",
+          "tip": "If the small pieces don't hold, use a little glue or water as \"clay glue\"."
+        },
+        {
+          "title": "Draw the face",
+          "duration": "5 min",
+          "description": "With a fine-point tool or toothpick, mark the location of the eyes: two small dots or ovals spaced one eye-width apart. Add a small mouth shaped like a 'w' or an arc. For the cheeks, add two small circles of pink clay or paint. You can also add white highlights in the eyes with paint.",
+          "tip": "The kawaii expression comes from large, close-set eyes and small mouths."
+        },
+        {
+          "title": "Finalize the figurine",
+          "duration": "5 min",
+          "description": "Check that all elements are well fixed by pressing gently. Smooth all imperfections with a slightly damp finger. Place the figurine on a flat surface and let dry 24-48h in the open air, or bake according to the manufacturer's instructions. Once dry, you can varnish to protect.",
+          "tip": "Turn the figurine every 12h during drying to prevent it from sticking."
+        }
+      ],
+      "tips": [
+        "Start with simple shapes: round, oval, cone.",
+        "Use household tools: toothpick, straw, pencil tip."
+      ],
+      "commonMistakes": [
+        "Too much water for assembly: the clay becomes sticky and loses its shape.",
+        "Figurine too large: it risks cracking while drying. Stay under 8 cm tall."
+      ],
+      "variations": [
+        "Turn your companion into a keychain with a metal eyelet.",
+        "Create a family with different sizes."
+      ]
+    },
+    "fleurSoleil": {
+      "title": "A sun-filled flower",
+      "description": "Make a bright flower and add a little smiling face to it.",
+      "materials": [
+        "Bright yellow clay for the petals",
+        "Orange or brown clay for the center",
+        "Green clay for the leaves",
+        "A fine tool (stylus or toothpick)",
+        "A work surface",
+        "Black paint or black clay for the face"
+      ],
+      "instructions": [
+        {
+          "title": "Prepare the center",
+          "duration": "15 min",
+          "description": "Form a ball of orange or brown clay the size of a marble. Flatten it slightly to create a disk about 2 cm in diameter. With a pointed tool, texture the surface by creating small dots or a spiral to imitate the heart of a flower. This is the base onto which the petals will be attached.",
+          "tip": "The center should be slightly domed to give volume to the flower."
+        },
+        {
+          "title": "Shape the petals",
+          "duration": "20 min",
+          "description": "Form 12 to 15 balls of yellow clay in decreasing sizes. The largest for the outside, the smallest for the inside. Flatten each ball into a teardrop shape: wide at the base, pointed at the tip. The outer petals should be about 3 cm long. Smooth the edges with your finger.",
+          "tip": "For a natural effect, slightly ruffle the edges of the petals with a fine tool."
+        },
+        {
+          "title": "Assemble the flower",
+          "duration": "15 min",
+          "description": "Start with the outer row: fix the largest petals around the center, spacing them evenly. Overlap a second row of medium petals in the gaps of the first row. Finish with an inner row of small petals. Each petal should slightly overlap the previous one.",
+          "tip": "Press the base of each petal firmly so it doesn't detach while drying."
+        },
+        {
+          "title": "Add the smile",
+          "duration": "10 min",
+          "description": "With black paint or black clay, draw two small round eyes spaced apart and a big arc-shaped smile. Add two small pink cheeks with paint or pink clay. You can add green leaves at the base of the flower. Let dry completely before handling.",
+          "tip": "Use a toothpick for the fine details of the face."
+        }
+      ],
+      "tips": [
+        "The more petals, the more luxurious the flower looks.",
+        "Vary the shades of yellow for a natural gradient effect."
+      ],
+      "commonMistakes": [
+        "Petals of identical sizes: the flower looks artificial.",
+        "Face too big: it spoils the kawaii effect. Stay discreet."
+      ],
+      "variations": [
+        "Turn it into a brooch with a metal clasp.",
+        "Create a version with white petals and a yellow center."
+      ]
+    },
+    "bouclesMarbrees": {
+      "title": "Marbled earrings",
+      "description": "Create a set of elegant earrings with a trendy marbled effect.",
+      "materials": [
+        "Polymer clay (2 or 3 complementary colors: white, powder pink, pearl gray)",
+        "An acrylic roller",
+        "Geometric cookie cutters (circles, half-moons, ovals)",
+        "Earring hooks and jump rings",
+        "A straw or punch for the hole",
+        "Fine sandpaper (400 grit)"
+      ],
+      "instructions": [
+        {
+          "title": "Mix the colors",
+          "duration": "10 min",
+          "description": "Form logs of each color the size of a pencil. Place them side by side and twist them together like a braid. Fold the whole thing in half and twist again. Repeat 3 to 4 times maximum to keep visible marbling. Form a final ball and flatten it slightly.",
+          "tip": "Don't mix too much: you would lose the marbled effect. Stop when the colors start to blend."
+        },
+        {
+          "title": "Roll out the clay",
+          "duration": "5 min",
+          "description": "Place the marbled ball between two sheets of baking paper. Flatten it with the roller using regular movements in all directions. Aim for a uniform thickness of 2 to 3 mm. Turn the clay regularly for even rolling. The marbled pattern should appear on the surface.",
+          "tip": "If the clay sticks to the roller, place a sheet of baking paper between the two."
+        },
+        {
+          "title": "Cut the shapes",
+          "duration": "10 min",
+          "description": "Position your cookie cutters on the rolled-out clay and press firmly to cut. For each pair of earrings, cut two identical shapes. With a straw or small punch, make a hole 3 mm from the top edge. Gently remove the shapes with a spatula.",
+          "tip": "The hole must be large enough to pass the jump ring after baking."
+        },
+        {
+          "title": "Baking and assembly",
+          "duration": "15 min",
+          "description": "Preheat the oven according to your clay's instructions (generally 110-130°C). Place the pieces on a baking paper-lined tray and bake 15-30 minutes. Let cool completely. Sand the edges lightly if necessary. Assemble the earrings with the rings and hooks using flat-nose pliers.",
+          "tip": "Don't overheat: polymer clay burns and yellows. Better to bake longer at a lower temperature."
+        }
+      ],
+      "tips": [
+        "Test the marbled mix on a small amount of clay first.",
+        "Use metal cookie cutters for clean cuts."
+      ],
+      "commonMistakes": [
+        "Baking too hot: the clay yellows and becomes fragile.",
+        "Holes too close to the edge: the earring risks breaking."
+      ],
+      "variations": [
+        "Add glitter to the clay for a sparkling effect.",
+        "Create asymmetrical shapes for a modern style."
+      ]
+    },
+    "chatGourmand": {
+      "title": "Cute Greedy Little Cat",
+      "description": "Make an adorable kitten holding a small colorful donut between its paws.",
+      "materials": [
+        "White clay for the body",
+        "Pink clay for the frosting",
+        "Beige/light brown clay for the donut",
+        "Black acrylic paint for details",
+        "Decorative micro-beads or glitter",
+        "Ball-point tool",
+        "A toothpick for the whiskers"
+      ],
+      "instructions": [
+        {
+          "title": "Shape the kitten",
+          "duration": "20 min",
+          "description": "Form a large white ball for the body (ping-pong ball size) and a slightly smaller ball for the head. Assemble them by pressing and smoothing the joint. For the head, add two triangles for the ears and hollow out the inside slightly. Form two small cylindrical arms and two oval feet. Add a tail as a curved cone.",
+          "tip": "The head should be slightly tilted forward to give a curious look."
+        },
+        {
+          "title": "Prepare the mini donut",
+          "duration": "10 min",
+          "description": "Form a small beige ball the size of a hazelnut. Flatten it slightly and pierce a hole in the center with a toothpick. With pink clay, form a flat circle slightly larger than the donut and place it on top to imitate the frosting. Make the frosting drip over the edges by forming small waves. Place a few colored micro-beads on the frosting.",
+          "tip": "The frosting should slightly overflow the donut for a realistic effect."
+        },
+        {
+          "title": "Assemble everything",
+          "duration": "10 min",
+          "description": "Position the donut against the cat's belly, slightly on the side. Shape two small arms that hold the donut: one arm passes in front, the other behind. Press firmly so everything holds together. Adjust the position so the cat seems to look at its donut longingly.",
+          "tip": "If the pieces don't hold, use a little glue or a toothpick as an armature."
+        },
+        {
+          "title": "Paint the face",
+          "duration": "10 min",
+          "description": "After baking or complete drying, draw closed eyes in arcs with fine black paint. Add a small pink triangular nose and a 'w' mouth. With a toothpick, trace three thin whiskers on each side. Add pink cheeks with paint or blush.",
+          "tip": "Use a very fine brush (000) for the face details."
+        }
+      ],
+      "tips": [
+        "The donut can be replaced by a cookie, a cake, or an ice cream.",
+        "Add color spots on the cat with paint."
+      ],
+      "commonMistakes": [
+        "Arms too thin: they risk breaking. Keep them thick.",
+        "Donut too heavy: it makes the figurine tip over."
+      ],
+      "variations": [
+        "Dog version with a bone or a biscuit.",
+        "Bunny version with a carrot."
+      ]
+    },
+    "videPocheFeuille": {
+      "title": "Golden leaf trinket dish",
+      "description": "Mold a superb tropical leaf-shaped dish with golden finishes.",
+      "materials": [
+        "White self-hardening clay (500g)",
+        "A large textured real leaf (philodendron, monstera)",
+        "A precision knife / craft scalpel",
+        "Gold acrylic paint",
+        "Glossy or matte finishing varnish",
+        "A hollow bowl as a mold",
+        "Plastic wrap",
+        "Fine sandpaper"
+      ],
+      "instructions": [
+        {
+          "title": "Roll out the clay slab",
+          "duration": "15 min",
+          "description": "Work the self-hardening clay on a clean, smooth surface. Roll it out with a roller from the center toward the edges. Aim for a uniform thickness of 5 mm. Turn the clay regularly to prevent sticking. The final slab should be slightly larger than your model leaf.",
+          "tip": "If the clay sticks, dust lightly with cornstarch."
+        },
+        {
+          "title": "Imprint and cut",
+          "duration": "20 min",
+          "description": "Place your real leaf on the rolled-out clay, vein side down. Press firmly with the roller to imprint the veins. Gently remove the leaf. With the scalpel, cut the outline following the shape of the leaf. Smooth the cut edges with a dampened finger.",
+          "tip": "Press harder on the roller at the center of the leaf to mark the main veins well."
+        },
+        {
+          "title": "Give the dish shape",
+          "duration": "10 min",
+          "description": "Line a hollow bowl with plastic wrap, letting the edges overhang. Place the clay leaf inside, adapting it to the bowl's curvature. The edges can rise slightly to create the sides of the dish. Let dry 24 to 48h without unmolding.",
+          "tip": "Flip the dish on the bowl at mid-drying so the underside dries too."
+        },
+        {
+          "title": "Gilding and varnish",
+          "duration": "30 min",
+          "description": "Once the clay is completely dry and hard, remove the dish from the mold. Sand imperfections lightly with fine sandpaper. With a fine brush, paint the edges or certain veins with gold paint. Let the paint dry, then apply a protective varnish over the entire surface.",
+          "tip": "For a subtle effect, only gild the edges. For a luxurious effect, also gild the main veins."
+        }
+      ],
+      "tips": [
+        "Choose a leaf with well-marked veins.",
+        "Work quickly: self-hardening clay starts to dry in 30 minutes."
+      ],
+      "commonMistakes": [
+        "Clay too thin: the dish breaks when unmolding. Stay at 5 mm minimum.",
+        "Insufficient drying: the dish deforms. Wait a full 48h."
+      ],
+      "variations": [
+        "Use several small leaves to create a set.",
+        "Tint the clay with coloring before rolling it out."
+      ]
+    },
+    "cupcakeSuspendre": {
+      "title": "Kawaii cupcake to hang",
+      "description": "Shape a mini smiling cupcake with its beautiful frosting crown, to offer as a keychain or charm.",
+      "materials": [
+        "Beige polymer clay for the liner",
+        "White clay for the frosting",
+        "Pink clay for the cheeks and decorations",
+        "A cookie cutter or small bowl for the mold",
+        "A charm ring with eyelet",
+        "Glitter or mini heart decorations",
+        "A fine-point tool"
+      ],
+      "instructions": [
+        {
+          "title": "Form the liner",
+          "duration": "10 min",
+          "description": "Form a ball of beige clay and shape a flared cone: wide on top, narrow at the bottom. With a fine tool or toothpick, mark regular vertical striations all around to imitate the folds of a paper liner. Hollow out the top slightly to receive the cake.",
+          "tip": "Use a small bowl as a mold to get a regular shape."
+        },
+        {
+          "title": "Add the cake and frosting",
+          "duration": "10 min",
+          "description": "Form a disk of beige clay slightly smaller than the liner opening and place it on top. For the frosting, form a white log and coil it in a spiral from the center outward. Let the frosting overflow on the edges for a dripping effect. Add small colored balls as sprinkles.",
+          "tip": "The frosting should have an irregular appearance to look natural."
+        },
+        {
+          "title": "Draw the face",
+          "duration": "5 min",
+          "description": "On the front of the liner, add two small black eyes with clay or paint. Draw a small mouth shaped like a 'w' or an arc. Add two pink cheeks on each side. You can also add eyelashes or eyebrows for more expression.",
+          "tip": "Place the face on the liner, not on the frosting, so it is well visible."
+        },
+        {
+          "title": "Bake and mount the charm",
+          "duration": "10 min",
+          "description": "With a needle or toothpick, pierce a hole in the top of the frosting and insert the metal eyelet. Bake according to the manufacturer's instructions (generally 15-30 min at 110-130°C). Let cool completely. Apply glossy varnish on the frosting to give it shine, then attach the ring and chain.",
+          "tip": "The eyelet must be well inserted so it doesn't detach."
+        }
+      ],
+      "tips": [
+        "Vary the frosting colors: pink, mint, lavender.",
+        "Add a small red clay cherry on top."
+      ],
+      "commonMistakes": [
+        "Forgetting the eyelet before baking: impossible to add after.",
+        "Frosting too heavy: it crushes the liner."
+      ],
+      "variations": [
+        "Turn it into a fridge magnet.",
+        "Create a series of cupcakes in different flavors."
+      ]
+    },
+    "maisonChampignon": {
+      "title": "Fairy mushroom house",
+      "description": "Build an adorable gnome house topped with a big red polka-dot mushroom cap.",
+      "materials": [
+        "White self-hardening clay (1 kg) for the walls",
+        "Red self-hardening clay for the cap",
+        "A cylinder or glass as a template",
+        "Modeling tools and fine knife",
+        "Acrylic paints (white, green, brown)",
+        "Small artificial or clay flowers",
+        "A protective varnish"
+      ],
+      "instructions": [
+        {
+          "title": "Build the walls",
+          "duration": "30 min",
+          "description": "Roll out the white clay into a 5 mm thick slab. Wrap it around a cylinder or glass of the desired size (about 10 cm in diameter). Join the edges by smoothing with a dampened finger. Gently remove the template. Texture the walls by drawing horizontal and vertical lines to imitate bricks or stones.",
+          "tip": "Work on baking paper so you can turn the piece easily."
+        },
+        {
+          "title": "Shape the cap",
+          "duration": "30 min",
+          "description": "Form a large red half-sphere the size of an orange. Flatten the underside so it rests well on the walls. With a tool, hollow out an opening for the door. Add small white balls of different sizes on the cap for the polka dots. Press them firmly so they adhere.",
+          "tip": "The cap should be slightly wider than the walls to create an overhang."
+        },
+        {
+          "title": "Add the details",
+          "duration": "30 min",
+          "description": "Sculpt a rounded door and oval windows. Hollow them into the walls or add clay frames. Shape small mushrooms, flowers, leaves to decorate the walls. Add a path of small stones at the base. You can add a chimney or dormers on the cap.",
+          "tip": "Fix each detail with a little water and press firmly."
+        },
+        {
+          "title": "Drying and painting",
+          "duration": "30 min + drying",
+          "description": "Let dry 48h in the open air, away from direct heat. Once dry, sand imperfections lightly. Paint the details: door and window outlines in brown, leaves in green, polka dots in pure white. Add shadows with darker shades. Finish with a matte or glossy protective varnish.",
+          "tip": "Turn the house every 12h during drying so the underside dries too."
+        }
+      ],
+      "tips": [
+        "Build over several days: walls one day, cap the next.",
+        "Add an LED inside for a luminous effect."
+      ],
+      "commonMistakes": [
+        "Clay too wet: the structure collapses. Let it dry a bit before assembling.",
+        "Details too heavy: they fall off during drying. Fix them with glue."
+      ],
+      "variations": [
+        "Winter version with white for snow.",
+        "Night version with windows painted in luminous yellow."
+      ]
+    },
+    "magnetsGourmands": {
+      "title": "Greedy fridge magnets",
+      "description": "Sculpt a series of small smiling treats — donut, avocado, fried egg — to stick on your refrigerator.",
+      "materials": [
+        "Polymer clay in several colors (beige, green, yellow, pink, white)",
+        "Self-adhesive or glue-on magnets",
+        "A pointed tool for the faces",
+        "Glossy varnish",
+        "A toothpick for details",
+        "Strong glue if the magnets are not self-adhesive"
+      ],
+      "instructions": [
+        {
+          "title": "Choose your treats",
+          "duration": "5 min",
+          "description": "Select three or four cute foods: a donut, an avocado, a pizza slice, a fried egg, a strawberry. Draw a quick sketch of each to visualize the colors and proportions. Prepare all the clay colors needed before starting.",
+          "tip": "Start with simple shapes: round or oval."
+        },
+        {
+          "title": "Shape each piece",
+          "duration": "20 min",
+          "description": "For the donut: form a beige ring and add colored frosting on top. For the avocado: form a green pear shape, hollow out slightly and add a brown pit. For the egg: form an irregular white and add a domed yolk. For each piece, texture the surface to imitate reality (rice grains, pizza crust, etc.).",
+          "tip": "Keep the pieces small (3-4 cm) so the magnets stay light."
+        },
+        {
+          "title": "Draw the faces",
+          "duration": "15 min",
+          "description": "On each treat, add two small black eyes with a pointed tool or black clay. Draw a small mouth in a \"w\" or an arc. Add pink cheeks on each side. For more personality, vary the expressions: one winking eye, a tongue sticking out, eyelashes.",
+          "tip": "The eyes should be small and close together for the kawaii effect."
+        },
+        {
+          "title": "Bake and glue the magnets",
+          "duration": "10 min",
+          "description": "Place all the pieces on a baking paper-lined tray. Bake according to the manufacturer's instructions. Let cool completely. Apply glossy varnish to protect and make shine. Glue a magnet on the back of each piece with strong glue. Let the glue dry 24h before use.",
+          "tip": "Test the magnet on the fridge before gluing to check the holding strength."
+        }
+      ],
+      "tips": [
+        "Create a themed collection: fruits, fast food, desserts.",
+        "Use cookie cutters for perfect shapes."
+      ],
+      "commonMistakes": [
+        "Pieces too thick: they are too heavy for the magnet.",
+        "Face too big: it spoils the cute effect."
+      ],
+      "variations": [
+        "Turn them into clothing pins.",
+        "Create seasonal magnets: Halloween pumpkin, Christmas tree."
+      ]
+    },
+    "tortueBureau": {
+      "title": "Soft desk turtle",
+      "description": "Sculpt a small turtle with a tender gaze, perfect to watch over your desk.",
+      "materials": [
+        "Green clay for the body",
+        "Brown or khaki clay for the shell",
+        "Pink clay for the cheeks",
+        "A ball-point tool",
+        "Black paint or black clay for the eyes",
+        "Glossy varnish",
+        "A toothpick for the patterns"
+      ],
+      "instructions": [
+        {
+          "title": "Shape the body",
+          "duration": "15 min",
+          "description": "Form a flattened oval of green clay for the body (about 5 cm long). Shape a round head that protrudes at the front and four short cylindrical legs. Add a small conical tail at the back. Smooth all joints with a ball tool or your moistened finger. The belly must be flat so the turtle is stable.",
+          "tip": "The head should be proportioned: about 1/3 of the body length."
+        },
+        {
+          "title": "Create the shell",
+          "duration": "15 min",
+          "description": "Form a half-sphere of brown clay slightly larger than the body. Flatten the underside so it rests well on the back. With a toothpick or pointed tool, trace the shell patterns: a large central hexagon surrounded by geometric motifs. The lines must be deep enough to remain visible after baking.",
+          "tip": "Look at photos of real turtles for pattern inspiration."
+        },
+        {
+          "title": "Add the face",
+          "duration": "10 min",
+          "description": "On the head, add two large round black eyes with clay or paint. Add white highlights to give life. Draw a small arc-shaped smile under the eyes. Add two pink cheeks on each side. You can add small nostrils with a pointed tool.",
+          "tip": "The eyes should be large and close together for the kawaii effect."
+        },
+        {
+          "title": "Baking and finishing",
+          "duration": "5 min",
+          "description": "Assemble the shell on the back of the body by pressing firmly. Bake according to the manufacturer's instructions, or let dry 24-48h. Once cooled, varnish only the shell to give it a nice shine. Leave the body matte for a texture contrast.",
+          "tip": "If the shell doesn't hold, use a little glue before baking."
+        }
+      ],
+      "tips": [
+        "Vary the colors: blue, pink, or purple turtle.",
+        "Add accessories: a hat, a bow, glasses."
+      ],
+      "commonMistakes": [
+        "Shell too heavy: it crushes the body. Keep it thin.",
+        "Legs too thin: they break easily."
+      ],
+      "variations": [
+        "Turn it into a piggy bank with a slot in the shell.",
+        "Create a family with baby turtles."
+      ]
+    },
+    "potSouriant": {
+      "title": "Smiling little plant pot",
+      "description": "Transform a simple little pot into a smiling companion that welcomes your favorite succulent.",
+      "materials": [
+        "Small terracotta pot (8-10 cm diameter) or clay bowl",
+        "Acrylic paints (white, pink, black, colors of your choice)",
+        "A fine brush and a flat brush",
+        "A protective varnish",
+        "A small succulent plant",
+        "Cactus soil",
+        "Masking tape (optional)"
+      ],
+      "instructions": [
+        {
+          "title": "Prepare the pot",
+          "duration": "10 min",
+          "description": "If you use a terracotta pot, clean it with a damp cloth to remove dust. Let dry completely. If you prefer to create a bowl with self-hardening clay, form a flared pot with a rim and let dry 48h. Sand imperfections lightly.",
+          "tip": "A new pot doesn't need to be washed, just dusted."
+        },
+        {
+          "title": "Paint the patterns",
+          "duration": "15 min",
+          "description": "Apply a coat of white paint or the color of your choice over the entire pot. Let dry. With a fine brush, add patterns: dots, stripes, waves, hearts. Use masking tape for straight lines. Let your creativity run free.",
+          "tip": "Two thin coats are better than one thick one."
+        },
+        {
+          "title": "Draw the face",
+          "duration": "10 min",
+          "description": "On the front of the pot, draw two closed eyes in arcs with black paint. Add eyelashes if you want. Draw a big smiling mouth. Add two round pink cheeks. The face should be centered and proportioned to the pot size.",
+          "tip": "Use a pencil to sketch the face before painting."
+        },
+        {
+          "title": "Plant the succulent",
+          "duration": "5 min",
+          "description": "Once the paint is completely dry, apply a protective varnish over the entire pot. Let dry. Fill the pot with cactus soil up to 2 cm from the rim. Plant your succulent by digging a small hole. Press the soil lightly. Add decorative gravel if you want.",
+          "tip": "Choose a small, easy-care succulent like an echeveria."
+        }
+      ],
+      "tips": [
+        "Create a family of pots with different expressions.",
+        "Use water-resistant paints for outdoor use."
+      ],
+      "commonMistakes": [
+        "Painting on a damp pot: the paint doesn't adhere.",
+        "Too much water for the plant: succulents don't like humidity."
+      ],
+      "variations": [
+        "Transform the pot into an animal: cat, rabbit, bear.",
+        "Add inspiring messages on the pot."
+      ]
+    },
+    "pendentifLune": {
+      "title": "Moon & stars pendant",
+      "description": "Create a celestial pendant with a crescent moon and small golden stars.",
+      "materials": [
+        "Night blue, pale yellow, and lilac polymer clay",
+        "Moon and star cookie cutters (or paper template)",
+        "Gold powder clay or gold paint",
+        "Jump ring, chain, and flat-nose pliers",
+        "A toothpick for the hole",
+        "Fine sandpaper"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Follow the temperature and time indicated on your clay."
+      },
+      "instructions": [
+        {
+          "title": "Roll out the clay",
+          "duration": "5 min",
+          "description": "Roll out the night blue clay to about 3 mm thickness between two sheets of baking paper. Do the same with the light colors (pale yellow and lilac). Use thickness guides if you have them for a uniform result.",
+          "tip": "Always roll out on a sheet of baking paper so as not to deform the clay when moving it."
+        },
+        {
+          "title": "Cut the shapes",
+          "duration": "10 min",
+          "description": "Cut a crescent moon from the night blue clay. To do this, cut a circle, then overlap a smaller offset circle and remove the excess. Cut two or three stars of different sizes from the light colors. With a straw or toothpick, make the hole for the ring 5 mm from the top of the moon.",
+          "tip": "Make the hole for the ring with a straw or needle before baking."
+        },
+        {
+          "title": "Decorate",
+          "duration": "10 min",
+          "description": "Position the stars on the crescent moon, pressing them lightly so they adhere. Add small dots of gold paint to imitate stars in the sky. You can also add gold powder on the surface for a shimmering effect. Lightly texture the moon's surface to imitate craters.",
+          "tip": "Use a toothpick to deposit tiny dots of gold paint."
+        },
+        {
+          "title": "Bake and assemble",
+          "duration": "10 min",
+          "description": "Place the pendant on a baking paper-lined tray. Bake according to the manufacturer's instructions (generally 15-30 min at 110-130°C). Let cool completely. Sand the edges lightly if necessary. Open the jump ring with flat-nose pliers, pass it through the hole, add the chain, and close.",
+          "tip": "If the hole is too small, drill it again with a hand drill after baking."
+        }
+      ],
+      "tips": [
+        "Always roll out on a sheet of baking paper so as not to deform the clay when moving it.",
+        "Run a slightly damp finger over the edges to erase cut marks."
+      ],
+      "commonMistakes": [
+        "Drilling the hole too close to the edge: the clay risks breaking."
+      ],
+      "variations": [
+        "Add a full moon phase across several pendants.",
+        "Use glitter for a galaxy effect."
+      ]
+    },
+    "plateauSushis": {
+      "title": "Mini sushi platter",
+      "description": "Shape a mini plate of smiling sushi: salmon nigiri, maki, and egg.",
+      "materials": [
+        "White, salmon pink, green, black, and yellow polymer clay",
+        "A fine knife or modeling blade",
+        "A ball-point tool",
+        "A clean toothbrush for texture",
+        "Glossy varnish",
+        "A small decorative tray or plate"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Varnish only after complete cooling."
+      },
+      "instructions": [
+        {
+          "title": "Prepare the rice",
+          "duration": "10 min",
+          "description": "Form small white ovals for the nigiri (about 2 cm long) and small cylinders for the maki (about 1.5 cm in diameter). To texture the rice, press the clay lightly on a clean toothbrush or sieve. The result should look like grains of rice stuck together.",
+          "tip": "For the rice, texture the white clay by pressing it on a sieve or clean toothbrush."
+        },
+        {
+          "title": "Add the toppings",
+          "duration": "20 min",
+          "description": "For the nigiri: roll out a thin sheet of salmon pink clay and place it on the rice. Mark striations to imitate the fish texture. For the maki: wrap a band of black clay around the rice cylinder, then add a colored center (green for cucumber, yellow for egg, pink for tuna). For the egg nigiri: add a thin rectangular yellow slice.",
+          "tip": "Keep a paper towel under your hand to avoid color traces."
+        },
+        {
+          "title": "Draw the faces",
+          "duration": "15 min",
+          "description": "On each sushi, add two small black eyes with the ball-point tool. Draw a small mouth in a 'w' or an arc. Add pink cheeks on each side. For more realism, vary the expressions: some can be happy, others surprised or sleepy.",
+          "tip": "The eyes should be small and close together for the kawaii effect."
+        },
+        {
+          "title": "Bake and varnish",
+          "duration": "15 min",
+          "description": "Place all the sushi on a baking paper-lined tray. Bake according to the manufacturer's instructions. Let cool completely. Apply glossy varnish on the toppings to imitate the shine of fresh fish. Leave the rice matte for a realistic contrast. Arrange them on a small tray.",
+          "tip": "Varnish only after complete cooling."
+        }
+      ],
+      "tips": [
+        "For the rice, texture the white clay by pressing it on a sieve or clean toothbrush.",
+        "Keep a paper towel under your hand to avoid color traces."
+      ],
+      "commonMistakes": [
+        "Mixing colors without washing your hands between each clay."
+      ],
+      "variations": [
+        "Turn them into magnets or earrings.",
+        "Add miniature chopsticks in brown clay."
+      ]
+    },
+    "porteClesNuage": {
+      "title": "Rainbow cloud keychain",
+      "description": "Make a small soft cloud with a rainbow coming out from underneath.",
+      "materials": [
+        "White, red, yellow, green, and blue polymer clay",
+        "Acrylic roller",
+        "Keychain ring with small chain",
+        "A toothpick for the hole",
+        "Matte or glossy varnish",
+        "A straw for the hole"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Insert the ring before baking."
+      },
+      "instructions": [
+        {
+          "title": "Form the rainbow",
+          "duration": "10 min",
+          "description": "Roll four small colored logs (red, yellow, green, blue) of the same thickness and length. Place them side by side and press lightly to stick them together. Curve the whole thing into an arc, making sure the colors stay well aligned. Cut the ends at an angle for a clean result.",
+          "tip": "Roll the colored logs to the same thickness for a regular rainbow."
+        },
+        {
+          "title": "Shape the cloud",
+          "duration": "10 min",
+          "description": "Form three or four white balls of different sizes (the largest in the center). Assemble them by pressing lightly to form a cloud. Flatten the underside slightly so the cloud rests well. Smooth the junctions between the balls with a dampened finger.",
+          "tip": "The cloud must be wider than the rainbow to cover it well."
+        },
+        {
+          "title": "Assemble",
+          "duration": "5 min",
+          "description": "Position the cloud in front of the ends of the rainbow, pressing firmly so everything holds together. With a straw or toothpick, pierce a hole at the top of the cloud for the eyelet. Insert the metal eyelet by screwing it in slightly.",
+          "tip": "Insert the eyelet before baking."
+        },
+        {
+          "title": "Bake and finish",
+          "duration": "5 min",
+          "description": "Place the keychain on a baking paper-lined tray. Bake according to the manufacturer's instructions. Let cool completely. Apply varnish to protect and make shine. Attach the small chain and the keychain ring.",
+          "tip": "Baking without having inserted the eyelet: it will be impossible to add it after."
+        }
+      ],
+      "tips": [
+        "Roll the colored logs to the same thickness for a regular rainbow."
+      ],
+      "commonMistakes": [
+        "Baking without having inserted the eyelet: it will be impossible to add it after."
+      ],
+      "variations": [
+        "Pastel version or neon version."
+      ]
+    },
+    "bebeDino": {
+      "title": "Baby dino in its egg",
+      "description": "Create a small dinosaur hatching from its eggshell, perfect to decorate your desk.",
+      "materials": [
+        "Green, cream, and pink polymer clay",
+        "Ball-point tool",
+        "Small brush and black paint",
+        "Glossy varnish",
+        "A toothpick for details",
+        "Baking paper"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Place the figurine on baking paper."
+      },
+      "instructions": [
+        {
+          "title": "Form the shell",
+          "duration": "15 min",
+          "description": "Form a cream clay ball the size of a ping-pong ball. Flatten the underside slightly so it is stable. With a knife or fine tool, cut the top of the ball in a zigzag to create the broken shell effect. Remove the upper part and hollow out the inside to make room for the baby dino.",
+          "tip": "Break the edges of the shell with a tool for a natural, irregular effect."
+        },
+        {
+          "title": "Shape the baby dino",
+          "duration": "15 min",
+          "description": "Form an oval green body that sits in the shell. The lower part should be hidden in the egg. Shape a small round head that protrudes and two tiny arms that cling to the edge of the shell. Add a small tail that protrudes at the back.",
+          "tip": "Make the head smaller than the body to prevent it from tipping."
+        },
+        {
+          "title": "Add the details",
+          "duration": "15 min",
+          "description": "Add small dorsal spikes in triangle shapes along the back. Form a mini pink flower with five petals: five small drops arranged in a circle around a yellow center. Place it on the head or in a hand. Add pink cheeks and color spots on the shell. Texture the shell with small dots to imitate an egg's surface.",
+          "tip": "The dorsal spikes should be small and rounded for the baby effect."
+        },
+        {
+          "title": "Baking and face",
+          "duration": "10 min",
+          "description": "Place the figurine on baking paper. Bake according to the manufacturer's instructions. Let cool completely. With fine black paint, draw two large round eyes with white highlights. Add a small smile. Varnish the shell to give it shine.",
+          "tip": "Place the figurine on baking paper for baking."
+        }
+      ],
+      "tips": [
+        "Break the edges of the shell with a tool for a natural, irregular effect."
+      ],
+      "commonMistakes": [
+        "Making the head too heavy: it tips during baking. Keep it smaller than the body."
+      ],
+      "variations": [
+        "A dragon, a chick, or a small blue dinosaur."
+      ]
+    },
+    "barrettesFruits": {
+      "title": "Summer fruit hair clips",
+      "description": "Make hair clips shaped like cherries, lemons, and strawberries to clip in your hair.",
+      "materials": [
+        "Red, yellow, green, and white polymer clay",
+        "Metal hair clips to glue",
+        "Cyanoacrylate glue or strong glue",
+        "Glossy varnish",
+        "A fine-point tool",
+        "A toothpick for details"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Glue the hair clips after baking."
+      },
+      "instructions": [
+        {
+          "title": "Choose the fruits",
+          "duration": "5 min",
+          "description": "Prepare the colors for the strawberry (red + green), the cherry (dark red + green), and the lemon (yellow + green). Form small balls of each color. Draw a quick sketch of each fruit to visualize the proportions.",
+          "tip": "Keep the fruits small (2-3 cm) so they stay light on the hair."
+        },
+        {
+          "title": "Shape the fruits",
+          "duration": "20 min",
+          "description": "For the strawberry: form a rounded red cone and flatten the underside slightly. For the cherry: form two small dark red spheres. For the lemon: form a yellow oval with pointed ends. Each fruit must have a flat back for better adhesion on the clip.",
+          "tip": "Make the pieces flat on the back for better adhesion."
+        },
+        {
+          "title": "Add the details",
+          "duration": "10 min",
+          "description": "For the strawberry: add small white dots with a toothpick and a crown of green leaves. For the cherry: add a green stem and a leaf. For the lemon: add a slice with white segments. Add kawaii faces on each fruit: black eyes, mouth, pink cheeks.",
+          "tip": "Make the seeds with a fine point so the fruits stay light."
+        },
+        {
+          "title": "Bake and glue",
+          "duration": "5 min",
+          "description": "Place the fruits on a baking paper-lined tray. Bake according to the manufacturer's instructions. Let cool completely. Apply glossy varnish to protect. Glue each fruit on its clip with strong glue. Let dry 24h before use.",
+          "tip": "Glue the hair clips after baking."
+        }
+      ],
+      "tips": [
+        "Make the seeds with a fine point so the fruits stay light."
+      ],
+      "commonMistakes": [
+        "Making pieces too thick: the clip becomes heavy."
+      ],
+      "variations": [
+        "Flower, star, or small heart motifs."
+      ]
+    },
+    "coupelleTerrazzo": {
+      "title": "Terrazzo effect dish",
+      "description": "Make a modern terrazzo-look dish with small colored chips.",
+      "materials": [
+        "White self-hardening clay (300g)",
+        "3 colors of polymer clay for the chips (coral, sage, navy)",
+        "A bowl or plate for the mold",
+        "Fine sandpaper (400 grit)",
+        "Matte varnish",
+        "Plastic wrap",
+        "A roller"
+      ],
+      "cure": {
+        "type": "air-dry",
+        "note": "Drying 24 to 48 h. If you mix with polymer, check that the mixture dries correctly."
+      },
+      "instructions": [
+        {
+          "title": "Prepare the chips",
+          "duration": "15 min",
+          "description": "Roll out your colored clays into thin 2 mm thick sheets. Let them harden slightly for 10 minutes. With a knife or scissors, cut them into small irregular pieces of various sizes (from 2 mm to 1 cm). Gently mix all the chips.",
+          "tip": "Chop the chips into pieces of various sizes for a more natural effect."
+        },
+        {
+          "title": "Embed in the clay",
+          "duration": "15 min",
+          "description": "Roll out the white self-hardening clay into a 5 mm thick slab. Scatter the colored chips over the entire surface, pressing them lightly into the clay. Roll over them to flatten and embed them. The surface must be smooth.",
+          "tip": "Roll in all directions to integrate the chips well."
+        },
+        {
+          "title": "Shape the dish",
+          "duration": "10 min",
+          "description": "Cut a circle from the terrazzo clay. Line a bowl with plastic wrap and place the circle inside, adapting it to the curvature. Smooth the edges that rise up. Let dry 24 to 48h without unmolding.",
+          "tip": "Flip the dish at mid-drying so the underside dries too."
+        },
+        {
+          "title": "Drying and finishing",
+          "duration": "30 min active + drying",
+          "description": "Once completely dry, remove the dish from the mold. Sand the edges and surface lightly with fine sandpaper. Wipe off the dust. Apply a matte varnish to protect and bring out the colors. Let the varnish dry 24h before use.",
+          "tip": "Sand lightly after drying to reveal the chips."
+        }
+      ],
+      "tips": [
+        "Chop the chips into pieces of various sizes for a more natural effect.",
+        "Sand lightly after drying to reveal the chips."
+      ],
+      "commonMistakes": [
+        "Too many colors: keep 3 shades maximum for a harmonious result."
+      ],
+      "variations": [
+        "A ring holder, a coaster, or a decorative ashtray."
+      ]
+    },
+    "miniCactus": {
+      "title": "Mini flowering cactus",
+      "description": "Create a miniature cactus with a small pink flower, in its terracotta pot.",
+      "materials": [
+        "Green, pink, and terracotta polymer clay",
+        "Fine-point tool",
+        "Toothpick for the spines",
+        "Matte varnish",
+        "A small terracotta or clay pot",
+        "Baking paper"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Bake the pot and the cactus together."
+      },
+      "instructions": [
+        {
+          "title": "Shape the pot",
+          "duration": "10 min",
+          "description": "Form a small flared terracotta pot with a slightly wider rim. Hollow out the inside. If you use a real terracotta pot, clean it and let dry. Texture the outside with fine vertical striations to imitate terracotta.",
+          "tip": "The pot must be stable: check that it doesn't wobble."
+        },
+        {
+          "title": "Create the cactus",
+          "duration": "10 min",
+          "description": "Form an oval green body that rises upward. Add one or two small arms on the sides by forming curved cylinders. Press firmly so the arms adhere. With a toothpick, mark vertical striations to imitate the cactus ribs.",
+          "tip": "Too many arms on the cactus: it becomes unstable."
+        },
+        {
+          "title": "Add the flower",
+          "duration": "10 min",
+          "description": "Form a mini pink flower with five petals: five small drops arranged in a circle around a yellow center. Place it on top of the cactus, pressing it lightly. Add tiny white dots on the cactus for the spines with a toothpick.",
+          "tip": "Make the spines with tiny white dots rather than real points."
+        },
+        {
+          "title": "Bake and assemble",
+          "duration": "10 min",
+          "description": "Place the pot and the cactus on a baking paper-lined tray. Bake according to the manufacturer's instructions. Let cool completely. Varnish the green part of the cactus to give it shine. Leave the pot matte for a natural terracotta effect. Glue the cactus in the pot if necessary.",
+          "tip": "Bake the pot and the cactus together to save time."
+        }
+      ],
+      "tips": [
+        "Make the spines with tiny white dots rather than real points."
+      ],
+      "commonMistakes": [
+        "Too many arms on the cactus: it becomes unstable."
+      ],
+      "variations": [
+        "A trio of cacti in different sizes."
+      ]
+    },
+    "supportBagueChat": {
+      "title": "Cat ring holder",
+      "description": "Make a small cat whose outstretched arms serve to hold your rings.",
+      "materials": [
+        "White, cream, and pink polymer clay",
+        "Ball-point tool",
+        "Black paint or black clay",
+        "Glossy varnish",
+        "Baking paper"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Place it flat on baking paper."
+      },
+      "instructions": [
+        {
+          "title": "Form the body",
+          "duration": "10 min",
+          "description": "Shape a round body and flatten the underside slightly so it is stable. The shape should be that of a sitting cat: a rounded triangle with a wide base. Smooth all imperfections with a dampened finger.",
+          "tip": "The cat must be heavy enough at the base so it doesn't tip over."
+        },
+        {
+          "title": "Add the arms",
+          "duration": "5 min",
+          "description": "Shape two arms stretched forward and stick them on the sides of the body. The arms must be thick enough to support the weight of the rings. Form a small tail that curls up next to the body.",
+          "tip": "Make the arms thick enough so they support the weight of the rings."
+        },
+        {
+          "title": "Create the face",
+          "duration": "10 min",
+          "description": "Add two triangles for the ears and hollow out the inside slightly. Form a small pink triangular muzzle. Add the eyes with black paint or black clay: two large ovals or two small dots. Add pink cheeks and whiskers with a toothpick.",
+          "tip": "Forgetting to smooth the underside: the piece doesn't sit well flat."
+        },
+        {
+          "title": "Bake and varnish",
+          "duration": "5 min",
+          "description": "Place the cat flat on baking paper. Bake according to the manufacturer's instructions. Let cool completely. Apply glossy varnish to protect and make shine. Your ring holder is ready!",
+          "tip": "Place it flat on baking paper."
+        }
+      ],
+      "tips": [
+        "Make the arms thick enough so they support the weight of the rings."
+      ],
+      "commonMistakes": [
+        "Forgetting to smooth the underside: the piece doesn't sit well flat."
+      ],
+      "variations": [
+        "Dog, rabbit, or bear version."
+      ]
+    },
+    "bouclesPapillon": {
+      "title": "Butterfly earrings",
+      "description": "Create colorful butterfly earrings with delicate wings and natural patterns.",
+      "materials": [
+        "Polymer clay in several colors (pink, yellow, purple, turquoise)",
+        "Butterfly cookie cutter or paper template",
+        "An acrylic roller",
+        "Earring hooks",
+        "Jump rings",
+        "A toothpick for the holes",
+        "Glossy varnish",
+        "Flat-nose pliers"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Bake at 110-130°C according to the manufacturer."
+      },
+      "instructions": [
+        {
+          "title": "Prepare the wings",
+          "duration": "15 min",
+          "description": "Roll out the clay into a 3 mm thick slab. Layer different colors to create a gradient. Cut two large wings and two small wings for each earring. Smooth the edges with a dampened finger.",
+          "tip": "Use a paper template for symmetrical wings."
+        },
+        {
+          "title": "Create the body",
+          "duration": "10 min",
+          "description": "Form a small cylinder for the butterfly's body. With a toothpick, mark horizontal striations. Add two small antennae by forming very thin logs. Fix the body between the wings by pressing lightly.",
+          "tip": "The body should be proportioned: about 1/3 the size of the wings."
+        },
+        {
+          "title": "Decorate",
+          "duration": "15 min",
+          "description": "With a pointed tool, draw patterns on the wings: circles, lines, dots. Add details in contrasting clay. Create texture effects by pressing lightly. Add glitter if you want.",
+          "tip": "The patterns must be symmetrical on both wings."
+        },
+        {
+          "title": "Bake and assemble",
+          "duration": "10 min",
+          "description": "Pierce the holes for the hooks with a straw. Bake according to the instructions. Let cool. Apply glossy varnish. Assemble the earrings with the rings and hooks.",
+          "tip": "Varnish only after complete cooling."
+        }
+      ],
+      "tips": [
+        "Use a paper template for perfectly symmetrical wings.",
+        "Vary the colors to create unique butterflies."
+      ],
+      "commonMistakes": [
+        "Wings too thin: they break easily. Stay at 3 mm minimum."
+      ],
+      "variations": [
+        "Version with flowers on the wings.",
+        "Version with transparent wings in translucent clay."
+      ]
+    },
+    "marquePageChat": {
+      "title": "Reading cat bookmark",
+      "description": "Make a cat-shaped bookmark reading a book, perfect for book lovers.",
+      "materials": [
+        "Beige or white polymer clay",
+        "Pink and black clay",
+        "A roller",
+        "A toothpick",
+        "A ribbon or cord",
+        "A rectangular cookie cutter or a knife",
+        "Matte varnish"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Bake flat on baking paper."
+      },
+      "instructions": [
+        {
+          "title": "Form the base",
+          "duration": "5 min",
+          "description": "Roll out the beige clay into a 3 mm thick slab. Cut a rectangle 4 cm by 8 cm for the bookmark base. Round the corners. Smooth the edges.",
+          "tip": "The base must be large enough to be visible between the pages."
+        },
+        {
+          "title": "Shape the cat",
+          "duration": "10 min",
+          "description": "Form a small round cat head with two triangular ears. Add a small sitting body. Position the cat at the bottom of the rectangle, as if it were reading. Add a small open book between its paws with white clay.",
+          "tip": "The cat should be in relief for a 3D effect."
+        },
+        {
+          "title": "Add the details",
+          "duration": "5 min",
+          "description": "Draw the face: closed eyes, pink nose, whiskers. Add patterns on the rectangle: lines to imitate pages, stars, hearts. Texture the book with fine striations.",
+          "tip": "Use a toothpick for the fine details."
+        },
+        {
+          "title": "Bake and finish",
+          "duration": "5 min",
+          "description": "Pierce a hole at the top with a straw. Bake according to the instructions. Let cool. Apply matte varnish. Pass a ribbon or cord through the hole.",
+          "tip": "The ribbon makes it easy to find your page."
+        }
+      ],
+      "tips": [
+        "Add personalized patterns: name, favorite quote.",
+        "Create other animals: dog, owl, rabbit."
+      ],
+      "commonMistakes": [
+        "Cat too heavy: it bends the bookmark. Keep it small."
+      ],
+      "variations": [
+        "Version with several stacked cats.",
+        "Version with a background landscape."
+      ]
+    },
+    "tasseCafe": {
+      "title": "Cute coffee cup",
+      "description": "Sculpt a latte coffee cup with an adorable face and heart patterns in the foam.",
+      "materials": [
+        "White, beige, pink, and brown polymer clay",
+        "A roller",
+        "A ball-point tool",
+        "A toothpick",
+        "A small bowl as a mold",
+        "Glossy varnish"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Bake the bowl and the cup separately."
+      },
+      "instructions": [
+        {
+          "title": "Form the cup",
+          "duration": "20 min",
+          "description": "Form a flared cylinder for the cup. Hollow out the inside. Add a handle by forming a ring and fixing it on the side. Smooth all joints. The cup must be large enough to hold the coffee (about 4 cm in diameter).",
+          "tip": "Use a small bowl as a mold for the interior shape."
+        },
+        {
+          "title": "Create the coffee",
+          "duration": "15 min",
+          "description": "Fill the cup with beige clay for the coffee. Smooth the surface. With white clay, form heart or leaf patterns on the surface to imitate latte art. Add a small spoon in metallic clay.",
+          "tip": "The patterns must be in relief to be visible."
+        },
+        {
+          "title": "Add the face",
+          "duration": "10 min",
+          "description": "On the front of the cup, add two large black eyes with white highlights. Draw a small smile. Add pink cheeks. You can add arms and legs so the cup seems alive.",
+          "tip": "The face should be centered and proportioned."
+        },
+        {
+          "title": "Bake and varnish",
+          "duration": "10 min",
+          "description": "Bake according to the instructions. Let cool. Apply glossy varnish on the coffee to give it shine. Leave the cup matte or varnish it lightly.",
+          "tip": "Varnish only the coffee for a realistic contrast."
+        }
+      ],
+      "tips": [
+        "Create other drinks: tea, hot chocolate, smoothie.",
+        "Add seasonal patterns: snowflake, autumn leaf."
+      ],
+      "commonMistakes": [
+        "Cup too thin: it breaks easily. Stay at 3 mm minimum."
+      ],
+      "variations": [
+        "Version with a lid and a straw.",
+        "Version with seasonal patterns."
+      ]
+    },
+    "boiteCoquillage": {
+      "title": "Shell treasure box",
+      "description": "Make a pearly seashell-shaped jewelry box with iridescent reflections.",
+      "materials": [
+        "White self-hardening clay (500g)",
+        "Pearlescent paints (pink, blue, purple)",
+        "A bowl as a mold",
+        "Plastic wrap",
+        "A precision knife",
+        "Fine sandpaper",
+        "Glossy varnish",
+        "A decorative clasp"
+      ],
+      "cure": {
+        "type": "air-dry",
+        "note": "Complete 48h drying."
+      },
+      "instructions": [
+        {
+          "title": "Create the two halves",
+          "duration": "30 min",
+          "description": "Roll out the clay into a 5 mm slab. Line two slightly different-sized bowls with plastic wrap. Place the clay in each bowl to form the two halves of the shell. Let dry 48h. Unmold carefully.",
+          "tip": "The upper half should be slightly larger to fit over the lower half."
+        },
+        {
+          "title": "Sculpt the details",
+          "duration": "20 min",
+          "description": "On top of the shell, sculpt radial striations to imitate seashells. With a pointed tool, mark fine, regular lines. Smooth the edges. Add a clay hinge or use a metal clasp.",
+          "tip": "The striations must converge toward a central point."
+        },
+        {
+          "title": "Paint the pearlescent effect",
+          "duration": "25 min",
+          "description": "Mix pearlescent pink, blue, and purple paints. Apply in thin layers with a sponge to create an iridescent effect. Add golden reflections on the striations. Let dry between each layer.",
+          "tip": "The pearlescent effect comes from the layering of translucent coats."
+        },
+        {
+          "title": "Finishing",
+          "duration": "15 min",
+          "description": "Sand imperfections lightly. Apply a glossy varnish to protect and make shine. Install the clasp. Your treasure box is ready!",
+          "tip": "Add a small mirror inside for more elegance."
+        }
+      ],
+      "tips": [
+        "Use real seashells as models.",
+        "Add pearls or rhinestones to decorate."
+      ],
+      "commonMistakes": [
+        "Clay too thin: the box breaks when opening. Stay at 5 mm minimum."
+      ],
+      "variations": [
+        "Starfish-shaped version.",
+        "Version with wave patterns."
+      ]
+    },
+    "porteSavonCitron": {
+      "title": "Lemon soap dish",
+      "description": "Create a sliced lemon-shaped soap dish, fresh and vitamin-packed for your bathroom.",
+      "materials": [
+        "White and yellow self-hardening clay",
+        "Acrylic paints (yellow, green, white)",
+        "A knife",
+        "A bowl as a mold",
+        "Plastic wrap",
+        "Waterproof varnish"
+      ],
+      "cure": {
+        "type": "air-dry",
+        "note": "48h drying + waterproof varnish."
+      },
+      "instructions": [
+        {
+          "title": "Form the base",
+          "duration": "10 min",
+          "description": "Roll out the white clay into a 5 mm slab. Cut a 12 cm diameter circle. Line a bowl with plastic wrap and place the circle inside to give it a hollow shape. Let dry 24h.",
+          "tip": "The base must be large enough to hold a soap."
+        },
+        {
+          "title": "Create the lemon",
+          "duration": "15 min",
+          "description": "Form a yellow half-sphere for the lemon. Flatten the underside. With a knife, cut the lemon into a slice. Texture the surface with radial striations to imitate the segments. Add a small green leaf and a stem.",
+          "tip": "The segments must be well marked for a realistic effect."
+        },
+        {
+          "title": "Paint",
+          "duration": "5 min",
+          "description": "Paint the lemon in bright yellow. Add white details for the lemon flesh. Paint the leaf green. Let dry.",
+          "tip": "Use bright shades for a fresh effect."
+        },
+        {
+          "title": "Assemble and varnish",
+          "duration": "5 min",
+          "description": "Glue the lemon onto the base. Apply a waterproof varnish to protect from water. Let dry 24h before use.",
+          "tip": "Waterproof varnish is essential for bathroom use."
+        }
+      ],
+      "tips": [
+        "Create other fruits: orange, grapefruit, lime.",
+        "Add a water drain."
+      ],
+      "commonMistakes": [
+        "Non-waterproof varnish: the piece degrades in water."
+      ],
+      "variations": [
+        "Version with several lemon slices.",
+        "Version with lemon blossoms."
+      ]
+    },
+    "renardEndormi": {
+      "title": "Sleeping fox figurine",
+      "description": "Sculpt a small sleeping fox, curled up in a ball with its bushy tail, perfect for decoration.",
+      "materials": [
+        "Orange, white, and black polymer clay",
+        "A ball-point tool",
+        "A toothpick",
+        "Black paint",
+        "Matte varnish",
+        "Baking paper"
+      ],
+      "cure": {
+        "type": "polymer",
+        "note": "Bake flat to prevent tipping."
+      },
+      "instructions": [
+        {
+          "title": "Form the body",
+          "duration": "20 min",
+          "description": "Form a large orange oval for the fox's body. Flatten one side slightly so it is stable. The fox is curled up in a ball, so the body must be compact and round.",
+          "tip": "The body must be stable: check that it doesn't wobble."
+        },
+        {
+          "title": "Add the head and paws",
+          "duration": "15 min",
+          "description": "Form a round head that rests on the body. Add two orange triangular ears with white interiors. Shape two small front paws that protrude. Add a small bushy tail by forming a cone and texturing with a toothpick.",
+          "tip": "The tail should be generous for the fox effect."
+        },
+        {
+          "title": "Draw the face",
+          "duration": "10 min",
+          "description": "Draw closed eyes in arcs with black paint. Add a small black nose and a white muzzle. Add pink cheeks. The fox should look peaceful and asleep.",
+          "tip": "Closed eyes give the impression of sleep."
+        },
+        {
+          "title": "Bake and varnish",
+          "duration": "5 min",
+          "description": "Place the fox flat on baking paper. Bake according to the instructions. Let cool. Apply a matte varnish for a soft rendering.",
+          "tip": "Matte varnish for a plush effect."
+        }
+      ],
+      "tips": [
+        "Vary the colors: white fox, gray fox.",
+        "Add a small pillow under the head."
+      ],
+      "commonMistakes": [
+        "Head too heavy: it tips over. Keep it proportioned."
+      ],
+      "variations": [
+        "Version with a small bird on its back.",
+        "Version with stars around."
+      ]
+    }
+  },
+
+  "techniques": {
+    "preparer-pate": {
+      "title": "Prepare and soften the clay",
+      "duration": "15 min",
+      "description": "Learn to prepare a homogeneous clay, recognize the ideal modeling texture and avoid beginner mistakes.",
+      "objectives": [
+        "Understand the ideal texture for modeling",
+        "Prepare a soft and regular clay",
+        "Avoid preparation mistakes"
+      ],
+      "materials": [
+        "Modeling clay suited to the project",
+        "Clean work surface",
+        "Suitable cutting tool"
+      ],
+      "steps": [
+        "Read the manufacturer's instructions and prepare the work surface.",
+        "Take a small amount of clay.",
+        "Knead gradually according to the product recommendations.",
+        "Check the texture and make sure it works easily.",
+        "Form a test ball to validate elasticity."
+      ],
+      "exercise": [
+        "Prepare a small portion of clay.",
+        "Form a regular ball.",
+        "Form a small cylinder without deforming the clay."
+      ],
+      "mistakes": [
+        "Working on a dirty surface.",
+        "Kneading clay that doesn't require this preparation.",
+        "Mixing incompatible products."
+      ],
+      "tip": "Work in small batches. If the clay becomes sticky or cracks, check the manufacturer's recommendations before continuing.",
+      "project": "Create a perfect small ball and a regular cylinder."
+    },
+    "formes-simples": {
+      "title": "Master simple shapes",
+      "duration": "20 min",
+      "description": "Learn to form balls, cylinders and oval shapes to build your creations.",
+      "objectives": [
+        "Create regular shapes",
+        "Master finger pressure",
+        "Assemble simple shapes"
+      ],
+      "materials": [
+        "Modeling clay",
+        "Work surface",
+        "Ruler (optional)"
+      ],
+      "steps": [
+        "Divide the clay into comparable portions.",
+        "Roll a portion between your palms to form a ball.",
+        "Roll gently to obtain a cylinder.",
+        "Adjust the ends to obtain an oval shape.",
+        "Compare the shapes to check regularity."
+      ],
+      "exercise": [
+        "Form three balls of different sizes.",
+        "Create two cylinders of different lengths.",
+        "Make a small set of harmonious shapes."
+      ],
+      "mistakes": [
+        "Pressing too hard and deforming the piece.",
+        "Changing finger pressure abruptly.",
+        "Not checking the regularity of shapes."
+      ],
+      "tip": "Light and regular movements generally give a more homogeneous result.",
+      "project": "Create a small composition of 5 simple shapes."
+    },
+    "petales-fleurs": {
+      "title": "Model petals and leaves",
+      "duration": "25 min",
+      "description": "Discover how to transform small portions of clay into decorative petals and leaves.",
+      "objectives": [
+        "Create thin and regular petals",
+        "Add natural veins",
+        "Assemble a small flower"
+      ],
+      "materials": [
+        "Clay in several colors",
+        "Small rounded tool",
+        "Smooth surface"
+      ],
+      "steps": [
+        "Form small balls of clay.",
+        "Gently flatten each ball to create a petal.",
+        "Slightly thin one end to give a natural shape.",
+        "Form a leaf and add a vein if necessary.",
+        "Assemble the pieces to make a small flower."
+      ],
+      "exercise": [
+        "Create five petals of similar size.",
+        "Form two leaves.",
+        "Assemble the pieces to make a small flower."
+      ],
+      "mistakes": [
+        "Making petals too thick for the project.",
+        "Stretching a fragile piece too much.",
+        "Pressing excessively with tools."
+      ],
+      "tip": "Prepare your pieces before assembling them: it makes the composition more regular.",
+      "project": "Create a complete flower with 5 petals and 2 leaves."
+    },
+    "textures-details": {
+      "title": "Create textures and details",
+      "duration": "20 min",
+      "description": "Add patterns, reliefs and small details to personalize your creations.",
+      "objectives": [
+        "Create regular patterns",
+        "Use texture tools",
+        "Personalize a piece"
+      ],
+      "materials": [
+        "Modeling clay",
+        "Texture tools",
+        "Suitable textured objects"
+      ],
+      "steps": [
+        "Prepare a clay slab of regular thickness.",
+        "Choose a clean and suitable tool.",
+        "Test the pressure on a piece of scrap clay.",
+        "Repeat the pattern with regular spacing.",
+        "Clean the tool between each use."
+      ],
+      "exercise": [
+        "Create three different patterns on scrap clay.",
+        "Make a row of regular patterns.",
+        "Choose a texture to decorate a small piece."
+      ],
+      "mistakes": [
+        "Pressing too hard and tearing the surface.",
+        "Using a dirty tool.",
+        "Multiplying patterns without coherence."
+      ],
+      "tip": "Always test on a scrap piece before texturing your final creation.",
+      "project": "Decorate a small slab with 3 different textures."
+    },
+    "assemblage": {
+      "title": "Assemble multiple pieces",
+      "duration": "25 min",
+      "description": "Learn to join several elements to obtain a stable and neat creation.",
+      "objectives": [
+        "Assemble pieces without deforming them",
+        "Choose the right joining method",
+        "Check stability"
+      ],
+      "materials": [
+        "Modeled pieces",
+        "Suitable tool",
+        "Work support"
+      ],
+      "steps": [
+        "Prepare the elements and check their position.",
+        "Identify the joining method suited to the clay type.",
+        "Assemble gently without deforming the pieces.",
+        "Check stability and follow drying or baking instructions.",
+        "Let dry or bake according to the instructions."
+      ],
+      "exercise": [
+        "Create two simple shapes.",
+        "Assemble them to form a small object.",
+        "Check the strength of the joint without forcing."
+      ],
+      "mistakes": [
+        "Assembling incompatible clays.",
+        "Using an unsuitable gluing method.",
+        "Moving the pieces before the joint is stable."
+      ],
+      "tip": "The assembly method depends on the material: always check the manufacturer's instructions before adding water, glue or another product.",
+      "project": "Assemble a small 3-piece object."
+    },
+    "finitions": {
+      "title": "Achieve perfect finishes",
+      "duration": "20 min",
+      "description": "Learn to inspect, correct and protect your creations with compatible products.",
+      "objectives": [
+        "Identify defects",
+        "Correct imperfections",
+        "Apply a suitable finish"
+      ],
+      "materials": [
+        "Finished creation",
+        "Suitable finishing tools",
+        "Surface protection if necessary"
+      ],
+      "steps": [
+        "Examine the piece and spot imperfections.",
+        "Correct defects only with a method suited to the material.",
+        "Respect drying time or baking instructions.",
+        "Apply a finish only if it is compatible with the clay.",
+        "Clean the tools after use."
+      ],
+      "exercise": [
+        "Inspect a small creation from several angles.",
+        "Identify three details to improve.",
+        "Write a short checklist before considering the piece finished."
+      ],
+      "mistakes": [
+        "Applying varnish before complete drying.",
+        "Using an incompatible finish.",
+        "Ignoring the product's ventilation or safety instructions."
+      ],
+      "tip": "Air-dry clay and polymer clay are not treated the same way. Always follow the product instructions.",
+      "project": "Finish a piece with a suitable finish."
+    }
+  },
+
+  "library": {
+    "eyebrow": "The library",
+    "title": "Explore the techniques",
+    "description": "Choose a theme, discover the explanations and move on to practice.",
+    "searchPlaceholder": "Search for a technique...",
+    "categoryLabel": "Filter by category",
+    "levelLabel": "Filter by level",
+    "difficultyLabel": "Filter by difficulty",
+    "showCompleted": "Show completed",
+    "showAll": "Show all",
+    "addButton": "Add",
+    "pdfButton": "PDF",
+    "emptyState": {
+      "title": "No technique found",
+      "description": "Try adjusting your filters or add a new technique.",
+      "resetButton": "Reset filters"
+    }
+  },
+  "workshop": {
+    "eyebrow": "Let's practice",
+    "exercisesCompletedLabel": "exercises",
+    "title": "My interactive workshop",
+    "description": "Follow the steps, complete the exercises and validate the technique when you're ready.",
+    "objectivesTitle": "Objectives",
+    "materialsTitle": "Required materials",
+    "stepsTitle": "Steps to follow",
+    "exerciseTitle": "My practical exercise",
+    "exerciseDescription": "Check each exercise once completed.",
+    "exercisesCompleted": "Exercises completed",
+    "tipTitle": "The ClayBloom tip",
+    "avoidTitle": "Avoid",
+    "validateButton": "Mark this technique as completed",
+    "unvalidateButton": "Technique completed — cancel validation",
+    "validationNote": "Validate the technique when you have finished the practice. You can modify your tracking at any time.",
+    "customBadge": "Custom",
+    "journeyTitle": "Your journey",
+    "journeyDescription": "{{completed}} technique(s) out of {{total}}",
+    "progressLabel": "Progress",
+    "resetButton": "Reset my progress",
+    "resetConfirm": "Clear all validations and all exercises?",
+    "confirmButton": "Confirm",
+    "cancelButton": "Cancel",
+    "storageTitle": "Your data",
+    "storageNote": "Your validations and exercises are saved on this device in your browser."
+  },
+  "hero": {
+    "badge": "The ClayBloom workshop",
+    "title": "Learn the",
+    "titleHighlight": "modeling techniques",
+    "description": "Discover the essential gestures, train with guided exercises and progress at your own pace in your creative learning.",
+    "startButton": "Start learning",
+    "exportButton": "Export to PDF",
+    "newTechniqueButton": "New technique",
+    "progressLabel": "My progress",
+    "techniquesCompleted": "Techniques completed",
+    "exercisesDone": "Exercises completed",
+    "motivationText": "Every small step counts. Come back to the workshop to pick up where you left off."
+  },
+  "cta": {
+    "title": "Creativity is built with practice",
+    "description": "Move step by step, take the time to experiment and keep your trials to observe your progress. Every creation is an opportunity to learn.",
+    "button": "Back to the workshop"
+  },
+  "modal": {
+    "title": "New technique",
+    "close": "Close",
+    "defaultProject": "Practice this technique on a small piece",
+    "deleteConfirm": "Delete this technique? This cannot be undone.",
+    "form": {
+      "title": "Title *",
+      "titlePlaceholder": "Ex: Create a clay bowl",
+      "category": "Category",
+      "level": "Level",
+      "difficulty": "Difficulty",
+      "duration": "Duration",
+      "durationPlaceholder": "Ex: 30 min",
+      "image": "Image URL (optional)",
+      "imagePlaceholder": "https://...",
+      "description": "Description *",
+      "descriptionPlaceholder": "Describe the technique in one sentence...",
+      "objectives": "Objectives (one per line) *",
+      "objectivesPlaceholder": "Master the basic gesture\nCreate a regular shape",
+      "materials": "Required materials (one per line) *",
+      "materialsPlaceholder": "Modeling clay\nCutting tool",
+      "steps": "Steps to follow (one per line) *",
+      "stepsPlaceholder": "Prepare the surface\nForm a ball\n...",
+      "exercise": "Practical exercises (one per line) *",
+      "exercisePlaceholder": "Create 3 balls\nForm a cylinder",
+      "mistakes": "Mistakes to avoid (one per line) *",
+      "mistakesPlaceholder": "Pressing too hard\nNot checking regularity",
+      "tip": "ClayBloom tip *",
+      "tipPlaceholder": "A practical tip to succeed...",
+      "project": "Final project (optional)",
+      "projectPlaceholder": "Ex: Make a small decorative vase"
+    },
+    "errors": {
+      "titleRequired": "Title is required",
+      "descriptionRequired": "Description is required",
+      "objectivesRequired": "Objectives are required",
+      "materialsRequired": "Materials are required",
+      "stepsRequired": "Steps are required",
+      "exerciseRequired": "Exercises are required",
+      "mistakesRequired": "Mistakes are required",
+      "tipRequired": "Tip is required"
+    },
+    "submit": "Add technique",
+    "cancel": "Cancel"
+  },
+  "categories": {
+    "all": "All",
+    "basics": "The basics",
+    "gestures": "The gestures",
+    "decoration": "Decoration",
+    "assembly": "Assembly",
+    "finishes": "Finishes",
+    "custom": "Custom"
+  },
+  "levels": {
+    "all": "All",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "difficulties": {
+    "all": "All",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "buttons": {
+    "learn": "Learn",
+    "review": "Review",
+    "delete": "Delete",
+    "completed": "Completed",
+    "custom": "Custom"
+  },
+  "pdf": {
+    "title": "Techniques guide",
+    "footer": "Document generated by ClayBloom - The creative modeling workshop",
+    "progress": "Progress: {{percentage}}% • {{completed}}/{{total}} techniques completed",
+    "printError": "Unable to launch printing. Please try again.",
+    "objectives": "Objectives",
+    "materials": "Required materials",
+    "steps": "Steps to follow",
+    "exercises": "Practical exercises",
+    "tip": "ClayBloom tip",
+    "mistakes": "Mistakes to avoid",
+    "project": "Final project",
+    "subtitle": "Complete guide of techniques — {{count}} techniques • {{date}}"
+  }
+}

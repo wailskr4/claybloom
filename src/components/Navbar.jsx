@@ -1,13 +1,17 @@
+
 import { useState } from "react";
-import { Link } from 'react-router-dom'
-import Logo from '../assets/logo2.jpg'
-import ThemeToggle from './ThemeToggle';
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo2.jpg";
+import ThemeToggle from "./ThemeToggle";
 import { Sparkles, X, Menu } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
-  const closeMenu = () => setMobileMenuOpen(false)
+  const closeMenu = () => setMobileMenuOpen(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-pink-100/70 bg-[#fffaf6]/90 backdrop-blur-xl dark:border-[#3d2f47]/70 dark:bg-[#211d2c]/90">
@@ -26,42 +30,43 @@ export default function Navbar() {
           />
 
           <span className="hidden text-[10px] leading-tight text-[#998590] sm:block dark:text-[#c4b5c2]">
-            Crée, modèle, fais fleurir ta créativité
+            {t("navbar.tagline")}
           </span>
         </Link>
 
         {/* Navigation ordinateur */}
         <div className="hidden items-center gap-7 text-sm font-medium text-[#766474] md:flex dark:text-[#c4b5c2]">
           <Link to="/" className="text-pink-500 dark:text-pink-400">
-            Accueil
+            {t("navbar.home")}
           </Link>
 
           <Link
             to="/creations"
             className="transition hover:text-pink-500 dark:hover:text-pink-400"
           >
-            Créations
+            {t("navbar.creations")}
           </Link>
 
           <Link
             to="/tutoriels"
             className="transition hover:text-pink-500 dark:hover:text-pink-400"
           >
-            Tutoriels
+            {t("navbar.tutorials")}
           </Link>
 
           <Link
             to="/technique"
             className="transition hover:text-pink-500 dark:hover:text-pink-400"
           >
-            Techniques
+            {t("navbar.techniques")}
           </Link>
         </div>
 
+        {/* Actions */}
         <div className="flex items-center gap-3">
           <Link
             to="/creations"
-            aria-label="Rechercher une création"
+            aria-label={t("navbar.searchCreation")}
             className="hidden rounded-full p-2.5 text-[#766474] transition hover:bg-pink-50 sm:block dark:text-[#c4b5c2] dark:hover:bg-[#3a2f47]"
           >
             <Sparkles size={19} />
@@ -71,15 +76,15 @@ export default function Navbar() {
             to="/creations"
             className="hidden rounded-full bg-pink-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-pink-200 transition hover:bg-pink-600 sm:inline-flex dark:shadow-none"
           >
-            Commencer
+            {t("navbar.start")}
           </Link>
 
           <button
             type="button"
             aria-label={
               mobileMenuOpen
-                ? 'Fermer le menu'
-                : 'Ouvrir le menu'
+                ? t("navbar.closeMenu")
+                : t("navbar.openMenu")
             }
             aria-expanded={mobileMenuOpen}
             onClick={() => setMobileMenuOpen((open) => !open)}
@@ -91,7 +96,9 @@ export default function Navbar() {
               <Menu size={23} />
             )}
           </button>
+
           <ThemeToggle />
+          <LanguageSwitcher />
         </div>
       </nav>
 
@@ -104,7 +111,7 @@ export default function Navbar() {
               onClick={closeMenu}
               className="text-pink-500 dark:text-pink-400"
             >
-              Accueil
+              {t("navbar.home")}
             </Link>
 
             <Link
@@ -112,7 +119,7 @@ export default function Navbar() {
               onClick={closeMenu}
               className="transition hover:text-pink-500 dark:hover:text-pink-400"
             >
-              Créations
+              {t("navbar.creations")}
             </Link>
 
             <Link
@@ -120,7 +127,7 @@ export default function Navbar() {
               onClick={closeMenu}
               className="transition hover:text-pink-500 dark:hover:text-pink-400"
             >
-              Tutoriels
+              {t("navbar.tutorials")}
             </Link>
 
             <Link
@@ -128,7 +135,7 @@ export default function Navbar() {
               onClick={closeMenu}
               className="transition hover:text-pink-500 dark:hover:text-pink-400"
             >
-              Techniques
+              {t("navbar.techniques")}
             </Link>
 
             <Link
@@ -136,15 +143,15 @@ export default function Navbar() {
               onClick={closeMenu}
               className="mt-2 inline-flex items-center justify-center rounded-full bg-pink-500 px-5 py-3 text-sm font-semibold text-white shadow-md shadow-pink-200 dark:shadow-none"
             >
-              Explorer les créations
+              {t("navbar.exploreCreations")}
             </Link>
           </div>
 
           <div className="mt-4 flex justify-center border-t border-pink-100 pt-4 dark:border-[#3d2f47]">
-            <ThemeToggle />
+            <LanguageSwitcher />
           </div>
         </div>
       )}
     </header>
-  )
+  );
 }

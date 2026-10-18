@@ -8,6 +8,7 @@ import TutorialDetail from './pages/TutorialDetail'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
+import './i18n'
 
 export default function App() {
   return (

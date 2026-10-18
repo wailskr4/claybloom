@@ -1,188 +1,237 @@
-
-import { useEffect, useState } from 'react'
-import useFavorites from '../hooks/useFavorites'
+import { useEffect, useState, useMemo } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import {
   ArrowLeft,
-  ArrowRight,
   BookOpen,
   Check,
   CheckCircle2,
   Clock3,
   Heart,
   Lightbulb,
+  Package,
   Palette,
   RotateCcw,
   Sparkles,
-  TriangleAlert,
+  AlertTriangle,
+  ImageOff,
 } from 'lucide-react'
+
+import useFavorites from '../hooks/useFavorites'
 import { tutorials } from '../data/tutorials'
 
 const STORAGE_PREFIX = 'claybloom:tutorial:'
 
-function readStorage(key, fallback = []) {
-  if (typeof window === 'undefined') return fallback
+/* --------------------------------
+   LocalStorage helpers
+--------------------------------- */
 
+function readStorage(key) {
   try {
-    const value = window.localStorage.getItem(key)
-    return value ? JSON.parse(value) : fallback
+    const saved = window.localStorage.getItem(key)
+    const parsed = saved ? JSON.parse(saved) : []
+    return Array.isArray(parsed) ? parsed : []
   } catch {
-    return fallback
+    return []
   }
 }
 
 function cureLabel(cure) {
-  if (!cure) return ''
-
-  if (cure.type === 'polymer') {
-    return 'Pâte polymère : cuisson nécessaire'
+  if (!cure) return null
+  if (typeof cure === 'string') return cure
+  if (typeof cure === 'object') {
+    return cure.description || cure.label || cure.duration || cure.note || null
   }
-
-  if (cure.type === 'air-dry') {
-    return 'Pâte autodurcissante : séchage à l’air libre'
-  }
-
-  return 'Séchage ou finition'
+  return String(cure)
 }
 
-function InfoSection({ title, icon: Icon, items, color = 'pink' }) {
-  if (!items?.length) return null
+/* --------------------------------
+   Reusable information section
+--------------------------------- */
 
-  const styles = {
-    pink: 'border-pink-100 bg-pink-50/70 text-pink-700 dark:border-pink-500/30 dark:bg-[#3a2f47] dark:text-pink-300',
-    amber: 'border-amber-100 bg-amber-50/80 text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-300',
-    purple: 'border-purple-100 bg-purple-50/80 text-purple-700 dark:border-purple-500/30 dark:bg-purple-500/15 dark:text-purple-300',
-  }
-
+function InfoSection({ title, icon: Icon, children, className = '' }) {
   return (
-    <section className="rounded-3xl border border-[#F3E8EE] bg-white p-5 shadow-sm sm:p-7 dark:border-[#3d2f47] dark:bg-[#2b2438]">
-      <div className="flex items-center gap-3">
-        <span className={`rounded-xl border p-2.5 ${styles[color]}`}>
-          <Icon size={21} />
-        </span>
-
-        <h2 className="text-xl font-extrabold dark:text-[#f7e8ef]">{title}</h2>
+    <section
+      className={`rounded-2xl border border-stone-200 bg-white p-5 shadow-sm dark:border-stone-700 dark:bg-stone-900 sm:p-6 ${className}`}
+    >
+      <div className="mb-4 flex items-center gap-3">
+        {Icon && (
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-pink-100 text-pink-600 dark:bg-pink-950 dark:text-pink-300">
+            <Icon size={20} />
+          </span>
+        )}
+        <h2 className="text-lg font-bold text-stone-800 dark:text-stone-100">
+          {title}
+        </h2>
       </div>
-
-      <ul className="mt-5 space-y-3">
-        {items.map((item, index) => (
-          <li
-            key={`${item}-${index}`}
-            className="flex items-start gap-3 text-sm leading-6 text-[#806C7A] dark:text-[#c4b5c2]"
-          >
-            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-pink-300 dark:bg-pink-400" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
+      {children}
     </section>
   )
 }
 
-export default function TutorialDetail() {
-  const { id } = useParams()
+/* --------------------------------
+   Helper: Get translated content safely
+--------------------------------- */
 
+function getTranslatedContent(i18n, translationKey) {
+  if (!translationKey) return {}
 
-const {
-  isFavorite,
-  toggleFavorite,
-} = useFavorites()
-
-const favorite = isFavorite(id)
-
-
-  const tutorial = tutorials.find(
-    (item) => String(item.id) === id
+  const languages = [
+    i18n.resolvedLanguage,
+    i18n.language,
+    i18n.resolvedLanguage?.split('-')[0],
+    i18n.language?.split('-')[0],
+  ].filter((language, index, array) =>
+    language && array.indexOf(language) === index
   )
 
+  for (const language of languages) {
+    const bundle = i18n.getResourceBundle(language, 'translation')
+
+    const content = bundle?.tutorialData?.[translationKey]
+
+    if (
+      content &&
+      typeof content === 'object' &&
+      !Array.isArray(content)
+    ) {
+      console.log('Traduction trouvée :', {
+        language,
+        translationKey,
+        title: content.title,
+      })
+
+      return content
+    }
+  }
+
+  console.warn('Traduction introuvable :', {
+    translationKey,
+    language: i18n.language,
+    resolvedLanguage: i18n.resolvedLanguage,
+  })
+
+  return {}
+}
+
+/* --------------------------------
+   Tutorial detail page
+--------------------------------- */
+
+export default function TutorialDetail() {
+  const { t, i18n } = useTranslation()
+  const { id } = useParams()
+
+  // 1. Retrieve the original tutorial
+  const originalTutorial = tutorials.find(
+    (item) => String(item.id) === String(id)
+  )
+
+  // 2. Get translation key
+  const translationKey = originalTutorial?.translationKey
+
+  // 3. Retrieve translated content with useMemo for optimization
+const translatedContent = useMemo(
+  () => getTranslatedContent(i18n, translationKey),
+  [i18n, translationKey, i18n.language, i18n.resolvedLanguage]
+)
+
+
+  // 4. Merge translations with original data
+  const tutorial = useMemo(() => {
+    if (!originalTutorial) return null
+    
+    return {
+      ...originalTutorial,
+      // Les traductions écrasent les données originales si elles existent
+      ...(translatedContent && Object.keys(translatedContent).length > 0
+        ? translatedContent
+        : {}),
+    }
+  }, [originalTutorial, translatedContent])
+console.log('LANGUE ACTIVE :', i18n.language)
+console.log('LANGUE RÉSOLUE :', i18n.resolvedLanguage)
+console.log('TITRE TRADUIT :', translatedContent.title)
+console.log('TITRE FINAL :', tutorial?.title)
+console.log('MATÉRIEL FINAL :', tutorial?.materials?.[0])
+  // 5. Favorites
+  const { isFavorite, toggleFavorite } = useFavorites()
+  const favorite = isFavorite(id)
+
+  // 6. Progress and materials storage keys
   const progressKey = `${STORAGE_PREFIX}${id}:steps`
   const materialsKey = `${STORAGE_PREFIX}${id}:materials`
 
-  const [completedSteps, setCompletedSteps] = useState(
-    () => readStorage(progressKey)
-  )
-  const [checkedMaterials, setCheckedMaterials] = useState(
-    () => readStorage(materialsKey)
-  )
+  const [completedSteps, setCompletedSteps] = useState(() => readStorage(progressKey))
+  const [checkedMaterials, setCheckedMaterials] = useState(() => readStorage(materialsKey))
   const [imageFailed, setImageFailed] = useState(false)
 
-  // Recharger les données lorsque l'identifiant du tutoriel change.
+  // 7. Reload saved data when the tutorial changes
   useEffect(() => {
     setCompletedSteps(readStorage(progressKey))
     setCheckedMaterials(readStorage(materialsKey))
     setImageFailed(false)
   }, [progressKey, materialsKey])
 
-  // Sauvegarder automatiquement les étapes cochées.
+  // 8. Persist completed steps
   useEffect(() => {
     try {
-      window.localStorage.setItem(
-        progressKey,
-        JSON.stringify(completedSteps)
-      )
+      window.localStorage.setItem(progressKey, JSON.stringify(completedSteps))
     } catch {
-      // Le tutoriel reste utilisable si le stockage est indisponible.
+      // Local storage may be unavailable.
     }
   }, [progressKey, completedSteps])
 
-  // Sauvegarder automatiquement le matériel préparé.
+  // 9. Persist checked materials
   useEffect(() => {
     try {
-      window.localStorage.setItem(
-        materialsKey,
-        JSON.stringify(checkedMaterials)
-      )
+      window.localStorage.setItem(materialsKey, JSON.stringify(checkedMaterials))
     } catch {
-      // Le tutoriel reste utilisable si le stockage est indisponible.
+      // Local storage may be unavailable.
     }
   }, [materialsKey, checkedMaterials])
 
+  // 10. Handle an unknown tutorial ID
   if (!tutorial) {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center bg-[#FFF8F2] px-6 text-center text-[#493747]">
-        <span className="mb-4 text-5xl">🌷</span>
-
-        <h1 className="text-2xl font-bold">
-          Tutoriel introuvable
-        </h1>
-
-        <p className="mt-3 text-[#998590]">
-          Ce guide n'existe pas ou n'est plus disponible.
-        </p>
-
-        <Link
-          to="/creations"
-          className="mt-6 rounded-full bg-pink-500 px-6 py-3 font-semibold text-white transition hover:bg-pink-600"
-        >
-          Retour aux créations
-        </Link>
+      <main className="min-h-screen bg-stone-50 px-4 py-16 dark:bg-stone-950">
+        <div className="mx-auto max-w-xl rounded-3xl border border-stone-200 bg-white p-8 text-center dark:border-stone-700 dark:bg-stone-900">
+          <BookOpen size={44} className="mx-auto mb-4 text-pink-500" />
+          <h1 className="mb-3 text-2xl font-bold text-stone-800 dark:text-stone-100">
+            {t('tutorialDetail.notFound', { defaultValue: 'Tutoriel introuvable' })}
+          </h1>
+          <p className="mb-6 text-stone-600 dark:text-stone-400">
+            {t('tutorialDetail.notFoundDescription', {
+              defaultValue: "Ce tutoriel est introuvable ou n'est plus disponible.",
+            })}
+          </p>
+          <Link
+            to="/creations"
+            className="inline-flex items-center gap-2 rounded-xl bg-pink-500 px-5 py-3 font-semibold text-white transition hover:bg-pink-600"
+          >
+            <ArrowLeft size={18} />
+            {t('tutorialDetail.backToCreations', { defaultValue: 'Retour aux créations' })}
+          </Link>
+        </div>
       </main>
     )
   }
 
-  const instructions = tutorial.instructions ?? []
-  const materials = tutorial.materials ?? []
-  const palette = tutorial.palette ?? []
-  const tips = tutorial.tips ?? []
-  const mistakes = tutorial.commonMistakes ?? []
-  const variations = tutorial.variations ?? []
-  const tags = tutorial.tags ?? []
-  const cure = tutorial.cure
+  // 11. Safe collections
+  const materials = Array.isArray(tutorial.materials) ? tutorial.materials : []
+  const instructions = Array.isArray(tutorial.instructions) ? tutorial.instructions : []
+  const tips = Array.isArray(tutorial.tips) ? tutorial.tips : []
+  const commonMistakes = Array.isArray(tutorial.commonMistakes) ? tutorial.commonMistakes : []
+  const variations = Array.isArray(tutorial.variations) ? tutorial.variations : []
+  const palette = Array.isArray(tutorial.palette) ? tutorial.palette : []
 
-  const validCompletedSteps = completedSteps.filter(
-    (index) => Number.isInteger(index) && index >= 0 && index < instructions.length
-  )
+  // 12. Progress calculations
+  const totalSteps = instructions.length
+  const completedCount = instructions.filter((_, index) => completedSteps.includes(index)).length
+  const progress = totalSteps > 0 ? Math.round((completedCount / totalSteps) * 100) : 0
+  const allMaterialsChecked = materials.length > 0 && materials.every((_, index) => checkedMaterials.includes(index))
 
-  const validCheckedMaterials = checkedMaterials.filter(
-    (index) => Number.isInteger(index) && index >= 0 && index < materials.length
-  )
-
-  const progress = instructions.length
-    ? Math.round(
-        (validCompletedSteps.length / instructions.length) * 100
-      )
-    : 0
-
+  // 13. Step handlers
   function toggleStep(index) {
     setCompletedSteps((previous) =>
       previous.includes(index)
@@ -191,6 +240,7 @@ const favorite = isFavorite(id)
     )
   }
 
+  // 14. Material handlers
   function toggleMaterial(index) {
     setCheckedMaterials((previous) =>
       previous.includes(index)
@@ -199,530 +249,393 @@ const favorite = isFavorite(id)
     )
   }
 
+  // 15. Reset progress
   function resetProgress() {
     setCompletedSteps([])
     setCheckedMaterials([])
   }
 
-return (
-    <div className="min-h-screen bg-[#FFF8F2] text-[#493747] dark:bg-[#211d2c] dark:text-[#f7e8ef]">
-      {/* Navigation */}
-      <header className="border-b border-pink-100 bg-white/90 dark:border-[#3d2f47] dark:bg-[#2b2438]/90">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
-          <Link
-            to="/"
-            className="flex items-center gap-2 text-xl font-extrabold tracking-tight text-pink-600 dark:text-pink-400"
-          >
-            <Sparkles size={23} />
-            ClayBloom
-          </Link>
+  const translatedCure = cureLabel(tutorial.cure, t)
 
+  return (
+    <main className="min-h-screen bg-stone-50 pb-16 dark:bg-stone-950">
+      <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
+        {/* Breadcrumb */}
+        <nav aria-label={t('tutorialDetail.breadcrumbAria', { defaultValue: "Fil d'Ariane" })} className="mb-6">
           <Link
             to="/creations"
-            className="flex items-center gap-2 text-sm font-semibold text-[#806C7A] transition hover:text-pink-600 dark:text-[#c4b5c2] dark:hover:text-pink-400"
+            className="inline-flex items-center gap-2 text-sm font-medium text-stone-600 transition hover:text-pink-600 dark:text-stone-400 dark:hover:text-pink-400"
           >
             <ArrowLeft size={17} />
-            <span className="hidden sm:inline">
-              Toutes les créations
-            </span>
-            <span className="sm:hidden">Retour</span>
+            {t('tutorialDetail.backToCreations', { defaultValue: 'Retour aux créations' })}
           </Link>
-        </div>
-      </header>
-
-      <main className="mx-auto max-w-6xl px-5 py-8 sm:px-8 sm:py-12">
-        {/* Fil d'Ariane */}
-        <nav
-          aria-label="Fil d’Ariane"
-          className="mb-6 flex flex-wrap items-center gap-2 text-sm text-[#998590] dark:text-[#c4b5c2]"
-        >
-          <Link to="/" className="hover:text-pink-600 dark:hover:text-pink-400">
-            Accueil
-          </Link>
-          <span>/</span>
-          <Link to="/creations" className="hover:text-pink-600 dark:hover:text-pink-400">
-            Créations
-          </Link>
-          <span>/</span>
-          <span className="font-medium text-pink-600 dark:text-pink-400">
-            {tutorial.title}
-          </span>
         </nav>
 
-        {/* Présentation */}
-        <section className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-          <div className="relative flex min-h-72 items-center justify-center overflow-hidden rounded-4xl bg-linear-to-br from-pink-100 via-purple-100 to-amber-50 shadow-lg shadow-pink-100/60 sm:min-h-107.5 dark:from-[#2f2438] dark:via-[#251f30] dark:to-[#2a2235] dark:shadow-none">
-            {!imageFailed && tutorial.image ? (
-              <img
-                src={tutorial.image}
-                alt={tutorial.title}
-                onError={() => setImageFailed(true)}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-            ) : (
-              <div className="flex flex-col items-center px-8 py-12 text-center">
-                <span className="text-7xl" aria-hidden="true">
-                  🌸
-                </span>
-                <p className="mt-4 max-w-xs text-sm font-medium text-[#806C7A] dark:text-[#c4b5c2]">
-                  Une création pleine de douceur
-                </p>
-                <span className="mt-2 text-xs text-[#998590] dark:text-[#8b7a91]">
-                  {tutorial.category}
-                </span>
-              </div>
-            )}
-
-            <span className="absolute left-4 top-4 rounded-full bg-white/95 px-4 py-2 text-xs font-bold text-pink-600 shadow-sm dark:bg-[#2b2438]/95 dark:text-pink-300">
-              {tutorial.level}
-            </span>
-          </div>
-
-          <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-pink-700 dark:bg-[#3a2f47] dark:text-pink-300">
-              <Sparkles size={15} />
-              {tutorial.category}
-            </span>
-
-            <h1 className="mt-5 text-3xl font-extrabold leading-tight sm:text-5xl">
-              {tutorial.title}
-            </h1>
-
-            <p className="mt-5 text-base leading-7 text-[#806C7A] dark:text-[#c4b5c2]">
-              {tutorial.description ||
-                'Découvre ce tutoriel créatif et avance étape par étape pour réaliser ta propre création.'}
-            </p>
-
-            <div className="mt-6 flex flex-wrap gap-3">
-              <span className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold shadow-sm dark:bg-[#2b2438] dark:text-[#f7e8ef]">
-                <Sparkles size={16} className="text-pink-500 dark:text-pink-400" />
-                {tutorial.level}
-              </span>
-
-              <span className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold shadow-sm dark:bg-[#2b2438] dark:text-[#f7e8ef]">
-                <Clock3 size={16} className="text-pink-500 dark:text-pink-400" />
-                {tutorial.duration}
-              </span>
-
-              <span className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold shadow-sm dark:bg-[#2b2438] dark:text-[#f7e8ef]">
-                <BookOpen size={16} className="text-pink-500 dark:text-pink-400" />
-                {instructions.length} étapes
-              </span>
-            </div>
-
-            {tags.length > 0 && (
-              <div className="mt-5 flex flex-wrap gap-2">
-                {tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-pink-100 bg-white/80 px-3 py-1.5 text-xs font-medium text-[#806C7A] dark:border-[#3d2f47] dark:bg-[#2b2438]/80 dark:text-[#c4b5c2]"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            )}
-
-            <a
-              href="#etapes"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-pink-500 px-7 py-3.5 font-bold text-white shadow-lg shadow-pink-200 transition hover:-translate-y-0.5 hover:bg-pink-600 dark:shadow-none"
-            >
-              Commencer le tutoriel
-              <ArrowRight size={18} />
-            </a>
-          </div>
-        </section>
-<button
-  type="button"
-  onClick={() => toggleFavorite(id)}
-  aria-pressed={favorite}
-  className={`mt-4 inline-flex items-center gap-2 rounded-full border px-6 py-3.5 font-bold transition hover:-translate-y-0.5 ${
-    favorite
-      ? 'border-pink-500 bg-pink-50 text-pink-600 dark:border-pink-400 dark:bg-[#3a2f47] dark:text-pink-300'
-      : 'border-pink-200 bg-white text-[#806C7A] hover:border-pink-400 hover:text-pink-600 dark:border-[#3d2f47] dark:bg-[#2b2438] dark:text-[#c4b5c2] dark:hover:border-pink-400 dark:hover:text-pink-300'
-  }`}
->
-  <Heart
-    size={18}
-    fill={favorite ? 'currentColor' : 'none'}
-  />
-
-  {favorite
-    ? 'Retirer des favoris'
-    : 'Ajouter aux favoris'}
-</button>
-        {/* Palette de couleurs */}
-        {palette.length > 0 && (
-          <section className="mt-10 rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8 dark:border-[#3d2f47] dark:bg-[#2b2438]">
-            <div className="flex items-center gap-3">
-              <span className="rounded-xl bg-purple-50 p-3 text-purple-600 dark:bg-purple-500/20 dark:text-purple-300">
-                <Palette size={22} />
-              </span>
-
-              <div>
-                <h2 className="text-xl font-extrabold">
-                  Palette de couleurs
-                </h2>
-                <p className="mt-1 text-sm text-[#998590] dark:text-[#c4b5c2]">
-                  Les teintes proposées pour ta création.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-6 flex flex-wrap gap-4">
-              {palette.map((color, index) => (
-                <div
-                  key={`${color}-${index}`}
-                  className="flex flex-col items-center gap-2"
-                  title={color}
-                >
-                  <span
-                    className="h-12 w-12 rounded-full border border-black/10 shadow-sm sm:h-14 sm:w-14 dark:border-white/20"
-                    style={{ backgroundColor: color }}
-                  />
-                  <span className="text-xs font-medium text-[#806C7A] dark:text-[#c4b5c2]">
-                    {color}
+        {/* Hero */}
+        <header className="mb-8 overflow-hidden rounded-3xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900">
+          <div className="grid md:grid-cols-2">
+            {/* Tutorial image */}
+            <div className="relative flex min-h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-pink-100 via-rose-50 to-amber-100 dark:from-pink-950 dark:via-stone-900 dark:to-amber-950 md:min-h-[420px]">
+              {tutorial.image && !imageFailed ? (
+                <img
+                  src={tutorial.image}
+                  alt={tutorial.title}
+                  onError={() => setImageFailed(true)}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              ) : (
+                <div className="flex flex-col items-center gap-3 p-8 text-center text-pink-500">
+                  <ImageOff size={48} />
+                  <span className="text-sm font-medium">
+                    {t('tutorialDetail.imageUnavailable', { defaultValue: 'Image indisponible' })}
                   </span>
                 </div>
-              ))}
+              )}
+              {tutorial.level && (
+                <span className="absolute left-4 top-4 rounded-full bg-white/95 px-4 py-2 text-xs font-bold text-stone-700 shadow-sm dark:bg-stone-900/95 dark:text-stone-200">
+                  {tutorial.level}
+                </span>
+              )}
             </div>
-          </section>
-        )}
 
-        {/* Matériel */}
-        <section className="mt-10 rounded-4xl border border-pink-100 bg-white p-6 shadow-sm sm:mt-14 sm:p-9 dark:border-[#3d2f47] dark:bg-[#2b2438]">
-          <div className="flex items-start justify-between gap-4">
+            {/* Tutorial information */}
+            <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+              {tutorial.category && (
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-pink-600 dark:text-pink-400">
+                  {tutorial.category}
+                </p>
+              )}
+              <h1 className="mb-4 text-3xl font-extrabold leading-tight text-stone-800 dark:text-stone-100 sm:text-4xl">
+                {tutorial.title}
+              </h1>
+              {tutorial.description && (
+                <p className="mb-6 leading-7 text-stone-600 dark:text-stone-300">
+                  {tutorial.description}
+                </p>
+              )}
+              <div className="mb-6 flex flex-wrap gap-3">
+                {tutorial.duration && (
+                  <span className="inline-flex items-center gap-2 rounded-xl bg-stone-100 px-3 py-2 text-sm font-medium text-stone-700 dark:bg-stone-800 dark:text-stone-300">
+                    <Clock3 size={17} />
+                    {tutorial.duration}
+                  </span>
+                )}
+                {tutorial.cure && (
+                  <span className="inline-flex items-center gap-2 rounded-xl bg-stone-100 px-3 py-2 text-sm font-medium text-stone-700 dark:bg-stone-800 dark:text-stone-300">
+                    <Sparkles size={17} />
+                    {translatedCure}
+                  </span>
+                )}
+              </div>
+              <button
+                type="button"
+                onClick={() => toggleFavorite(id)}
+                aria-pressed={favorite}
+                className={`inline-flex w-fit items-center gap-2 rounded-xl px-5 py-3 font-semibold transition ${
+                  favorite
+                    ? 'bg-pink-100 text-pink-700 dark:bg-pink-950 dark:text-pink-300'
+                    : 'border border-stone-200 bg-white text-stone-700 hover:border-pink-300 hover:text-pink-600 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200'
+                }`}
+              >
+                <Heart size={19} fill={favorite ? 'currentColor' : 'none'} />
+                {favorite
+                  ? t('tutorialDetail.removeFavorite', { defaultValue: 'Retirer des favoris' })
+                  : t('tutorialDetail.addFavorite', { defaultValue: 'Ajouter aux favoris' })}
+              </button>
+            </div>
+          </div>
+        </header>
+
+        {/* Progress Section - TOUJOURS AFFICHÉE */}
+        <section className="mb-8 rounded-2xl border border-stone-200 bg-white p-5 shadow-sm dark:border-stone-800 dark:bg-stone-900 sm:p-6">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
             <div>
-              <span className="text-sm font-bold uppercase tracking-widest text-pink-500 dark:text-pink-400">
-                Avant de commencer
-              </span>
-
-              <h2 className="mt-2 text-2xl font-extrabold sm:text-3xl">
-                Ton matériel créatif
+              <h2 className="font-bold text-stone-800 dark:text-stone-100">
+                {t('tutorialDetail.progressTitle', { defaultValue: 'Votre progression' })}
               </h2>
-
-              <p className="mt-2 text-sm text-[#998590] dark:text-[#c4b5c2]">
-                Coche les éléments que tu as déjà préparés.
+              <p className="mt-1 text-sm text-stone-500 dark:text-stone-400">
+                {t('tutorialDetail.progressCount', {
+                  completed: completedCount,
+                  total: totalSteps,
+                  defaultValue: `${completedCount} étape(s) sur ${totalSteps}`,
+                })}
               </p>
             </div>
-
-            <span className="rounded-2xl bg-pink-50 p-3 text-pink-500 dark:bg-[#3a2f47] dark:text-pink-300">
-              <Heart size={24} />
+            <span className="text-2xl font-extrabold text-pink-600 dark:text-pink-400">
+              {progress}%
             </span>
           </div>
 
-          {materials.length > 0 ? (
-            <>
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {materials.map((material, index) => {
-                  const checked = validCheckedMaterials.includes(index)
-
-                  return (
-                    <button
-                      key={`${material}-${index}`}
-                      type="button"
-                      onClick={() => toggleMaterial(index)}
-                      aria-pressed={checked}
-                      className={`flex items-center gap-3 rounded-2xl border p-4 text-left transition ${
-                        checked
-                          ? 'border-pink-300 bg-pink-50 dark:border-pink-400 dark:bg-[#3a2f47]'
-                          : 'border-[#F3E8EE] bg-[#FFFCFA] hover:border-pink-200 dark:border-[#3d2f47] dark:bg-[#211d2c] dark:hover:border-pink-500/40'
-                      }`}
-                    >
-                      <span
-                        className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full border ${
-                          checked
-                            ? 'border-pink-500 bg-pink-500 text-white'
-                            : 'border-pink-200 bg-white dark:border-[#4a3a56] dark:bg-[#2b2438]'
-                        }`}
-                      >
-                        {checked && <Check size={15} />}
-                      </span>
-
-                      <span
-                        className={`text-sm font-medium ${
-                          checked
-                            ? 'text-pink-700 line-through dark:text-pink-300'
-                            : 'text-[#493747] dark:text-[#f7e8ef]'
-                        }`}
-                      >
-                        {material}
-                      </span>
-                    </button>
-                  )
-                })}
-              </div>
-
-              <p className="mt-4 text-sm text-[#998590] dark:text-[#c4b5c2]">
-                {validCheckedMaterials.length} / {materials.length} éléments préparés
-              </p>
-            </>
-          ) : (
-            <p className="mt-5 text-sm text-[#998590] dark:text-[#c4b5c2]">
-              Aucun matériel particulier n'a été renseigné pour ce tutoriel.
-            </p>
-          )}
-        </section>
-
-        {/* Conseils de séchage et cuisson */}
-        {cure && (
-          <section className="mt-6 rounded-[2rem] border border-amber-200 bg-amber-50/80 p-6 sm:p-8 dark:border-amber-500/30 dark:bg-amber-500/10">
-            <div className="flex items-start gap-4">
-              <span className="rounded-xl bg-white p-3 text-amber-700 shadow-sm dark:bg-[#2b2438] dark:text-amber-200">
-                <Lightbulb size={23} />
-              </span>
-
-              <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-amber-700 dark:text-amber-200">
-                  Séchage et finition
-                </p>
-
-                <h2 className="mt-2 text-xl font-extrabold">
-                  {cureLabel(cure)}
-                </h2>
-
-                {cure.note && (
-                  <p className="mt-3 text-sm leading-7 text-[#806C7A] dark:text-[#c4b5c2]">
-                    {cure.note}
-                  </p>
-                )}
-
-                <p className="mt-3 text-xs leading-5 text-[#806C7A] dark:text-[#c4b5c2]">
-                  Suis toujours les instructions du fabricant de ta pâte,
-                  notamment pour la température et la durée de cuisson.
-                </p>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Étapes */}
-        <section id="etapes" className="mt-14 scroll-mt-8 sm:mt-20">
-          <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-            <div>
-              <span className="text-sm font-bold uppercase tracking-widest text-pink-500 dark:text-pink-400">
-                À toi de jouer
-              </span>
-
-              <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl">
-                Les étapes de création
-              </h2>
-
-              <p className="mt-3 text-[#998590] dark:text-[#c4b5c2]">
-                Prends ton temps et avance à ton rythme.
-              </p>
-            </div>
-
-            <div className="w-full rounded-2xl bg-white p-4 shadow-sm sm:max-w-xs dark:bg-[#2b2438]">
-              <div className="mb-2 flex items-center justify-between text-sm">
-                <span className="font-semibold">Ta progression</span>
-                <span className="font-extrabold text-pink-600 dark:text-pink-400">
-                  {progress}%
-                </span>
-              </div>
-
-              <div
-                className="h-2.5 overflow-hidden rounded-full bg-pink-100 dark:bg-[#3a2f47]"
-                role="progressbar"
-                aria-label="Progression du tutoriel"
-                aria-valuemin={0}
-                aria-valuemax={100}
-                aria-valuenow={progress}
-              >
-                <div
-                  className="h-full rounded-full bg-pink-500 transition-all duration-300"
-                  style={{ width: `${progress}%` }}
-                />
-              </div>
-
-              <p className="mt-2 text-xs text-[#998590] dark:text-[#c4b5c2]">
-                {validCompletedSteps.length} étape(s) sur {instructions.length}
-              </p>
-            </div>
+          <div
+            role="progressbar"
+            aria-label={t('tutorialDetail.progressAria', { defaultValue: 'Progression du tutoriel' })}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={progress}
+            className="h-3 overflow-hidden rounded-full bg-stone-100 dark:bg-stone-800"
+          >
+            <div
+              className="h-full rounded-full bg-gradient-to-r from-pink-500 to-rose-400 transition-all duration-300"
+              style={{ width: `${progress}%` }}
+            />
           </div>
 
-          {instructions.length > 0 ? (
-            <div className="mt-8 space-y-5">
-              {instructions.map((step, index) => {
-                const completed = validCompletedSteps.includes(index)
+          {progress === 100 && totalSteps > 0 && (
+            <p className="mt-4 flex items-center gap-2 text-sm font-semibold text-green-600 dark:text-green-400">
+              <CheckCircle2 size={18} />
+              {t('tutorialDetail.completedMessage', { defaultValue: 'Bravo ! Vous avez terminé ce tutoriel.' })}
+            </p>
+          )}
 
-                return (
-                  <article
-                    key={`${step.title}-${index}`}
-                    className={`rounded-[1.75rem] border bg-white p-5 shadow-sm transition sm:p-7 dark:bg-[#2b2438] ${
-                      completed
-                        ? 'border-pink-300 dark:border-pink-400'
-                        : 'border-pink-100 dark:border-[#3d2f47]'
-                    }`}
-                  >
-                    <div className="flex items-start gap-4 sm:gap-6">
-                      <div
-                        className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-lg font-extrabold ${
-                          completed
-                            ? 'bg-pink-500 text-white'
-                            : 'bg-pink-100 text-pink-600 dark:bg-[#3a2f47] dark:text-pink-300'
-                        }`}
-                      >
-                        {completed ? (
-                          <CheckCircle2 size={23} />
-                        ) : (
-                          String(index + 1).padStart(2, '0')
-                        )}
-                      </div>
+          <div className="mt-4 flex justify-end">
+            <button
+              type="button"
+              onClick={resetProgress}
+              className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-stone-500 transition hover:bg-stone-100 hover:text-stone-800 dark:hover:bg-stone-800 dark:hover:text-stone-200"
+            >
+              <RotateCcw size={15} />
+              {t('tutorialDetail.resetProgress', { defaultValue: 'Réinitialiser la progression' })}
+            </button>
+          </div>
+        </section>
 
-                      <div className="min-w-0 flex-1">
-                        <div className="flex flex-wrap items-center gap-3">
-                          <h3 className="text-lg font-bold sm:text-xl">
-                            {step.title}
-                          </h3>
-
-                          {step.duration && (
-                            <span className="inline-flex items-center gap-1.5 rounded-full bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-700 dark:bg-purple-500/20 dark:text-purple-300">
-                              <Clock3 size={13} />
-                              {step.duration}
+        {/* Main content */}
+        <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)]">
+          <div className="space-y-8">
+            {/* Materials */}
+            <InfoSection
+              title={t('tutorialDetail.materialsTitle', { defaultValue: 'Matériel nécessaire' })}
+              icon={Package}
+            >
+              {materials.length > 0 ? (
+                <>
+                  <p className="mb-4 text-sm text-stone-500 dark:text-stone-400">
+                    {t('tutorialDetail.materialsHint', { defaultValue: 'Cochez les éléments que vous avez préparés.' })}
+                  </p>
+                  <ul className="space-y-3">
+                    {materials.map((material, index) => {
+                      const checked = checkedMaterials.includes(index)
+                      return (
+                        <li key={`${index}-${String(material)}`}>
+                          <label
+                            className={`flex cursor-pointer items-start gap-3 rounded-xl border p-3 transition ${
+                              checked
+                                ? 'border-pink-200 bg-pink-50 dark:border-pink-900 dark:bg-pink-950/40'
+                                : 'border-stone-200 hover:border-pink-200 dark:border-stone-700 dark:hover:border-pink-900'
+                            }`}
+                          >
+                            <input
+                              type="checkbox"
+                              checked={checked}
+                              onChange={() => toggleMaterial(index)}
+                              className="mt-1 h-4 w-4 accent-pink-500"
+                            />
+                            <span
+                              className={`text-sm leading-6 ${
+                                checked
+                                  ? 'text-stone-400 line-through dark:text-stone-500'
+                                  : 'text-stone-700 dark:text-stone-300'
+                              }`}
+                            >
+                              {material}
                             </span>
-                          )}
-                        </div>
+                          </label>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                  {allMaterialsChecked && (
+                    <p className="mt-4 flex items-center gap-2 text-sm font-medium text-green-600 dark:text-green-400">
+                      <CheckCircle2 size={17} />
+                      {t('tutorialDetail.materialsReady', { defaultValue: 'Tout le matériel est prêt !' })}
+                    </p>
+                  )}
+                </>
+              ) : (
+                <p className="text-sm text-stone-500 dark:text-stone-400">
+                  {t('tutorialDetail.noMaterials', { defaultValue: 'Aucun matériel renseigné.' })}
+                </p>
+              )}
+            </InfoSection>
 
-                        <p className="mt-3 leading-7 text-[#806C7A] dark:text-[#c4b5c2]">
-                          {step.description}
-                        </p>
+            {/* Palette */}
+            {palette.length > 0 && (
+              <InfoSection
+                title={t('tutorialDetail.paletteTitle', { defaultValue: 'Palette de couleurs' })}
+                icon={Palette}
+              >
+                <div className="flex flex-wrap gap-3">
+                  {palette.map((color, index) => {
+                    const colorValue = typeof color === 'string' ? color : color.color || color.hex || '#E5E7EB'
+                    const colorName = typeof color === 'string' ? color : color.name || color.label || colorValue
+                    return (
+                      <div key={`${colorValue}-${index}`} className="flex flex-col items-center gap-2" title={colorName}>
+                        <span
+                          className="h-10 w-10 rounded-full border border-black/10 shadow-sm"
+                          style={{ backgroundColor: colorValue }}
+                        />
+                        <span className="max-w-20 text-center text-xs text-stone-500 dark:text-stone-400">
+                          {colorName}
+                        </span>
+                      </div>
+                    )
+                  })}
+                </div>
+              </InfoSection>
+            )}
+          </div>
 
-                        {step.tip && (
-                          <div className="mt-4 flex items-start gap-2 rounded-xl bg-amber-50 p-3 text-sm leading-6 text-amber-900 dark:bg-amber-500/10 dark:text-amber-200">
-                            <Lightbulb size={17} className="mt-1 shrink-0" />
-                            <p>{step.tip}</p>
-                          </div>
-                        )}
+          {/* Instructions */}
+          <InfoSection
+            title={t('tutorialDetail.instructionsTitle', { defaultValue: 'Étapes de réalisation' })}
+            icon={BookOpen}
+          >
+            {instructions.length > 0 ? (
+              <ol className="space-y-5">
+                {instructions.map((step, index) => {
+                  const completed = completedSteps.includes(index)
+                  const stepTitle = typeof step === 'string'
+                    ? step
+                    : step.title || t('tutorialDetail.stepLabel', { number: index + 1, defaultValue: `Étape ${index + 1}` })
+                  const stepDescription = typeof step === 'string' ? '' : step.description || ''
+                  const stepDuration = typeof step === 'object' ? step.duration : null
+                  const stepTip = typeof step === 'object' ? step.tip : null
 
+                  return (
+                    <li
+                      key={`${index}-${stepTitle}`}
+                      className={`rounded-2xl border p-4 transition sm:p-5 ${
+                        completed
+                          ? 'border-green-200 bg-green-50/70 dark:border-green-900 dark:bg-green-950/20'
+                          : 'border-stone-200 dark:border-stone-700'
+                      }`}
+                    >
+                      <div className="flex items-start gap-3">
                         <button
                           type="button"
                           onClick={() => toggleStep(index)}
                           aria-pressed={completed}
-                          className={`mt-5 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold transition ${
+                          aria-label={
                             completed
-                              ? 'bg-pink-100 text-pink-700 hover:bg-pink-200 dark:bg-[#3a2f47] dark:text-pink-300 dark:hover:bg-[#4a3a56]'
-                              : 'bg-[#FFF1F6] text-pink-600 hover:bg-pink-100 dark:bg-[#3a2f47] dark:text-pink-300 dark:hover:bg-[#4a3a56]'
+                              ? t('tutorialDetail.markIncomplete', { title: stepTitle, defaultValue: `Marquer ${stepTitle} comme non terminée` })
+                              : t('tutorialDetail.markComplete', { title: stepTitle, defaultValue: `Marquer ${stepTitle} comme terminée` })
+                          }
+                          className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition ${
+                            completed
+                              ? 'bg-green-500 text-white'
+                              : 'bg-pink-100 text-pink-600 hover:bg-pink-200 dark:bg-pink-950 dark:text-pink-300'
                           }`}
                         >
-                          {completed ? (
-                            <>
-                              <CheckCircle2 size={17} />
-                              Étape terminée
-                            </>
-                          ) : (
-                            <>
-                              <Check size={17} />
-                              Marquer comme terminée
-                            </>
-                          )}
+                          {completed ? <Check size={18} /> : <span className="text-sm font-bold">{index + 1}</span>}
                         </button>
+
+                        <div className="min-w-0 flex-1">
+                          <div className="flex flex-wrap items-center justify-between gap-2">
+                            <h3 className={`font-bold ${completed ? 'text-green-700 dark:text-green-400' : 'text-stone-800 dark:text-stone-100'}`}>
+                              {stepTitle}
+                            </h3>
+                            {stepDuration && (
+                              <span className="inline-flex items-center gap-1 text-xs text-stone-500 dark:text-stone-400">
+                                <Clock3 size={14} />
+                                {stepDuration}
+                              </span>
+                            )}
+                          </div>
+                          {stepDescription && (
+                            <p className="mt-3 whitespace-pre-line text-sm leading-7 text-stone-600 dark:text-stone-300">
+                              {stepDescription}
+                            </p>
+                          )}
+                          {stepTip && (
+                            <div className="mt-4 flex items-start gap-2 rounded-xl bg-amber-50 p-3 text-sm leading-6 text-amber-900 dark:bg-amber-950/30 dark:text-amber-200">
+                              <Lightbulb size={17} className="mt-1 shrink-0" />
+                              <p>{stepTip}</p>
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                )
-              })}
-            </div>
-          ) : (
-            <p className="mt-8 rounded-2xl bg-white p-6 text-sm text-[#998590] dark:bg-[#2b2438] dark:text-[#c4b5c2]">
-              Les étapes de ce tutoriel seront bientôt disponibles.
-            </p>
-          )}
-
-          {progress === 100 && instructions.length > 0 && (
-            <div className="mt-8 rounded-4xl border border-pink-200 bg-pink-50 p-8 text-center dark:border-pink-500/30 dark:bg-[#3a2f47]">
-              <div className="text-4xl">🌷</div>
-
-              <h3 className="mt-3 text-2xl font-extrabold">
-                Bravo, tu as terminé !
-              </h3>
-
-              <p className="mt-2 text-[#806C7A] dark:text-[#c4b5c2]">
-                Ta création est terminée. Félicitations pour ce joli projet !
+                    </li>
+                  )
+                })}
+              </ol>
+            ) : (
+              <p className="text-sm text-stone-500 dark:text-stone-400">
+                {t('tutorialDetail.noInstructions', { defaultValue: 'Aucune étape renseignée pour le moment.' })}
               </p>
+            )}
+          </InfoSection>
+        </div>
 
-              <Link
-                to="/creations"
-                className="mt-5 inline-flex items-center gap-2 rounded-full bg-pink-500 px-6 py-3 font-bold text-white transition hover:bg-pink-600"
-              >
-                Explorer les créations
-                <ArrowRight size={18} />
-              </Link>
-            </div>
+        {/* Additional advice */}
+        <div className="mt-8 grid gap-8 md:grid-cols-2">
+          {tips.length > 0 && (
+            <InfoSection
+              title={t('tutorialDetail.tipsTitle', { defaultValue: 'Conseils pratiques' })}
+              icon={Lightbulb}
+            >
+              <ul className="space-y-3">
+                {tips.map((tip, index) => (
+                  <li key={`${index}-${tip}`} className="flex items-start gap-3 text-sm leading-7 text-stone-600 dark:text-stone-300">
+                    <CheckCircle2 size={18} className="mt-1 shrink-0 text-green-500" />
+                    <span>{tip}</span>
+                  </li>
+                ))}
+              </ul>
+            </InfoSection>
           )}
 
-          {(validCompletedSteps.length > 0 || validCheckedMaterials.length > 0) && (
-            <div className="mt-5 flex justify-end">
-              <button
-                type="button"
-                onClick={resetProgress}
-                className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-[#998590] transition hover:bg-white hover:text-pink-600 dark:text-[#c4b5c2] dark:hover:bg-[#2b2438] dark:hover:text-pink-400"
-              >
-                <RotateCcw size={15} />
-                Réinitialiser ma progression
-              </button>
-            </div>
+          {commonMistakes.length > 0 && (
+            <InfoSection
+              title={t('tutorialDetail.mistakesTitle', { defaultValue: 'Erreurs à éviter' })}
+              icon={AlertTriangle}
+            >
+              <ul className="space-y-3">
+                {commonMistakes.map((mistake, index) => (
+                  <li key={`${index}-${mistake}`} className="flex items-start gap-3 text-sm leading-7 text-stone-600 dark:text-stone-300">
+                    <AlertTriangle size={18} className="mt-1 shrink-0 text-amber-500" />
+                    <span>{mistake}</span>
+                  </li>
+                ))}
+              </ul>
+            </InfoSection>
           )}
-        </section>
+        </div>
 
-        {/* Conseils, erreurs et variantes */}
-        {(tips.length > 0 || mistakes.length > 0 || variations.length > 0) && (
-          <section className="mt-14 sm:mt-20">
-            <div className="mb-7">
-              <span className="text-sm font-bold uppercase tracking-widest text-pink-500 dark:text-pink-400">
-                Les petits secrets de l'atelier
-              </span>
-
-              <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl">
-                Pour une création réussie
-              </h2>
-
-              <p className="mt-3 text-[#998590] dark:text-[#c4b5c2]">
-                Quelques astuces pour personnaliser ton résultat et éviter les erreurs courantes.
-              </p>
-            </div>
-
-            <div className="grid gap-5 lg:grid-cols-2">
-              <InfoSection
-                title="Conseils pratiques"
-                icon={Lightbulb}
-                items={tips}
-                color="pink"
-              />
-
-              <InfoSection
-                title="Erreurs à éviter"
-                icon={TriangleAlert}
-                items={mistakes}
-                color="amber"
-              />
-
-              <div className="lg:col-span-2">
-                <InfoSection
-                  title="Essaie aussi ces variantes"
-                  icon={Sparkles}
-                  items={variations}
-                  color="purple"
-                />
+        {/* Variations */}
+        {variations.length > 0 && (
+          <div className="mt-8">
+            <InfoSection
+              title={t('tutorialDetail.variationsTitle', { defaultValue: 'Idées de variations' })}
+              icon={Sparkles}
+            >
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {variations.map((variation, index) => (
+                  <div
+                    key={`${index}-${variation}`}
+                    className="rounded-xl border border-pink-100 bg-pink-50/70 p-4 text-sm leading-6 text-stone-700 dark:border-pink-900/50 dark:bg-pink-950/20 dark:text-stone-300"
+                  >
+                    {variation}
+                  </div>
+                ))}
               </div>
-            </div>
-          </section>
+            </InfoSection>
+          </div>
         )}
 
-        <div className="mt-14 text-center">
+        {/* Footer */}
+        <footer className="mt-10 text-center">
+          <p className="mb-4 text-sm text-stone-500 dark:text-stone-400">
+            {t('tutorialDetail.footerMessage', { defaultValue: 'Prenez votre temps et amusez-vous à créer !' })}
+          </p>
           <Link
             to="/creations"
-            className="inline-flex items-center gap-2 font-semibold text-pink-600 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-300"
+            className="inline-flex items-center gap-2 rounded-xl bg-pink-500 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-pink-600"
           >
-            <ArrowLeft size={17} />
-            Retour à toutes les créations
+            <ArrowLeft size={18} />
+            {t('tutorialDetail.backToCreations', { defaultValue: 'Retour aux créations' })}
           </Link>
-        </div>
-      </main>
-
-      <footer className="mt-16 border-t border-pink-100 bg-white px-5 py-8 text-center text-sm text-[#998590] dark:border-[#3d2f47] dark:bg-[#2b2438] dark:text-[#c4b5c2]">
-        Fait avec amour et un peu de pâte créative 🌸 — ClayBloom
-      </footer>
-    </div>
+        </footer>
+      </div>
+    </main>
   )
 }
